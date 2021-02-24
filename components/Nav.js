@@ -19,9 +19,9 @@ export default function Nav(props) {
             <Link href="/">
               <Image
                 className=""
-                src="/atiLogo2.svg"
-                width={500}
-                height={200}
+                src="/IMG_2685.PNG"
+                width={2330}
+                height={1080}
                 priority
               />
             </Link>
