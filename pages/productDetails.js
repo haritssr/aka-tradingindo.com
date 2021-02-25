@@ -5,7 +5,7 @@ import ProductDetails from "../components/ProductDetails";
 export default function productDetails() {
   return (
     <div className="max-w-6xl min-h-screen mx-auto">
-      <Nav title="Product"></Nav>
+      <Nav title="Product | AKA Trading Indo"></Nav>
 
       <div className="w-full mx-auto">
         <Breadcomb name="PRODUCT" />

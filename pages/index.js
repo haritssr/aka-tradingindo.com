@@ -26,18 +26,57 @@ export default function Home() {
               <p className="mb-8 leading-relaxed">
                 -------
                 <br />
-                Gambier, Patchouli Oil, Citronella Oil, Incense, Cinnamon,
-                Coffee Beans, etc.
+                <Link href="/productPage/gambier">
+                  <a className="font-serif text-green-800 ont-bold hover:underline hover:text-green-500">
+                    Gambier
+                  </a>
+                </Link>
+                ,{" "}
+                <Link href="/productPage/patchouli-oil">
+                  <a className="font-serif text-green-800 ont-bold hover:underline hover:text-green-500">
+                    Patchouli Oil
+                  </a>
+                </Link>
+                ,{" "}
+                <Link href="/productPage/citronella-oil">
+                  <a className="font-serif text-green-800 ont-bold hover:underline hover:text-green-500">
+                    Citronella Oil
+                  </a>
+                </Link>
+                ,{" "}
+                <Link href="/productPage/cinnamon">
+                  <a className="font-serif text-green-800 ont-bold hover:underline hover:text-green-500">
+                    Cinnamon
+                  </a>
+                </Link>
+                ,{" "}
+                <Link href="/productPage/incense">
+                  <a className="font-serif text-green-800 ont-bold hover:underline hover:text-green-500">
+                    Incense
+                  </a>
+                </Link>
+                ,{" "}
+                <Link href="/productPage/coffee-bean">
+                  <a className="font-serif text-green-800 ont-bold hover:underline hover:text-green-500">
+                    Coffee Bean
+                  </a>
+                </Link>
+                ,{" "}
+                <Link href="/productPage/gambier">
+                  <a className="font-serif text-green-800 ont-bold hover:underline hover:text-green-500">
+                    Coffee Beans
+                  </a>
+                </Link>
               </p>
               <div className="flex justify-center">
                 <Link href="/product">
-                  <a className="inline-flex px-6 py-2 text-lg text-white bg-green-600 border-0 rounded focus:outline-none hover:bg-green-500">
+                  <a className="inline-flex px-4 py-2 text-lg font-bold text-white transition duration-300 transform bg-green-600 border-0 rounded-lg shadow-sm focus:outline-none hover:bg-green-500 hover:scale-95 hover:shadow-lg">
                     Products
                   </a>
                 </Link>
 
                 <Link href="/contact">
-                  <a className="inline-flex px-6 py-2 ml-4 text-lg text-gray-700 bg-gray-100 border-0 rounded focus:outline-none hover:bg-gray-200">
+                  <a className="inline-flex px-6 py-2 ml-4 text-lg text-gray-700 bg-gray-100 border-0 rounded-lg focus:outline-none hover:bg-gray-200">
                     Contact
                   </a>
                 </Link>
@@ -95,7 +134,7 @@ export default function Home() {
 
       <div className="text-center">
         <Link href="/about">
-          <a className="p-2 mr-2 font-bold text-white bg-blue-500 border-2 border-blue-500 rounded-lg hover:bg-white hover:text-blue-500">
+          <a className="p-2 mr-2 font-bold text-white bg-green-400 border-2 border-green-400 rounded-lg hover:bg-white hover:text-green-400">
             next
           </a>
         </Link>

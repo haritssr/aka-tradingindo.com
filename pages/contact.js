@@ -7,7 +7,7 @@ export default function contact() {
     "h-10 px-2 mb-5 placeholder-gray-400 bg-gray-200 rounded-md shadow-inner focus:ring-2 focus:outline-none focus:ring-green-400 w-full ";
   return (
     <div className="max-w-6xl min-h-screen mx-auto">
-      <Nav title="Contact"></Nav>
+      <Nav title="Contact | AKA Trading Indo"></Nav>
 
       <div className="mx-auto">
         <Breadcomb name="CONTACT" />

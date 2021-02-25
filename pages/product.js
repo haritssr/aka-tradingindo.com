@@ -6,7 +6,7 @@ import Product from "../components/Product";
 export default function product() {
   return (
     <div className="max-w-6xl min-h-screen mx-auto">
-      <Nav title="Product"></Nav>
+      <Nav title="Product | AKA Trading Indo"></Nav>
 
       <div className="w-full mx-auto">
         <Breadcomb name="PRODUCTS" />
@@ -17,7 +17,7 @@ export default function product() {
             image="/a1-rev.svg"
             productName="Gambier"
             subProductName="Powder"
-            product="/productDetails"
+            product="/productPage/gambier"
           />
         </div>
         <div className="mb-5 sm:mx-0">
@@ -25,7 +25,7 @@ export default function product() {
             image="/c.jpg"
             productName="Patchouli Oil"
             subProductName="Powder"
-            product="/productDetails"
+            product="/productPage/patchouli-oil"
           />
         </div>
         <div className="mb-5 sm:mx-0">
@@ -33,7 +33,7 @@ export default function product() {
             image="/c.jpg"
             productName="Citronella Oil"
             subProductName="Powder"
-            product="/productDetails"
+            product="/productPage/citronella-oil"
           />
         </div>
         <div className="mb-5 sm:mx-0">
@@ -41,7 +41,7 @@ export default function product() {
             image="/c.jpg"
             productName="Cinnamon"
             subProductName="Powder"
-            product="/productDetails"
+            product="/productPage/cinnamon"
           />
         </div>
         <div className="mb-5 sm:mx-0">
@@ -49,7 +49,7 @@ export default function product() {
             image="/c.jpg"
             productName="Incense"
             subProductName="Powder"
-            product="/productDetails"
+            product="/productPage/incense"
           />
         </div>
         <div className="mb-5 sm:mx-0">
@@ -57,7 +57,7 @@ export default function product() {
             image="/c.jpg"
             productName="Coffee Bean"
             subProductName="Powder"
-            product="/productDetails"
+            product="/productPage/coffee-bean"
           />
         </div>
       </div>

@@ -2,11 +2,11 @@ import Nav from "../components/Nav";
 import Breadcomb from "../components/Breadcomb";
 import Footer from "../components/Footer";
 
-export default function about() {
+export default function termsAndConditions() {
   return (
     <>
       <div className="max-w-6xl min-h-screen mx-auto">
-        <Nav title="Privacy Policy"></Nav>
+        <Nav title="Terms and Conditions | AKA Trading Indo"></Nav>
         <Breadcomb name="Terms and Conditions" />
         <div>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat

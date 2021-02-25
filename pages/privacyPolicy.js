@@ -6,7 +6,7 @@ export default function about() {
   return (
     <>
       <div className="max-w-6xl min-h-screen mx-auto">
-        <Nav title="Privacy Policy"></Nav>
+        <Nav title="Privacy Policy | AKA Trading Indo"></Nav>
         <Breadcomb name="Privacy Policy" />
         <div>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
