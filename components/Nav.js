@@ -6,7 +6,7 @@ import { useState } from "react";
 export default function Nav(props) {
   const [isOpen, setIsOpen] = useState(false);
   const ya =
-    "font-medium text-base text-gray-600  hover:bg-green-500 hover:text-white rounded-md   py-1 px-2  ";
+    "font-medium text-base text-gray-600  hover:bg-green-600 hover:text-white rounded-md   py-1 px-2  ";
   return (
     <section className="fixed top-0 z-20 w-full h-auto max-w-6xl p-3 mx-auto bg-white dark:bg-gray-600 dark:text-white ">
       <Head>

@@ -17,7 +17,7 @@ export default function Footer() {
           </div>
         </Link>
         <Link href="/">
-          <a className="ml-2 text-lg font-bold">AKATRADING&copy;2021</a>
+          <a className="ml-2 text-lg font-bold text-gray-500">AKATRADING&copy;2021</a>
         </Link>
       </div>
       <div>
@@ -38,7 +38,7 @@ export default function Footer() {
           className="font-bold hover:text-green-600 hover:underline"
           href="mailto:eksportiraka@gmail.com?subject=Website aka-tradingindo.com&body=Hi, i want to ask something about some stuff"
         >
-          eksportiraka@gmail.com
+          eksportirAKA@gmail.com
         </a>
       </div>
     </div>

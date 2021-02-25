@@ -4,7 +4,7 @@ import Nav from "../components/Nav";
 import PrevNext from "../components/PrevNext";
 export default function contact() {
   const ab =
-    "h-10 px-2 mb-5 placeholder-gray-400 bg-gray-200 rounded-md shadow-inner focus:ring-2 focus:outline-none focus:ring-green-400 w-full ";
+    "h-10 px-2 mb-5 placeholder-gray-400 bg-gray-200 rounded-md shadow-inner focus:ring-2 focus:outline-none focus:ring-green-600 w-full ";
   return (
     <div className="max-w-6xl min-h-screen mx-auto">
       <Nav title="Contact | AKA Trading Indo"></Nav>
@@ -42,14 +42,14 @@ export default function contact() {
         <input placeholder="Subject " className={ab} id="Subject" type="text" />
 
         <textarea
-          className="w-full p-5 placeholder-gray-500 bg-gray-200 rounded-md shadow-inner focus:ring-2 focus:outline-none focus:ring-green-400"
+          className="w-full p-5 placeholder-gray-500 bg-gray-200 rounded-md shadow-inner focus:ring-2 focus:outline-none focus:ring-green-600"
           name=""
           id="message"
           cols="20"
           rows="5"
         ></textarea>
 
-        <button className="w-full h-10 px-5 mt-5 font-bold text-white transition duration-300 transform bg-green-500 border-t-2 border-green-400 rounded-lg shadow-md hover:bg-green-500 hover:scale-90 hover:shadow-inner">
+        <button className="w-full h-10 px-5 mt-5 font-bold text-white transition duration-300 transform bg-green-600 border-t-2 border-green-400 rounded-lg shadow hover:bg-green-500 hover:scale-90 hover:shadow-inner">
           Submit
         </button>
       </div>

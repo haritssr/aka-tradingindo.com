@@ -8,26 +8,27 @@ export default function about() {
       <Nav title="About Us | AKA Trading Indo"></Nav>
       <Breadcomb name="ABOUT US" />
       <div className="flex flex-col h-auto p-5 m-5 font-sans text-gray-700 rounded-lg shadow bg-gray-50">
-        <div className="mb-5 text-xl font-bold text-center">About Us</div>
         <div className="text-lg font-medium ">
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AKA trading Indonesia is an
-          exporter company established since 2021. We prioritize in exporting
-          best-quality of Gambier, Patchouli oil, Citronella oil, Incense,
-          Cinnamon, and Coffee bean from Sumatra Island. We aim to help the
-          farmers to gain more value and fulfil the world’s need towards certain
-          commodities that we can offer. Our progressive planning in the future
-          is to diversify our commodities and expand our services. We committed
-          to implementing our plans by firstly adding more value to our
-          commodities to generate more benefit for more people with our
-          innovative programme. In our business practice, we hold the principles
-          of “People, Prosperity, and Profit”. We believe that if we treat our
-          people with integrity, it will surely bring prosperity and profit in
-          every aspect of the business.
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" "}
+          <strong>AKA Trading Indonesia</strong> is an exporter company
+          established since 2021. We prioritize in exporting best-quality of
+          Gambier, Patchouli oil, Citronella oil, Incense, Cinnamon, and Coffee
+          bean from Sumatra Island. We aim to help the farmers to gain more
+          value and fulfil the world’s need towards certain commodities that we
+          can offer. Our progressive planning in the future is to diversify our
+          commodities and expand our services. We committed to implementing our
+          plans by firstly adding more value to our commodities to generate more
+          benefit for more people with our innovative programme. In our business
+          practice, we hold the principles of “People, Prosperity, and Profit”.
+          We believe that if we treat our people with integrity, it will surely
+          bring prosperity and profit in every aspect of the business.
         </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2">
         <div className="p-5 m-5 font-sans text-gray-700 rounded-lg shadow bg-gradient-to-br from-green-50 to-green-100">
-          <div className="text-xl font-semibold text-center">Head Office</div>
+          <div className="mb-1 text-xl font-semibold text-center">
+            Head Office
+          </div>
           <div></div>
           <div className="flex flex-row items-start justify-start">
             <div>
@@ -46,7 +47,7 @@ export default function about() {
                 />
               </svg>
             </div>
-            <div className="pb-1">
+            <div className="pb-2 -mt-1">
               QP Office, Perkantoran Tanjung Mas Raya, Blok B1 nomor 44, Tanjung
               Barat, Jagakarsa – Jakarta Selatan 12530
             </div>
@@ -68,7 +69,7 @@ export default function about() {
                 />
               </svg>
             </div>
-            <div className="pb-1">+6281280493635</div>
+            <div className="pb-1">+62-8128-0493-635</div>
           </div>
           <div className="flex flex-row items-center justify-start">
             <div>
@@ -87,7 +88,14 @@ export default function about() {
                 />
               </svg>
             </div>
-            <div className="pb-1">eksportirAKA@gmail.com</div>
+            <div className="pb-1">
+              <a
+                className="hover:underline"
+                href="mailto:eksportiraka@gmail.com?subject=Website aka-tradingindo.com&body=Hi, i want to ask something about some stuff "
+              >
+                eksportirAKA@gmail.com
+              </a>
+            </div>
           </div>
         </div>
 

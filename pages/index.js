@@ -21,7 +21,7 @@ export default function Home() {
             <br />
             <div className="w-full text-center lg:mx-auto lg:w-2/3">
               <div className="mb-4 text-3xl font-medium text-gray-900 title-font sm:text-4xl">
-                We provide commodities to fulfil your company’s specific needs
+                We provide commodities to fulfill your company’s specific needs
               </div>
               <p className="mb-8 leading-relaxed">
                 -------
@@ -88,8 +88,7 @@ export default function Home() {
       <div className="p-4 m-3 mt-20">
         <div className="mb-2 text-2xl font-bold text-center">
           Why &nbsp;
-          <span className="text-green-600">AKA</span>
-          <span className="text-gray-800">TRADING</span>
+          <span className="text-gray-800">AKATRADING</span>
         </div>
         <div className="text-center text-gray-600">
           The world leading companis use and love{" "}
@@ -134,7 +133,7 @@ export default function Home() {
 
       <div className="text-center">
         <Link href="/about">
-          <a className="p-2 mr-2 font-bold text-white bg-green-400 border-2 border-green-400 rounded-lg hover:bg-white hover:text-green-400">
+          <a className="p-2 mr-2 text-lg hover:underline q">
             next
           </a>
         </Link>
