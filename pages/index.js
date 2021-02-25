@@ -7,7 +7,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className="max-w-6xl min-h-screen mx-auto">
-      <Nav title="Aka Trading Indo"></Nav>
+      <Nav title="AKA Trading Indo"></Nav>
       <div className="static mx-5 mt-28 md:mx-0 ">
         <section className="text-gray-600 body-font">
           <div className="flex-col items-center justify-center px-5 pb-24 mx-auto">

@@ -21,15 +21,15 @@ export default function Footer() {
         </Link>
       </div>
       <div>
-        <Link href="/">
+        <Link href="/privacyPolicy">
           <a className="text-gray-500 hover:text-green-700 hover:underline">
-            Privacy
+            Privacy Policy
           </a>
         </Link>
       </div>
       <div className="text-gray-500 hover:text-green-700 hover:underline">
-        <Link href="/">
-          <a>Term & Condition</a>
+        <Link href="/termsAndConditions">
+          <a>Terms and Conditions</a>
         </Link>
       </div>
       <div className="text-gray-500 ">

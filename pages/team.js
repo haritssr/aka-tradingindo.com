@@ -14,6 +14,12 @@ export default function team() {
             image="/aa.png"
             name="Adriani Putri"
             departement="Chief Marketing Officer"
+            ig="https://www.instagram.com/adrianiputri/"
+            fb="https://www.facebook.com/adrianiputri17/"
+            linkedIn="https://www.linkedin.com/in/adrianiputri/"
+            titleig="adrianiputri"
+            titlefb="adrianiputri17"
+            titlelinkedin="adrianiputri"
           />
         </div>
         <div className="m-5">
@@ -21,6 +27,12 @@ export default function team() {
             image="/bb.png"
             name="Kania Cinari"
             departement="Chief Operating Officer"
+            ig="https://www.instagram.com/kaniacinari/"
+            fb="https://www.facebook.com/kania.sinamo"
+            linkedIn="https://www.linkedin.com/in/kania-cinari-h-sinamo-a07035131/"
+            titleig="kaniacinari"
+            titlefb="kania.sinamo"
+            titlelinkedin="kania-cinari-h-sinamo-a07035131"
           />
         </div>
         <div className="m-5">
@@ -28,6 +40,12 @@ export default function team() {
             image="/cc.png"
             name="Avianita Rahmawati"
             departement="Chief Financial Officer"
+            ig="https://www.instagram.com/avooi/"
+            fb="https://www.facebook.com/avooi"
+            linkedIn="https://www.linkedin.com/in/avianita-rahmawati/"
+            titleig="avooi"
+            titlefb="avooi"
+            titlelinkedin="avianita-rahmawati"
           />
         </div>
       </div>

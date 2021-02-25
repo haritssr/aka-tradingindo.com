@@ -8,7 +8,7 @@ export default function Product(props) {
         <div className="my-2 font-serif text-2xl font-medium text-left text-gray-800">
           {props.productName}
         </div>
-        <div className="flex items-center justify-between my-2 ">
+        <div className="flex items-center justify-start mt-2 mb-4 ">
           <div>
             <Link href={`${props.product}`}>
               <a className="p-2 font-semibold text-gray-700 bg-gray-200 border-2 rounded-lg hover:border-gray-700">
@@ -16,11 +16,11 @@ export default function Product(props) {
               </a>
             </Link>
           </div>
-          <button className="px-6 py-1 font-bold text-gray-100 transform bg-gray-700 border-2 border-gray-700 rounded-md text-md hover:scale-105 hover:shadow-xl">
+          {/* <button className="px-6 py-1 font-bold text-gray-100 transform bg-gray-700 border-2 border-gray-700 rounded-md text-md hover:scale-105 hover:shadow-xl">
             <Link href="/contact">
               <a>Order</a>
             </Link>
-          </button>
+          </button> */}
         </div>
       </div>
     </div>
