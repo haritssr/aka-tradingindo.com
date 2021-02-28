@@ -4,10 +4,10 @@ import Footer from "../components/Footer";
 import PrevNext from "../components/PrevNext";
 export default function about() {
   return (
-    <div className="max-w-6xl min-h-screen mx-auto">
+    <div className="min-h-screen mx-auto  dark:bg-gray-900">
       <Nav title="About Us | AKA Trading Indo"></Nav>
       <Breadcomb name="ABOUT US" />
-      <div className="flex flex-col h-auto p-5 m-5 font-sans text-gray-700 rounded-lg shadow bg-gray-50">
+      <div className="flex flex-col h-auto p-5 m-5 font-sans text-gray-700 border rounded-lg shadow bg-gray-50 dark:text-white dark:bg-gray-800 dark:border-gray-500">
         <div className="text-lg font-medium ">
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" "}
           <strong>AKA Trading Indonesia</strong> is an exporter company

@@ -6,7 +6,7 @@ import Nav from "../../components/Nav";
 
 export default function citronellaOil() {
   return (
-    <div className="max-w-6xl min-h-screen mx-auto">
+    <div className="min-h-screen mx-auto">
       <Nav title="Citronella Oil | AKA Trading Indo"></Nav>
 
       <div className="w-full mx-auto">

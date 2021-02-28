@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 export default function termsAndConditions() {
   return (
     <>
-      <div className="max-w-6xl min-h-screen mx-auto">
+      <div className="min-h-screen mx-auto ">
         <Nav title="Terms and Conditions | AKA Trading Indo"></Nav>
         <Breadcomb name="Terms and Conditions" />
         <div>

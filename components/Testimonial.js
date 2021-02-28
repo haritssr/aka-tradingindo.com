@@ -3,8 +3,8 @@ import Image from "next/image";
 export default function Testimonial() {
   return (
     <div className="">
-      <div className="overflow-hidden transition-all duration-300 transform rotate-0 bg-white rounded-lg shadow-xl hover:rotate-1 hover:shadow-lg">
-        <div className="p-4 text-xl leading-normal text-gray-700">
+      <div className="overflow-hidden transition-all duration-300 transform rotate-0 bg-white rounded-lg shadow-xl hover:rotate-1 hover:shadow-lg dark:bg-gray-700">
+        <div className="p-4 text-xl leading-normal text-gray-700 dark:text-white">
           <svg
             width="45"
             height="36"

@@ -6,7 +6,7 @@ import Nav from "../../components/Nav";
 
 export default function patchouliOil() {
   return (
-    <div className="max-w-6xl min-h-screen mx-auto">
+    <div className="min-h-screen mx-auto">
       <Nav title="Patchouli Oil | AKA Trading Indo"></Nav>
 
       <div className="w-full mx-auto">

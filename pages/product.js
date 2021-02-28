@@ -5,7 +5,7 @@ import PrevNext from "../components/PrevNext";
 import Product from "../components/Product";
 export default function product() {
   return (
-    <div className="max-w-6xl min-h-screen mx-auto">
+    <div className="min-h-screen mx-auto dark:bg-gray-900">
       <Nav title="Product | AKA Trading Indo"></Nav>
 
       <div className="w-full mx-auto">

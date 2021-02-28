@@ -1,14 +1,11 @@
 export default function WhyUs(props) {
   return (
-    <div className="rounded-lg h-auto m-3 p-5 border-2 border-gray-200 hover:border-green-400 group">
-      <div className="text-gray-800 group-hover:text-green-600 font-bold text-2xl font-sans mb-3">
+    <div className="h-auto p-5 m-3 border-2 border-gray-200 rounded-lg dark:border hover:border-green-400 group dark:bg-gray-800 dark:border-gray-500">
+      <div className="mb-3 font-sans text-2xl font-bold text-center text-gray-800 group-hover:text-green-600 dark:group-hover:text-white dark:text-white">
         {props.judul}
       </div>
-      <div className="font-medium group-hover:text-green-400 text-gray-600 font-serif ">
+      <div className="font-serif font-medium text-gray-600 group-hover:text-green-400 dark:group-hover:text-white dark:text-white">
         {props.subjudul}
-      </div>
-      <div className="text-green-500 group-hover:text-green-500 hover:text-green-300 font-semibold ">
-        Check&rarr;
       </div>
     </div>
   );

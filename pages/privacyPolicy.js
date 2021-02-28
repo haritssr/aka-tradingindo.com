@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 export default function about() {
   return (
     <>
-      <div className="max-w-6xl min-h-screen mx-auto">
+      <div className="min-h-screen mx-auto ">
         <Nav title="Privacy Policy | AKA Trading Indo"></Nav>
         <Breadcomb name="Privacy Policy" />
         <div>
