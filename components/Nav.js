@@ -8,7 +8,7 @@ export default function Nav(props) {
   const { theme, setTheme } = useTheme();
   const [isOpen, setIsOpen] = useState(false);
   const ya =
-    "font-medium text-base text-gray-600  hover:bg-green-600 hover:text-white rounded-md   py-1 px-2 dark:text-white";
+    "font-medium text-base text-gray-600  hover:bg-green-1000 hover:text-white rounded-md   py-1 px-2 dark:text-white";
   return (
     <section className="fixed top-0 z-20 w-full h-auto p-3 mx-auto bg-white dark:bg-gray-800 ">
       <Head>
@@ -17,10 +17,10 @@ export default function Nav(props) {
       </Head>
       <div className="flex flex-col items-center rounded-lg lg:justify-between lg:flex-row">
         <div className="flex flex-row items-center justify-between w-full lg:w-1/3">
-          <div className="flex items-center w-40 ml-3 h-14">
+          <div className="flex items-center w-40 pl-3 h-14">
             <Link href="/">
               <Image
-                className="p-2"
+                className="p-2 cursor-pointer"
                 src="/IMG_2685.PNG"
                 width={2430}
                 height={1080}

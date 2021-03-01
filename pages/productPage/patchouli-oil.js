@@ -9,10 +9,6 @@ export default function patchouliOil() {
     <div className="min-h-screen mx-auto">
       <Nav title="Patchouli Oil | AKA Trading Indo"></Nav>
 
-      <div className="w-full mx-auto">
-        <Breadcomb name="PRODUCT" />
-      </div>
-
       <div className="grid m-5 grids-1 md:grid-cols-2 -colp-5 ">
         <div>
           <Image
@@ -37,10 +33,9 @@ export default function patchouliOil() {
         </div>
         <div>
           <div className="pl-3 mb-5 text-3xl font-bold border-l-4 border-black fon3">
-          Patchouli Oil
+            Patchouli Oil
           </div>
           <p>
-            <strong>Description</strong>: -
             <br />
             <br />
             <strong>Contents</strong> :-
@@ -61,7 +56,7 @@ export default function patchouliOil() {
               </a>
             </Link>
             <Link href="/contact">
-              <a className="px-4 py-2 font-bold text-white transition duration-300 transform bg-green-600 rounded-lg shadow-sm hover:scale-95 hover:shadow-lg">
+              <a className="px-4 py-2 font-bold text-white transform rounded-lg shadow-sm bg-green-1000 hover:shadow-lg">
                 Order
               </a>
             </Link>

@@ -10,7 +10,7 @@ import { useRouter } from "next/router";
 
 export default function Home() {
   const haha =
-    "font-serif  text-green-800 hover:underline hover:text-green-500 dark:text-white";
+    "font-serif  text-green-1000 hover:underline dark:text-white";
   const router = useRouter();
   const { locale } = router;
   const t = locale === "en" ? en : id;
@@ -70,13 +70,13 @@ export default function Home() {
               </p>
               <div className="flex justify-center">
                 <Link href="/product">
-                  <a className="inline-flex px-4 py-2 text-lg font-bold text-white transition duration-300 transform bg-green-600 border-0 rounded-lg shadow-sm focus:outline-none hover:bg-green-500 hover:scale-95 hover:shadow-lg">
+                  <a className="inline-flex px-4 py-2 text-lg font-bold text-white border-0 rounded-lg shadow-sm bg-green-1000 focus:outline-none hover:bg-opacity-95 hover:shadow-md">
                     Products
                   </a>
                 </Link>
 
                 <Link href="/contact">
-                  <a className="inline-flex px-6 py-2 ml-4 text-lg text-gray-700 bg-gray-100 border-0 rounded-lg focus:outline-none hover:bg-gray-200">
+                  <a className="inline-flex px-6 py-2 ml-4 text-lg font-bold text-gray-700 bg-gray-100 border-0 rounded-lg focus:outline-none hover:bg-gray-200">
                     Contact
                   </a>
                 </Link>
@@ -87,7 +87,7 @@ export default function Home() {
       </div>
       <div className="p-4 m-3 mt-20 dark:text-gray-500">
         <div className="mb-2 text-2xl font-bold text-center">
-          Why &nbsp; AKATRADING
+          Why AKA TRADING INDONESIA
         </div>
         <div className="text-center text-gray-600 dark:text-gray-500">
           The world leading companis use and love{" "}
@@ -128,10 +128,9 @@ export default function Home() {
           <Testimonial />
         </div>
       </div>
-      <br />
-      <br />
+      
 
-      <div className="text-center">
+      {/* <div className="text-center">
         <Link href="/about">
           <a className="p-2 mr-2 text-lg hover:underline q">next</a>
         </Link>
@@ -139,7 +138,7 @@ export default function Home() {
       <select onChange={changeLanguage} defaultValue={locale}>
         <option value="en">EN</option>
         <option value="id">ID</option>
-      </select>
+      </select> */}
       <Footer />
     </div>
   );

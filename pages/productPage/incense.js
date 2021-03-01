@@ -9,10 +9,6 @@ export default function incense() {
     <div className="min-h-screen mx-auto">
       <Nav title="Incense | AKA Trading Indo"></Nav>
 
-      <div className="w-full mx-auto">
-        <Breadcomb name="PRODUCT" />
-      </div>
-
       <div className="grid m-5 grids-1 md:grid-cols-2 -colp-5 ">
         <div>
           <Image

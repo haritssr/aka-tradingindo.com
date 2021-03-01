@@ -1,7 +1,7 @@
 import Image from "next/image";
 export default function Member(props) {
   return (
-    <div className="w-3/4 h-auto mx-auto text-center transition duration-300 transform shadow-md bg-gradient-to-br from-gray-200 to-green-300 rounded-xl hover:scale-105 hover:shadow-2xl overflow-clip">
+    <div className="w-3/4 h-auto mx-auto text-center transition duration-300 transform shadow-md bg-green-1000 rounded-xl hover:scale-105 hover:shadow-2xl overflow-clip">
       <div className="p-5">
         <div className="p-5">
           <Image
@@ -13,8 +13,8 @@ export default function Member(props) {
             priority
           />
         </div>
-        <div className="text-lg font-bold">{props.name}</div>
-        <div className="text-sm font-semibold text-gray-600">
+        <div className="text-lg font-bold text-gray-200">{props.name}</div>
+        <div className="text-sm font-semibold text-gray-300">
           {props.departement}
         </div>
         <div className="flex flex-row items-center justify-center mt-5 ">
@@ -26,7 +26,8 @@ export default function Member(props) {
             href={`${props.ig}`}
           >
             <svg
-              className="m-2 h-7 w-7"
+            
+              className="m-2 text-white h-7 w-7"
               role="img"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"

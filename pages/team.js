@@ -52,7 +52,7 @@ export default function team() {
       <br />
       <br />
       <br />
-      <PrevNext prev="/product" next="/contact" />
+      
       <Footer />
     </div>
   );

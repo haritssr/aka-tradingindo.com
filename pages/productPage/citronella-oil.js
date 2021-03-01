@@ -9,10 +9,6 @@ export default function citronellaOil() {
     <div className="min-h-screen mx-auto">
       <Nav title="Citronella Oil | AKA Trading Indo"></Nav>
 
-      <div className="w-full mx-auto">
-        <Breadcomb name="PRODUCT" />
-      </div>
-
       <div className="grid m-5 grids-1 md:grid-cols-2 -colp-5 ">
         <div>
           <Image
@@ -37,7 +33,7 @@ export default function citronellaOil() {
         </div>
         <div>
           <div className="pl-3 mb-5 text-3xl font-bold border-l-4 border-black fon3">
-          Citronella Oil
+            Citronella Oil
           </div>
           <p>
             <strong>Description</strong>: -

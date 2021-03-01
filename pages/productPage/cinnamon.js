@@ -8,12 +8,7 @@ export default function cinammon() {
   return (
     <div className="min-h-screen mx-auto">
       <Nav title="Cinnamon | AKA Trading Indo"></Nav>
-
-      <div className="w-full mx-auto">
-        <Breadcomb name="PRODUCT" />
-      </div>
-
-      <div className="grid m-5 grids-1 md:grid-cols-2 -colp-5 ">
+        <div className="grid m-5 grids-1 md:grid-cols-2 -colp-5 ">
         <div>
           <Image
             className="w-full h-30"
