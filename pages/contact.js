@@ -17,8 +17,8 @@ export default function contact() {
       <div className="flex flex-col md:flex-row">
         <div>
           {/* contact */}
-          <div className="p-5 m-5 font-sans text-gray-700 bg-green-100 rounded-lg">
-            <div className="mb-1 text-xl font-semibold text-center">
+          <div className="p-5 m-5 font-sans text-gray-700 rounded-lg">
+            <div className="mb-4 text-xl font-semibold">
               Head Office
             </div>
             <div></div>
@@ -95,7 +95,7 @@ export default function contact() {
           {/* maps */}
           <div>
             <iframe
-              className={`w-full p-5 h-60`}
+              className={`w-full p-5 h-80`}
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.656300461767!2d106.83740851413296!3d-6.30880499543414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ed2b940afd89%3A0x6186386a52b3ee04!2sQP%20OFFICE!5e0!3m2!1sen!2sid!4v1613370918140!5m2!1sen!2sid"
               allowFullScreen
               aria-hidden="false"
