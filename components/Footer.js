@@ -23,7 +23,7 @@ export default function Footer() {
             </a>
           </Link>
         </div>
-        <div>
+        {/* <div>
           <Link href="/privacyPolicy">
             <a className="text-gray-500 hover:text-green-1000 hover:underline">
               Privacy Policy
@@ -34,7 +34,7 @@ export default function Footer() {
           <Link href="/termsAndConditions">
             <a>Terms and Conditions</a>
           </Link>
-        </div>
+        </div> */}
         <div className="text-gray-500 ">
           Need help?{" "}
           <a

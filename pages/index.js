@@ -9,8 +9,7 @@ import id from "../locales/id";
 import { useRouter } from "next/router";
 
 export default function Home() {
-  const haha =
-    "font-serif  text-green-1000 hover:underline dark:text-white";
+  const haha = "font-serif  text-green-1000 hover:underline dark:text-white";
   const router = useRouter();
   const { locale } = router;
   const t = locale === "en" ? en : id;
@@ -85,60 +84,7 @@ export default function Home() {
           </div>
         </section>
       </div>
-      <div className="p-4 m-3 mt-20 dark:text-gray-500">
-        <div className="mb-2 text-2xl font-bold text-center">
-          Why AKA TRADING INDONESIA
-        </div>
-        <div className="text-center text-gray-600 dark:text-gray-500">
-          The world leading companis use and love{" "}
-          <span className="text-gray-800 dark:text-gray-500">AKA TRADING</span>
-        </div>
-      </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 dark:bg-gray-900">
-        <WhyUs
-          judul="Masdasdad"
-          subjudul="repellat atque dolo  non laudantium veniam nostrum ratione a officiis rerum, voluptates repellat atque dolo non laudantium v"
-        />
-        <WhyUs
-          judul="Kasdadada"
-          subjudul="repellat atque dolo  non laudantium veniam nostrum ratione a officiis rerum, voluptates repellat atque dolo non laudantium veniam nostrum  re"
-        />
-        <WhyUs
-          judul="Lasdaasd"
-          subjudul="repellat atque dolo  non laudantium veniam nostrum ratione a officiis rerum, voluptates repellat atque dolo non laudantium veniam noepellat atque dolo non laudantium veniam nostrum ratione a officiis rerum, voluptates re"
-        />
-      </div>
-      <br />
-      <br />
-      <br />
-      <div className="font-semibold text-center dark:text-gray-500">
-        TESTIMONIAL
-      </div>
-      <div className="grid grid-cols-1 md:grid-cols-2">
-        <div className="p-5">
-          <Testimonial />
-        </div>
-        <div className="p-5">
-          <Testimonial />
-        </div>
-        <div className="p-5">
-          <Testimonial />
-        </div>
-        <div className="p-5">
-          <Testimonial />
-        </div>
-      </div>
-      
 
-      {/* <div className="text-center">
-        <Link href="/about">
-          <a className="p-2 mr-2 text-lg hover:underline q">next</a>
-        </Link>
-      </div>
-      <select onChange={changeLanguage} defaultValue={locale}>
-        <option value="en">EN</option>
-        <option value="id">ID</option>
-      </select> */}
       <Footer />
     </div>
   );
