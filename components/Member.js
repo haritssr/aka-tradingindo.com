@@ -1,7 +1,7 @@
 import Image from "next/image";
 export default function Member(props) {
   return (
-    <div className="w-3/4 h-auto mx-auto text-center transition duration-300 transform shadow-md bg-green-1000 rounded-xl hover:scale-105 hover:shadow-2xl overflow-clip">
+    <div className="w-3/4 h-auto mx-auto text-center transition duration-300 transform shadow-md bg-green-1000 rounded-xl hover:scale-105 hover:shadow-xl overflow-clip">
       <div className="p-5">
         <div className="p-5">
           <Image

@@ -24,9 +24,7 @@ export default function about() {
         </div>
       </div>
 
-      
-      
-      
+      <div className="h-20"></div>
 
       <Footer />
     </div>

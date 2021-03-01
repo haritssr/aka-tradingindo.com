@@ -41,7 +41,7 @@ export default function Footer() {
             className="font-bold hover:text-green-1000 hover:underline"
             href="mailto:eksportiraka@gmail.com?subject=Website aka-tradingindo.com&body=Hi, i want to ask something about some stuff"
           >
-            eksportirAKA@gmail.com
+            Feel free to email us
           </a>
         </div>
       </div>
