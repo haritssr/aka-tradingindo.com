@@ -7,8 +7,8 @@ export default function about() {
     <div className="min-h-screen mx-auto dark:bg-gray-900">
       <Nav title="About Us | AKA Trading Indo"></Nav>
 
-      <div className="max-w-6xl mx-auto mt-20 h-50 md:h-auto">
-        <img src="/abp.png" className="object-cover w-full h-full " alt="es" />
+      <div className="max-w-6xl mx-auto mt-20 overflow-hidden rounded-lg h-50 md:h-auto">
+        <img src="/abp.png" className="object-cover w-full h-full" alt="es" />
         {/* <img
           className="object-cover"
           src="/abp.png"
