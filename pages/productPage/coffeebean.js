@@ -3,7 +3,7 @@ import Link from "next/link";
 import Footer from "../../components/Footer";
 import Nav from "../../components/Nav";
 
-export default function gambier() {
+export default function coffeebean() {
   return (
     <div className="min-h-screen mx-auto">
       <Nav title="Gambier | AKA Trading Indo"></Nav>

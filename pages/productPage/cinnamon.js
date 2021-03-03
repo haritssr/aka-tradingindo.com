@@ -3,7 +3,7 @@ import Link from "next/link";
 import Footer from "../../components/Footer";
 import Nav from "../../components/Nav";
 
-export default function gambier() {
+export default function cinnamon() {
   return (
     <div className="min-h-screen mx-auto">
       <Nav title="Gambier | AKA Trading Indo"></Nav>
@@ -61,7 +61,7 @@ export default function gambier() {
                   prev
                 </a>
               </Link>
-              <Link href="/productPage/coffee-bean">
+              <Link href="/productPage/coffeebean">
                 <a className="px-4 py-2 mr-5 font-medium text-gray-700 border-2 border-black rounded-lg hover:text-gray-900">
                   next
                 </a>

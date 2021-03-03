@@ -56,7 +56,7 @@ export default function gambier() {
 
           <div className="flex flex-row justify-between mt-10">
             <div className="flex flex-row justify-start">
-              <Link href="/productPage/coffee-bean">
+              <Link href="/productPage/coffeebean">
                 <a className="px-4 py-2 mr-5 font-medium text-gray-700 border-2 border-black rounded-lg hover:text-gray-900">
                   prev
                 </a>

@@ -32,7 +32,7 @@ export default function product() {
           <Product
             image="/c.jpg"
             productName="Coffee bean"
-            product="/productPage/coffee-bean"
+            product="/productPage/coffeebean"
           />
         </div>
       </div>
