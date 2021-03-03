@@ -8,12 +8,17 @@ export default function Nav(props) {
   const { theme, setTheme } = useTheme();
   const [isOpen, setIsOpen] = useState(false);
   const ya =
-    "font-medium text-base text-gray-600  hover:bg-green-1000 hover:text-white rounded-md   py-1 px-2 dark:text-white";
+    "font-semibold text-base text-gray-600  hover:bg-green-1000 hover:text-white rounded-md   py-1 px-2 dark:text-white";
   return (
     <section className="fixed top-0 z-20 w-full h-auto p-3 mx-auto bg-white dark:bg-gray-800 ">
       <Head>
         <title>{props.title}</title>
         <link rel="icon" href="/logo.ico" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+          rel="stylesheet"
+        />
       </Head>
       <div className="flex flex-col items-center rounded-lg lg:justify-between lg:flex-row">
         <div className="flex flex-row items-center justify-between w-full lg:w-1/3">

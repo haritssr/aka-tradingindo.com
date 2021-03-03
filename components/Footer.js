@@ -2,9 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 export default function Footer() {
   return (
-    <div className="bottom-0">
-      <div className="flex flex-col items-center w-full h-auto p-4 mt-40 md:flex-row justify-evenly">
-        <div className="flex flex-row items-center justify-between">
+    <div className="bottom-0 flex flex-col w-full h-auto mt-40 ">
+      <div className="flex flex-col items-center w-full p-4 md:flex-row justify-evenly">
+        {/* <div className="flex flex-row items-center justify-between">
           <Link href="/">
             <div className="h-5 w-7">
               <Image
@@ -16,23 +16,11 @@ export default function Footer() {
                 priority
               />
             </div>
-          </Link>
-          <Link href="/">
+          </Link> 
+         <Link href="/">
             <a className="ml-2 text-lg font-bold text-gray-500">
               AKATRADING&copy;2021
             </a>
-          </Link>
-        </div>
-        {/* <div>
-          <Link href="/privacyPolicy">
-            <a className="text-gray-500 hover:text-green-1000 hover:underline">
-              Privacy Policy
-            </a>
-          </Link>
-        </div>
-        <div className="text-gray-500 hover:text-green-1000 hover:underline">
-          <Link href="/termsAndConditions">
-            <a>Terms and Conditions</a>
           </Link>
         </div> */}
         <div className="text-gray-500 ">
@@ -45,8 +33,9 @@ export default function Footer() {
           </a>
         </div>
       </div>
-      <div className="py-5 text-center text-gray-500 bg-gray-200">
-        PT.AKA TRADING INDONESIA. ALL RIGHTS RESERVED
+      <div className="p-3 text-sm text-center text-gray-500 bg-gray-300 dark:bg-gray-800">
+        COPYRIGHT&copy;2021&nbsp;&nbsp; PT.AKA TRADING INDONESIA. ALL RIGHTS
+        RESERVED
       </div>
     </div>
   );
