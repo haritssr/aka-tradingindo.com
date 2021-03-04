@@ -12,7 +12,7 @@ export default function Product(props) {
             height={705}
             priority
           />
-          <div className="flex flex-col p-3 -mt-2 bg-gray-200 cursor-pointer hover:bg-gray-100 dark:bg-gray-400">
+          <div className="flex flex-col p-3 -mt-2 bg-opacity-50 cursor-pointer bg-green-1000 hover:bg-gray-100 ">
             <div className="my-2 text-2xl font-medium text-left text-gray-800 font-mont dark:text-gray-900">
               {props.productName}
             </div>

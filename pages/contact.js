@@ -14,13 +14,10 @@ export default function contact() {
         <Breadcomb name="CONTACT" />
       </div>
 
-      <div className="flex flex-col sm:px-10 md:flex-row">
+      <div className="flex flex-col sm:px-5 md:flex-row">
         <div>
-          {/* contact */}
           <div className="p-5 m-5 font-sans text-gray-700 rounded-lg dark:text-white">
-            <div className="mb-4 text-xl font-semibold">
-              Head Office
-            </div>
+            <div className="mb-4 text-xl font-semibold">Head Office</div>
             <div></div>
             <div className="flex flex-row items-start justify-start">
               <div>

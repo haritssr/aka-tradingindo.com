@@ -2,15 +2,20 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import { useRouter } from "next/router";
 import { useTheme } from "next-themes";
+import { EN, ID } from "../translation";
 
 export default function Nav(props) {
+  const router = useRouter();
+  const { locale } = router;
+  const t = locale === "ID" ? ID : EN;
   const { theme, setTheme } = useTheme();
   const [isOpen, setIsOpen] = useState(false);
   const ya =
     "font-semibold text-base text-gray-600  hover:bg-green-1000 hover:text-white rounded-md   py-1 px-2 dark:text-white";
   return (
-    <section className="fixed top-0 z-20 w-full h-auto p-3 mx-auto bg-white dark:bg-gray-800 ">
+    <section className="fixed top-0 z-20 w-full h-auto p-3 px-5 bg-white md:px-10 dark:bg-gray-800 ">
       <Head>
         <title>{props.title}</title>
         <link rel="icon" href="/logo.ico" />
@@ -22,7 +27,7 @@ export default function Nav(props) {
       </Head>
       <div className="flex flex-col items-center rounded-lg lg:justify-between lg:flex-row">
         <div className="flex flex-row items-center justify-between w-full lg:w-1/3">
-          <div className="flex items-center w-40 pl-3 h-14">
+          <div className="flex items-center w-40 h-14">
             <Link href="/">
               <Image
                 className="p-2 cursor-pointer"
@@ -98,6 +103,27 @@ export default function Nav(props) {
             <Link href="/contact">
               <a className={ya}>Contact</a>
             </Link>
+          </div>
+          <div>
+            <div className="inline-block">
+              <button
+                className={ya}
+                onClick={() => {
+                  router.push("/", "/", { locale: "EN" });
+                }}
+              >
+                EN
+              </button>
+            </div>
+            {`|`}
+            <div className="inline-block">
+              <button
+                className={ya}
+                onClick={() => router.push("/", "/", { locale: "ID" })}
+              >
+                ID
+              </button>
+            </div>
           </div>
           <div className="items-center m-5 ml-1 lg:m-0">
             <button

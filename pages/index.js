@@ -6,9 +6,7 @@ export default function Home() {
   return (
     <div className="min-h-screen mx-auto dark:bg-gray-900">
       <Nav title="AKA Trading Indo"></Nav>
-
       <Hero />
-
       <Footer />
     </div>
   );
