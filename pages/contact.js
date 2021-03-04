@@ -20,7 +20,7 @@ export default function contact() {
       )
       .then(
         (result) => {
-          alert("Message sent successfully")
+          alert("Message sent successfully");
           console.log(result.text);
         },
         (error) => {
