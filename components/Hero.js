@@ -19,7 +19,7 @@ export default function Hero() {
           <div className="mb-2 leading-relaxed text-center text-white md:text-left"></div>
           <div className="text-center text-white md:text-left">----------</div>
           <p className="text-center text-white md:text-left">
-            Gambier, Candlenut, Cinnamon, Coffee Bean, etc.
+            {t.bahan}
           </p>
         </div>
       </div>
