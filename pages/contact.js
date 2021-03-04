@@ -7,7 +7,28 @@ import { useState } from "react";
 import { useRouter } from "next/router";
 import { useTheme } from "next-themes";
 import { EN, ID } from "../translation";
+import emailjs from "emailjs-com";
 export default function contact() {
+  function sendEmail(e) {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        "service_ibi2aip",
+        "contact_form",
+        e.target,
+        "user_E6WrSXVVfdvAp9k2YeHDO"
+      )
+      .then(
+        (result) => {
+          alert("Message sent successfully")
+          console.log(result.text);
+        },
+        (error) => {
+          console.log("GAGAL", error);
+        }
+      );
+  }
+
   const router = useRouter();
   const { locale } = router;
   const t = locale === "ID" ? ID : EN;
@@ -247,13 +268,17 @@ export default function contact() {
         </div>
 
         {/* enquiry */}
-        <div className="h-auto p-5 m-5 bg-gray-100 border rounded-lg md:mx-auto dark:bg-gray-800 dark:border-gray-500 md:mr-5">
+        <form
+          className="h-auto p-5 m-5 bg-gray-100 border rounded-lg md:mx-auto dark:bg-gray-800 dark:border-gray-500 md:mr-5"
+          onSubmit={sendEmail}
+        >
           <div className="grid grid-cols-1 sm:grid-cols-2">
             <input
               placeholder={`${t.form.fullName}`}
               className={ab}
               id="nama"
               type="text"
+              name="full_name"
             />
 
             <div className="sm:pl-2">
@@ -262,6 +287,7 @@ export default function contact() {
                 className={ab}
                 id="nama"
                 type="text"
+                name="company_Name"
               />
             </div>
 
@@ -270,6 +296,7 @@ export default function contact() {
               className={ab}
               id="email"
               type="email"
+              name="email"
             />
             <div className="sm:pl-2">
               <input
@@ -277,6 +304,7 @@ export default function contact() {
                 className={ab}
                 id="Email"
                 type="tel"
+                name="phone_number"
               />
             </div>
           </div>
@@ -286,6 +314,7 @@ export default function contact() {
             className={ab}
             id="Address"
             type="text"
+            name="address"
           />
 
           <input
@@ -293,6 +322,7 @@ export default function contact() {
             className={ab}
             id="Country"
             type="text"
+            name="country"
           />
 
           <input
@@ -300,20 +330,26 @@ export default function contact() {
             className={ab}
             id="Subject"
             type="text"
+            name="subject"
           />
 
           <textarea
             className="w-full p-2 placeholder-gray-500 bg-gray-200 rounded-md focus:ring-2 focus:outline-none focus:ring-green-1000"
-            name=""
+            name="message"
             id="message"
             cols="20"
             rows="5"
           ></textarea>
 
-          <button className="w-full h-10 px-5 mt-5 font-bold text-white border-green-400 rounded-lg shadow bg-green-1000 hover:bg-opacity-90">
+          {/* <button className="w-full h-10 px-5 mt-5 font-bold text-white border-green-400 rounded-lg shadow bg-green-1000 hover:bg-opacity-90">
             Send
-          </button>
-        </div>
+          </button> */}
+          <input
+            className="w-full h-10 px-5 mt-5 font-bold text-white transition duration-200 transform border-green-400 rounded-lg shadow bg-green-1000 hover:bg-opacity-90 hover:scale-95"
+            type="submit"
+            value="Send"
+          />
+        </form>
       </div>
       <Footer />
     </div>
