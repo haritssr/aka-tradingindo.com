@@ -12,7 +12,7 @@ export default function Hero() {
         alt="es"
       />
       <div className="relative py-10 bg-gray-900 bg-opacity-50">
-        <div className="w-full p-10 sm:max-w-2xl ">
+        <div className="w-full p-10 sm:max-w-3xl ">
           <div className="mb-4 text-3xl font-medium text-center text-white md:text-5xl md:text-left title-font">
             <p className="leading-normal"> {t.hero}</p>
           </div>
