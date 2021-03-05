@@ -43,7 +43,7 @@ export default function contact() {
     <div className="min-h-screen mx-auto dark:bg-gray-900">
       <section className="fixed top-0 z-20 w-full h-auto p-3 px-5 bg-white md:px-10 dark:bg-gray-800 ">
         <Head>
-          <title>Contact | AKA Trading Indo</title>
+          <title>Contact | AKA Trading Indonesia</title>
           <link rel="icon" href="/logo.ico" />
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link

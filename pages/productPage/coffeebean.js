@@ -6,7 +6,7 @@ import Nav from "../../components/Nav";
 export default function coffeebean() {
   return (
     <div className="min-h-screen mx-auto">
-      <Nav title="Gambier | AKA Trading Indo"></Nav>
+      <Nav title="Gambier | AKA Trading Indonesia"></Nav>
 
       <div className="grid grid-cols-1 p-5 pt-32 md:m-5 md:grid-cols-2 ">
       <div className="h-auto p-5">
