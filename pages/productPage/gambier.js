@@ -160,8 +160,8 @@ export default function gambier() {
         {/* {props.children} */}
       </section>
 
-      <div className="grid grid-cols-1 p-5 pt-32 md:m-5 md:grid-cols-2 ">
-        <div className="h-auto p-5">
+      <div className="grid grid-cols-1 p-5 pt-24 md:pt-20 md:m-5 md:grid-cols-2 ">
+        <div className="h-auto md:p-5 md:px-0">
           <Image
             className="w-full h-auto rounded-md"
             src="/gambir1.jpg"
