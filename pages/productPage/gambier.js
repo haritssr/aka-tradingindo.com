@@ -8,6 +8,13 @@ import { useTheme } from "next-themes";
 import { EN, ID } from "../../translation";
 
 export default function gambier() {
+  const memperbesar = function () {
+    let yes = document.getElementById("gambar");
+    let oke = yes.addEventListener("onclick", function () {
+      return yes.classList("max-w-3xl mx-auto h-100");
+    });
+    return oke;
+  };
   const router = useRouter();
   const { locale } = router;
   const t = locale === "ID" ? ID : EN;
@@ -156,24 +163,27 @@ export default function gambier() {
       <div className="grid grid-cols-1 p-5 pt-32 md:m-5 md:grid-cols-2 ">
         <div className="h-auto p-5">
           <Image
-            className="w-full rounded h-30"
+            className="w-full h-auto rounded-md"
             src="/gambir1.jpg"
             width={1080}
-            height={605}
+            height={705}
             priority
           />
-          <Image
-            className="w-full rounded h-30"
-            src="/gambir2.jpg"
-            width={1080}
-            height={605}
-          />
+
+          <div id="gambar" onclick={memperbesar} >
+            <Image
+              className="w-full h-auto transform rounded-md hover:scale-110"
+              src="/gambir2.jpg"
+              width={1080}
+              height={805}
+            />
+          </div>
         </div>
-        <div className="md:p-5">
-          <div className="pl-3 mt-4 mb-2 text-2xl font-bold border-l-4 border-black md:mt-0 md:mb-5 md:text-4xl ">
+        <div className="text-gray-900 md:p-5">
+          <div className="pl-3 mt-4 mb-2 text-2xl font-bold border-l-4 border-black md:mt-0 md:mb-5 md:text-4xl">
             Gambier (Uncaria Gambir)
           </div>
-          <p>
+          <p className="">
             {t.gambier.description}
             <br />
             <br />

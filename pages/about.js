@@ -14,7 +14,7 @@ export default function about() {
   const { theme, setTheme } = useTheme();
   const [isOpen, setIsOpen] = useState(false);
   const ya =
-    "font-semibold text-base text-gray-600  hover:bg-green-1000 hover:text-white rounded-md   py-1 px-2 dark:text-white";
+    "font-semibold text-base text-gray-600  hover:bg-green-1000 hover:text-white rounded-md   py-1 px-2 dark:text-white active:bg-green-1000 active:text-white";
   return (
     <div className="min-h-screen dark:bg-gray-900 pt-28">
       {/* <Nav title="About Us | AKA Trading Indo"></Nav> */}
@@ -151,7 +151,7 @@ export default function about() {
 
         {/* {props.children} */}
       </section>
-      <div className="p-5 mx-5 text-lg font-medium md:mx-10 bg-green-1000 bg-opacity-20 dark:text-white dark:border">
+      <div className="p-5 mx-5 text-lg font-medium text-gray-800 md:mx-10 bg-green-1000 bg-opacity-20 dark:text-white dark:border">
         {t.about}
       </div>
       <div className="mt-5 overflow-hidden md:mt-0 md:mx-10 h-50 md:h-auto">
