@@ -153,8 +153,8 @@ export default function candlenut() {
         </div>
       </section>
 
-      <div className="grid grid-cols-1 p-5 pt-24 md:m-5 md:grid-cols-2 ">
-        <div className="-auto md:p-5 md:px-0">
+      <div className="grid grid-cols-1 p-5 pt-24 space-y-3 md:m-5 md:grid-cols-2">
+        <div className="space-y-3 -auto md:p-5 md:px-0">
           <Image
             className="w-full h-auto transform rounded-xl hover:scale-150"
             src="/kemiri.jpg"
@@ -164,7 +164,7 @@ export default function candlenut() {
           />
         </div>
         <div className="text-gray-900 md:p-5">
-          <div className="pl-3 mb-5 text-2xl font-bold border-l-4 border-black md:mt-0 md:mb-5 md:text-4xl ">
+          <div className="pl-3 mt-4 mb-2 text-2xl font-bold border-l-4 border-black md:mt-0 md:mb-5 md:text-4xl ">
             Candlenut (Aleurites moluccanus)
           </div>
           <p>
