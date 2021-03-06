@@ -14,7 +14,7 @@ export default function candlenut() {
   const { theme, setTheme } = useTheme();
   const [isOpen, setIsOpen] = useState(false);
   const ya =
-    "font-semibold text-base text-gray-600  hover:bg-green-1000 hover:text-white rounded-md   py-1 px-2 dark:text-white";
+    "font-semibold text-base text-gray-600  hover:bg-green-1000 hover:text-white rounded-md   py-2 px-3  dark:text-white";
   return (
     <div className="min-h-screen mx-auto">
       {/* <Nav title="Candlenut | AKA Trading Indo"></Nav> */}
@@ -153,18 +153,18 @@ export default function candlenut() {
         </div>
       </section>
 
-      <div className="grid grid-cols-1 p-5 pt-32 md:m-5 md:grid-cols-2 ">
-        <div className="h-auto p-5">
+      <div className="grid grid-cols-1 p-5 pt-24 md:m-5 md:grid-cols-2 ">
+        <div className="-auto md:p-5 md:px-0">
           <Image
-            className="w-full rounded"
+            className="w-full h-auto transform rounded-xl hover:scale-150"
             src="/kemiri.jpg"
             width={1080}
-            height={1000}
+            height={1200}
             priority
           />
         </div>
-        <div className="m-5">
-          <div className="pl-3 mb-5 text-4xl font-bold border-l-4 border-black font-3xl">
+        <div className="text-gray-900 md:p-5">
+          <div className="pl-3 mb-5 text-2xl font-bold border-l-4 border-black md:mt-0 md:mb-5 md:text-4xl ">
             Candlenut (Aleurites moluccanus)
           </div>
           <p>
@@ -186,24 +186,25 @@ export default function candlenut() {
             <strong>{t.candlenut.Type}</strong>
             {t.candlenut.isiType}
             <br />
-            <strong>{t.candlenut.HSCode}</strong>{t.candlenut.isiType}
+            <strong>{t.candlenut.HSCode}</strong>
+            {t.candlenut.isiType}
           </p>
 
-          <div className="flex flex-row justify-between mt-10">
-            <div className="flex flex-row justify-start">
+          <div className="flex flex-row items-center justify-between mt-10">
+            <div className="flex flex-row justify-start font-semibold">
               <Link href="/productPage/gambier">
-                <a className="px-4 py-2 mr-5 font-medium text-gray-700 border-2 border-black rounded-lg hover:text-gray-900">
+                <a className="px-4 py-2 mr-5 font-semibold text-gray-600 border-2 rounded-lg">
                   prev
                 </a>
               </Link>
-              <Link href="/productPage/cinnamon">
-                <a className="px-4 py-2 mr-5 font-medium text-gray-700 border-2 border-black rounded-lg hover:text-gray-900">
+              <Link href="/productPage/gambier">
+                <a className="px-4 py-2 mr-5 font-semibold text-gray-600 border-2 rounded-lg ">
                   next
                 </a>
               </Link>
             </div>
             <Link href="/contact">
-              <a className="px-4 py-2 font-bold text-white transition duration-300 transform rounded-lg shadow-sm bg-green-1000 hover:scale-95 hover:shadow-lg">
+              <a className="items-center px-4 py-2 font-bold text-white transition duration-300 transform rounded-lg shadow-sm bg-green-1000 hover:scale-95 hover:shadow-lg">
                 Order
               </a>
             </Link>

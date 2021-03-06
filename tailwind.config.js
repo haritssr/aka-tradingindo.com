@@ -7,6 +7,7 @@ module.exports = {
       colors: {
         green: {
           1000: "#5E725B",
+          950: "#5E725C",
         },
       },
       fontFamily: {

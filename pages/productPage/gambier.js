@@ -21,7 +21,7 @@ export default function gambier() {
   const { theme, setTheme } = useTheme();
   const [isOpen, setIsOpen] = useState(false);
   const ya =
-    "font-semibold text-base text-gray-600  hover:bg-green-1000 hover:text-white rounded-md   py-1 px-2 dark:text-white";
+    "font-semibold text-base text-gray-600  hover:bg-green-1000 hover:text-white rounded-md   py-2 px-3  dark:text-white";
   return (
     <div className="min-h-screen mx-auto">
       {/* <Nav title="Gambier | AKA Trading Indo"></Nav> */}
@@ -160,19 +160,19 @@ export default function gambier() {
         {/* {props.children} */}
       </section>
 
-      <div className="grid grid-cols-1 p-5 pt-24 md:pt-20 md:m-5 md:grid-cols-2 ">
-        <div className="h-auto md:p-5 md:px-0">
+      <div className="grid grid-cols-1 p-5 pt-24 space-y-3 md:pt-20 md:m-5 md:grid-cols-2 md:space-y-0">
+        <div className="h-auto space-y-3 md:p-5 md:px-0">
           <Image
-            className="w-full h-auto rounded-md"
+            className="w-full h-auto transform rounded-xl hover:scale-150"
             src="/gambir1.jpg"
             width={1080}
-            height={705}
+            height={805}
             priority
           />
 
           <div id="gambar" onclick={memperbesar} >
             <Image
-              className="w-full h-auto transform rounded-md hover:scale-110"
+              className="w-full h-auto transform rounded-xl hover:scale-150"
               src="/gambir2.jpg"
               width={1080}
               height={805}
@@ -206,21 +206,21 @@ export default function gambier() {
             {t.gambier.isiHSCode}
           </p>
 
-          <div className="flex flex-row justify-between mt-10">
-            <div className="flex flex-row justify-start">
-              <Link href="/productPage/coffeebean">
-                <a className="px-4 py-2 mr-5 font-medium text-gray-700 border-2 border-black rounded-lg hover:text-gray-900">
+          <div className="flex flex-row items-center justify-between mt-10">
+            <div className="flex flex-row justify-start font-semibold">
+              <Link href="/productPage/candlenut">
+                <a className="px-4 py-2 mr-5 font-semibold text-gray-600 border-2 rounded-lg">
                   prev
                 </a>
               </Link>
               <Link href="/productPage/candlenut">
-                <a className="px-4 py-2 mr-5 font-medium text-gray-700 border-2 border-black rounded-lg hover:text-gray-900">
+                <a className="px-4 py-2 mr-5 font-semibold text-gray-600 border-2 rounded-lg ">
                   next
                 </a>
               </Link>
             </div>
             <Link href="/contact">
-              <a className="px-4 py-2 font-bold text-white transition duration-300 transform rounded-lg shadow-sm bg-green-1000 hover:scale-95 hover:shadow-lg">
+              <a className="items-center px-4 py-2 font-bold text-white transition duration-300 transform rounded-lg shadow-sm bg-green-1000 hover:scale-95 hover:shadow-lg">
                 Order
               </a>
             </Link>

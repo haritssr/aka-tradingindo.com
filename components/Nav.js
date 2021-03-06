@@ -13,7 +13,7 @@ export default function Nav(props) {
   const { theme, setTheme } = useTheme();
   const [isOpen, setIsOpen] = useState(false);
   const ya =
-    "font-semibold text-base text-gray-600  hover:bg-green-1000 hover:text-white rounded-md   py-1 px-2 dark:text-white";
+    "font-semibold text-base text-gray-600  hover:bg-green-1000 hover:text-white rounded-md py-2 px-3 dark:text-white";
   return (
     <section className="fixed top-0 z-20 w-full h-auto p-3 px-5 bg-white md:px-10 dark:bg-gray-800 ">
       <Head>
@@ -133,7 +133,7 @@ export default function Nav(props) {
               onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
             >
               <svg
-                className="w-5 h-5 dark:text-white"
+                className="w-5 h-5 text-gray-600 dark:text-white"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
                 fill="currentColor"

@@ -15,7 +15,7 @@ export default function product() {
   const { theme, setTheme } = useTheme();
   const [isOpen, setIsOpen] = useState(false);
   const ya =
-    "font-semibold text-base text-gray-600  hover:bg-green-1000 hover:text-white rounded-md   py-1 px-2 dark:text-white";
+    "font-semibold text-base text-gray-600  hover:bg-green-1000 hover:text-white rounded-md   py-2 px-3  dark:text-white";
   return (
     <div className="min-h-screen mx-auto dark:bg-gray-900">
       {/* <Nav title="Product | AKA Trading Indo"></Nav> */}
@@ -162,12 +162,13 @@ export default function product() {
         </div>
         <div className="mb-5 sm:mx-0">
           <Product
-            image="/kemiri.jpg"
+            className="object-cover"
+            image="/kemiri2.jpg"
             productName={`${t.name.candlenut}`}
             product="/productPage/candlenut"
           />
         </div>
-        <div className="mb-5 sm:mx-0">
+        {/* <div className="mb-5 sm:mx-0">
           <Product
             image="/c.jpg"
             productName={`${t.name.cinnamon}`}
@@ -180,7 +181,7 @@ export default function product() {
             productName={`${t.name.coffeebean}`}
             product="/productPage/coffeebean"
           />
-        </div>
+        </div> */}
       </div>
       <Footer />
     </div>

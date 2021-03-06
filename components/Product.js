@@ -13,7 +13,7 @@ export default function Product(props) {
             priority
           />
           <div className="flex flex-col p-3 -mt-2 cursor-pointer bg-opacity-90 bg-green-1000 hover:bg-opacity-70 ">
-            <div className="text-2xl font-bold text-left text-white dark:text-white">
+            <div className="px-2 py-1 text-xl font-bold text-left text-white dark:text-white">
               {props.productName}
             </div>
           </div>
