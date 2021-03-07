@@ -187,7 +187,7 @@ export default function candlenut() {
             {t.candlenut.isiType}
             <br />
             <strong>{t.candlenut.HSCode}</strong>
-            {t.candlenut.isiType}
+            {t.candlenut.isiHSCode}
           </p>
 
           <div className="flex flex-row items-center justify-between mt-10">
