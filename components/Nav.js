@@ -15,7 +15,7 @@ export default function Nav(props) {
   const ya =
     "font-semibold text-base text-gray-600  hover:bg-green-1000 hover:text-white rounded-md py-2 px-3 dark:text-white";
   return (
-    <section className="fixed top-0 z-20 w-full h-auto p-3 px-5 bg-white md:px-10 dark:bg-gray-800 ">
+    <section className="fixed top-0 z-20 w-full h-auto p-3 px-5 bg-white shadow-lg md:px-10 dark:bg-gray-800">
       <Head>
         <title>{props.title}</title>
         <link rel="icon" href="/logo.ico" />
@@ -32,8 +32,8 @@ export default function Nav(props) {
               <Image
                 className="p-2 cursor-pointer"
                 src="/IMG_2685.PNG"
-                width={2430}
-                height={1080}
+                width={2245}
+                height={913}
                 priority
               />
             </Link>

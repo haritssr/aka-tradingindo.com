@@ -25,7 +25,7 @@ export default function gambier() {
   return (
     <div className="min-h-screen mx-auto">
       {/* <Nav title="Gambier | AKA Trading Indo"></Nav> */}
-      <section className="fixed top-0 z-20 w-full h-auto p-3 px-5 bg-white md:px-10 dark:bg-gray-800 ">
+      <section className="fixed top-0 z-20 w-full h-auto p-3 px-5 bg-white shadow-lg md:px-10 dark:bg-gray-800 ">
         <Head>
           <title>Gambier | AKA Trading Indonesia</title>
           <link rel="icon" href="/logo.ico" />
@@ -42,8 +42,8 @@ export default function gambier() {
                 <Image
                   className="p-2 cursor-pointer"
                   src="/IMG_2685.PNG"
-                  width={2430}
-                  height={1080}
+                  width={2245}
+                  height={913}
                   priority
                 />
               </Link>
@@ -170,7 +170,7 @@ export default function gambier() {
             priority
           />
 
-          <div id="gambar" onclick={memperbesar} >
+          <div id="gambar" onclick={memperbesar}>
             <Image
               className="w-full h-auto transform rounded-xl hover:scale-150"
               src="/gambir2.jpg"

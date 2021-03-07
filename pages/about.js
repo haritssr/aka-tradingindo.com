@@ -19,7 +19,7 @@ export default function about() {
     <div className="min-h-screen dark:bg-gray-900 pt-28">
       {/* <Nav title="About Us | AKA Trading Indo"></Nav> */}
 
-      <section className="fixed top-0 z-20 w-full h-auto p-3 px-5 bg-white md:px-10 dark:bg-gray-800 ">
+      <section className="fixed top-0 z-20 w-full h-auto p-3 px-5 bg-white shadow-lg md:px-10 dark:bg-gray-800 ">
         <Head>
           <title>About Us | AKA Trading Indonesia</title>
           <link rel="icon" href="/logo.ico" />
@@ -36,8 +36,8 @@ export default function about() {
                 <Image
                   className="p-2 cursor-pointer"
                   src="/IMG_2685.PNG"
-                  width={2430}
-                  height={1080}
+                  width={2245}
+                  height={913}
                   priority
                 />
               </Link>
@@ -155,7 +155,18 @@ export default function about() {
         {t.about}
       </div>
       <div className="mt-5 overflow-hidden md:mt-0 md:mx-10 h-50 md:h-auto">
-        <img src="/abp.png" className="object-cover w-full h-full sm:rounded-b-xl" alt="es" />
+        {/* <img src="/abp.png" className="object-cover w-full h-full sm:rounded-b-xl" alt="es" /> */}
+        <div className="flex flex-col overflow-hidden rounded-b-lg md:flex-row">
+          <div>
+            <Image src="/abp1.png" width={1400} height={1000} priority />
+          </div>
+          <div>
+            <Image src="/abp2.png" width={1400} height={1000} priority />
+          </div>
+          <div>
+            <Image src="/abp3.png" width={1400} height={1000} priority />
+          </div>
+        </div>
       </div>
       <Footer />
     </div>
