@@ -342,7 +342,7 @@ export default function contact() {
           <input
             className="w-full h-10 px-5 mt-5 font-bold text-white transition duration-200 transform border-green-400 rounded-lg shadow bg-green-1000 hover:bg-opacity-90 hover:scale-95"
             type="submit"
-            value="Send"
+            value={`${t.form.send}`}
           />
         </form>
       </div>

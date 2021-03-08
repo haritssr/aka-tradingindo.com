@@ -7,6 +7,7 @@ export const EN = {
     address: "Address",
     country: "Country",
     subject: "Subject",
+    send: "Send",
   },
   hero: "We provide commodities to fulfil your company’s specific needs.",
   about:
@@ -61,6 +62,7 @@ export const ID = {
     address: "Alamat",
     country: "Negara",
     subject: "Subjek",
+    send: "Kirim Pesan",
   },
   hero:
     "Kami menyediakan komoditas untuk memenuhi kebutuhan spesifik perusahaan Anda.",
