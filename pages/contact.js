@@ -37,13 +37,13 @@ export default function contact() {
   const ya =
     "font-semibold text-base text-gray-600  hover:bg-green-1000 hover:text-white rounded-md   py-2 px-3  dark:text-white";
   const ab =
-    "h-10 px-2 mb-5 placeholder-gray-400 bg-gray-200 rounded-md  focus:ring-2 focus:outline-none focus:ring-green-1000 w-full dark:placeholder-gray-700";
+    "h-10 px-2 mb-5 placeholder-gray-500 bg-gray-200 dark:bg-gray-300 rounded-md  focus:ring-2 focus:outline-none focus:ring-green-1000 w-full dark:placeholder-gray-700";
 
   return (
     <div className="min-h-screen mx-auto dark:bg-gray-900">
       <section className="fixed top-0 z-20 w-full h-auto p-3 px-5 bg-white shadow-lg md:px-10 dark:bg-gray-800">
         <Head>
-          <title>Contact | AKA Trading Indonesia</title>
+          <title>{`${t.nav.contact} | AKA Trading Indonesia`}</title>
           <link rel="icon" href="/logo.ico" />
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link
@@ -103,31 +103,31 @@ export default function contact() {
           >
             <div className="m-5 ml-0 lg:m-1">
               <Link href="/">
-                <a className={ya}>Home</a>
+                <a className={ya}>{t.nav.home}</a>
               </Link>
             </div>
 
             <div className="m-5 ml-0 lg:m-1">
               <Link href="/about">
-                <a className={ya}>About Us</a>
+                <a className={ya}>{t.nav.about}</a>
               </Link>
             </div>
 
             <div className="m-5 ml-0 lg:m-1">
               <Link href="/product">
-                <a className={ya}>Products</a>
+                <a className={ya}>{t.nav.product}</a>
               </Link>
             </div>
 
             <div className="m-5 ml-0 lg:m-1">
               <Link href="/team">
-                <a className={ya}>Team</a>
+                <a className={ya}>{t.nav.team}</a>
               </Link>
             </div>
 
             <div className="m-5 ml-0 lg:m-1">
               <Link href="/contact">
-                <a className={ya}>Contact</a>
+                <a className={ya}>{t.nav.contact}</a>
               </Link>
             </div>
             <div>
@@ -264,7 +264,7 @@ export default function contact() {
 
         {/* enquiry */}
         <form
-          className="h-auto p-5 m-5 bg-gray-100 border rounded-lg md:mx-auto dark:bg-gray-800 dark:border-gray-500 md:mr-5"
+          className="h-auto p-5 m-5 bg-gray-100 border rounded-lg md:mx-auto dark:bg-gray-800 dark:border-gray-600 md:mr-5"
           onSubmit={sendEmail}
         >
           <div className="grid grid-cols-1 sm:grid-cols-2">

@@ -51,6 +51,15 @@ export const EN = {
     HSCode: "HS Code: ",
     isiHSCode: "08029000",
   },
+  needHelp: "Need Help ? ",
+  emailUs: "Feel free to email us",
+  nav: {
+    home: "Home",
+    about: "About Us",
+    product: "Product",
+    team: "Team",
+    contact: "Contact",
+  },
 };
 
 export const ID = {
@@ -106,5 +115,14 @@ export const ID = {
     isiType: "Kemiri Utuh",
     HSCode: "Kode HS: ",
     isiHSCode: "08029000",
+  },
+  needHelp: "Butuh Bantuan ? ",
+  emailUs: "Email kita aja",
+  nav: {
+    home: "Beranda",
+    about: "Tentang",
+    product: "Produk",
+    team: "Tim",
+    contact: "Kontak",
   },
 };

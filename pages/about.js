@@ -21,7 +21,7 @@ export default function about() {
 
       <section className="fixed top-0 z-20 w-full h-auto p-3 px-5 bg-white shadow-lg md:px-10 dark:bg-gray-800 ">
         <Head>
-          <title>About Us | AKA Trading Indonesia</title>
+          <title>{` ${t.nav.about} | AKA Trading Indonesia`}</title>
           <link rel="icon" href="/logo.ico" />
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link
@@ -81,31 +81,31 @@ export default function about() {
           >
             <div className="m-5 ml-0 lg:m-1">
               <Link href="/">
-                <a className={ya}>Home</a>
+                <a className={ya}>{t.nav.home}</a>
               </Link>
             </div>
 
             <div className="m-5 ml-0 lg:m-1">
               <Link href="/about">
-                <a className={ya}>About Us</a>
+                <a className={ya}>{t.nav.about}</a>
               </Link>
             </div>
 
             <div className="m-5 ml-0 lg:m-1">
               <Link href="/product">
-                <a className={ya}>Products</a>
+                <a className={ya}>{t.nav.product}</a>
               </Link>
             </div>
 
             <div className="m-5 ml-0 lg:m-1">
               <Link href="/team">
-                <a className={ya}>Team</a>
+                <a className={ya}>{t.nav.team}</a>
               </Link>
             </div>
 
             <div className="m-5 ml-0 lg:m-1">
               <Link href="/contact">
-                <a className={ya}>Contact</a>
+                <a className={ya}>{t.nav.contact}</a>
               </Link>
             </div>
             <div>
@@ -149,7 +149,7 @@ export default function about() {
 
         {/* {props.children} */}
       </section>
-      <div className="p-5 mx-5 text-lg font-medium text-gray-800 md:rounded-t-xl md:mx-10 bg-green-1000 bg-opacity-10 dark:text-white dark:border">
+      <div className="p-5 mx-5 text-lg font-normal text-gray-800 md:rounded-t-xl md:mx-10 bg-green-1000 bg-opacity-10 dark:text-white dark:border">
         {t.about}
       </div>
       <div className="mt-5 overflow-hidden md:mt-0 md:mx-10 h-50 md:h-auto">
