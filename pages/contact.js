@@ -177,7 +177,7 @@ export default function contact() {
 
       <div className="flex flex-col sm:px-5 md:flex-row mt-24">
         <div>
-          <div className="p-5 m-5 font-sans text-gray-700 rounded-lg dark:text-white">
+          <div className="p-5 m-5 font-sans text-gray-700 rounded-lg dark:text-white space-y-2">
             <div className="mb-4 text-xl font-semibold">Head Office</div>
             <div></div>
             <div className="flex flex-row items-start justify-start">
@@ -203,7 +203,7 @@ export default function contact() {
               </div>
             </div>
 
-            <div className="flex flex-row items-center justify-start">
+            <div className="flex flex-row items-center justify-start ">
               <div>
                 <svg
                   className="w-5 h-5 mr-1"
@@ -220,7 +220,7 @@ export default function contact() {
                   />
                 </svg>
               </div>
-              <div className="pb-1">081223191932</div>
+              <div className="">081223191932</div>
             </div>
             <div className="flex flex-row items-center justify-start">
               <div>
@@ -239,7 +239,7 @@ export default function contact() {
                   />
                 </svg>
               </div>
-              <div className="pb-1">
+              <div className="">
                 <a
                   className="hover:underline"
                   href="mailto:eksportiraka@gmail.com?subject=Website aka-tradingindo.com&body=Hi, i want to ask something about some stuff "
