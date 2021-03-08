@@ -175,7 +175,7 @@ export default function contact() {
 
       {/* <Nav title="Contact | AKA Trading Indo"></Nav> */}
 
-      <div className="flex flex-col sm:px-5 md:flex-row">
+      <div className="flex flex-col sm:px-5 md:flex-row mt-24">
         <div>
           <div className="p-5 m-5 font-sans text-gray-700 rounded-lg dark:text-white">
             <div className="mb-4 text-xl font-semibold">Head Office</div>
