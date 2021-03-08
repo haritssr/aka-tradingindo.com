@@ -175,10 +175,6 @@ export default function contact() {
 
       {/* <Nav title="Contact | AKA Trading Indo"></Nav> */}
 
-      <div className="mx-auto">
-        <Breadcomb name="CONTACT" />
-      </div>
-
       <div className="flex flex-col sm:px-5 md:flex-row">
         <div>
           <div className="p-5 m-5 font-sans text-gray-700 rounded-lg dark:text-white">
@@ -224,7 +220,7 @@ export default function contact() {
                   />
                 </svg>
               </div>
-              <div className="pb-1">+62-8128-0493-635</div>
+              <div className="pb-1">081223191932</div>
             </div>
             <div className="flex flex-row items-center justify-start">
               <div>
