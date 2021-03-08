@@ -132,23 +132,21 @@ export default function candlenut() {
                 </button>
               </div>
             </div>
-            <div className="items-center m-5 ml-1 lg:m-0">
-              <button
-                aria-label="Toggle Dark Mode"
-                type="button"
-                className="w-5 h-5 focus:outline-none"
-                onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+            <button
+              aria-label="Toggle Dark Mode"
+              type="button"
+              className="items-center inline-block p-1 pb-1 m-5 ml-1 text-base font-semibold text-gray-600 rounded-md h-7 w-7 lg:m-0 focus:outline-none hover:bg-gray-100 "
+              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+            >
+              <svg
+                className="w-5 h-5 text-gray-600 dark:text-white dark:hover:text-gray-600"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
               >
-                <svg
-                  className="w-5 h-5 dark:text-white"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
-                </svg>
-              </button>
-            </div>
+                <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
+              </svg>
+            </button>
           </div>
         </div>
       </section>
