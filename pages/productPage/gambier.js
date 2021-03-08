@@ -185,22 +185,22 @@ export default function gambier() {
             {t.gambier.description}
             <br />
             <br />
-            <strong>{t.gambier.CatechinContent}</strong>
+            <span className="text-gray-800 font-semibold">{t.gambier.CatechinContent}</span>
             {t.gambier.isiCatechinContent}
             <br />
-            <strong>{t.gambier.Industry}</strong>
+            <span className="text-gray-800 font-semibold">{t.gambier.Industry}</span>
             {t.gambier.isiIndustry}
             <br />
-            <strong>{t.gambier.ScientificName}</strong>
+            <span className="text-gray-800 font-semibold">{t.gambier.ScientificName}</span>
             {t.gambier.isiScientificName}
             <br />
-            <strong>{t.gambier.PlaceOfOrigin}</strong>
+            <span className="text-gray-800 font-semibold">{t.gambier.PlaceOfOrigin}</span>
             {t.gambier.IsiPlaceOfOrigin}
             <br />
-            <strong>{t.gambier.ExtractionType}</strong>
+            <span className="text-gray-800 font-semibold">{t.gambier.ExtractionType}</span>
             {t.gambier.isiExtractionType}
             <br />
-            <strong>{t.gambier.HSCode}</strong>
+            <span className="text-gray-800 font-semibold">{t.gambier.HSCode}</span>
             {t.gambier.isiHSCode}
           </p>
 

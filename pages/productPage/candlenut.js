@@ -169,22 +169,23 @@ export default function candlenut() {
             {t.candlenut.description}
             <br />
             <br />
-            <strong>{t.candlenut.OilContent}</strong>
+            
+            <span className="text-gray-800 font-semibold">{t.candlenut.OilContent}</span>
             {t.candlenut.isiOilContent}
             <br />
-            <strong>{t.candlenut.SuitableIndustry}</strong>
+            <span className="text-gray-800 font-semibold">{t.candlenut.SuitableIndustry}</span>
             {t.candlenut.isiSuitableIndustry}
             <br />
-            <strong>{t.candlenut.ScientificName}</strong>
+            <span className="text-gray-800 font-semibold">{t.candlenut.ScientificName}</span>
             {t.candlenut.isiScientificName}
             <br />
-            <strong>{t.candlenut.PlaceOfOrigin}</strong>
+            <span className="text-gray-800 font-semibold">{t.candlenut.PlaceOfOrigin}</span>
             {t.candlenut.isiPlaceOfOrigin}
             <br />
-            <strong>{t.candlenut.Type}</strong>
+            <span className="text-gray-800 font-semibold">{t.candlenut.Type}</span>
             {t.candlenut.isiType}
             <br />
-            <strong>{t.candlenut.HSCode}</strong>
+            <span className="text-gray-800 font-semibold">{t.candlenut.HSCode}</span>
             {t.candlenut.isiHSCode}
           </p>
 
