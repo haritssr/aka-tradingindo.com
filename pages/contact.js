@@ -177,10 +177,12 @@ export default function contact() {
 
       <div className="flex flex-col sm:px-5 md:flex-row pt-24">
         <div>
-          <div className="p-5 m-5 font-sans text-gray-700 rounded-lg dark:text-white space-y-2">
-            <div className="mb-4 text-xl font-semibold">Head Office</div>
+          <div className=" m-5 font-sans text-gray-700 rounded-lg dark:text-white space-y-2 bg-gray-50">
+            <div className="mb-2 text-xl font-semibold">Head Office</div>
             <div></div>
-            <div className="flex flex-row items-start justify-start">
+
+            {/* address */}
+            <div className="flex flex-row items-start justify-start p-2">
               <div>
                 <svg
                   className="w-5 h-5 mr-1"
@@ -202,51 +204,86 @@ export default function contact() {
                 Tanjung Barat, Jagakarsa – Jakarta Selatan 12530
               </div>
             </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+              {/* phone number */}
+              <div className="flex flex-row items-center p-2 bg-gray-100 rounded-lg text-sm">
+                <div>
+                  <svg
+                    className="w-5 h-5 mr-1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                    />
+                  </svg>
+                </div>
+                <div className="">081223191932</div>
+              </div>
 
-            <div className="flex flex-row items-center justify-start ">
-              <div>
-                <svg
-                  className="w-5 h-5 mr-1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-                  />
-                </svg>
+              {/* email */}
+              <div className="flex flex-row items-center p-2 bg-gray-100 rounded-lg text-sm">
+                <div>
+                  <svg
+                    className="w-5 h-5 mr-1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                    />
+                  </svg>
+                </div>
+                <div className="">
+                  <a
+                    className="hover:underline"
+                    href="mailto:eksportiraka@gmail.com?subject=Website aka-tradingindo.com&body=Hi, i want to ask something about some stuff "
+                  >
+                    eksportirAKA@gmail.com
+                  </a>
+                </div>
               </div>
-              <div className="">081223191932</div>
-            </div>
-            <div className="flex flex-row items-center justify-start">
-              <div>
-                <svg
-                  className="w-5 h-5 mr-1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                  />
-                </svg>
-              </div>
-              <div className="">
-                <a
-                  className="hover:underline"
-                  href="mailto:eksportiraka@gmail.com?subject=Website aka-tradingindo.com&body=Hi, i want to ask something about some stuff "
-                >
-                  eksportirAKA@gmail.com
-                </a>
-              </div>
+
+              {/* fb  */}
+              <a
+                href="https://www.facebook.com/AKA-Trading-Indonesia-108120014669787"
+                target="_blank"
+              >
+                <div className="flex flex-row items-center  bg-gray-100 rounded-lg p-2 hover:shadow-md">
+                  <div className="h-5 w-5 mr-2">
+                    <Image src="/fbSVG.svg" width="100" height="100" priority />
+                  </div>
+
+                  <div className="text-blue-fb font-bold text-sm">
+                    AKA Trading Indonesia
+                  </div>
+                </div>
+              </a>
+              {/* ln */}
+              <a
+                href="https://www.linkedin.com/company/aka-tradingindo"
+                target="_blank"
+              >
+                <div className="flex flex-row items-center  bg-gray-100 rounded-lg p-2 hover:shadow-md">
+                  <div className="h-5 w-5 mr-2">
+                    <Image src="/lnSVG.svg" width="100" height="100" priority />
+                  </div>
+
+                  <div className="text-blue-ln font-bold text-sm">
+                    AKA Trading Indonesia
+                  </div>
+                </div>
+              </a>
             </div>
           </div>
 

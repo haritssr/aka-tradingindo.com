@@ -10,6 +10,10 @@ module.exports = {
           1000: "#5E725B",
           950: "#7F957C",
         },
+        blue: {
+          fb: "#1777F2",
+          ln: "#2867B2",
+        },
       },
       fontFamily: {
         sans: ["Inter", ...fontFamily.sans],
