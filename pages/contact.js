@@ -177,7 +177,7 @@ export default function contact() {
 
       <div className="flex flex-col sm:px-5 md:flex-row pt-24">
         <div>
-          <div className=" m-5 font-sans text-gray-700 rounded-lg dark:text-white space-y-2 bg-gray-50">
+          <div className=" m-5 font-sans text-gray-700 rounded-lg dark:text-white space-y-2 bg-gray-50 dark:bg-gray-900">
             <div className="mb-2 text-xl font-semibold">Head Office</div>
             <div></div>
 
@@ -206,7 +206,7 @@ export default function contact() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
               {/* phone number */}
-              <div className="flex flex-row items-center p-2 bg-gray-100 rounded-lg text-sm">
+              <div className="flex flex-row items-center p-2 bg-gray-100 rounded-lg text-sm dark:text-gray-900">
                 <div>
                   <svg
                     className="w-5 h-5 mr-1"
@@ -227,7 +227,7 @@ export default function contact() {
               </div>
 
               {/* email */}
-              <div className="flex flex-row items-center p-2 bg-gray-100 rounded-lg text-sm">
+              <div className="flex flex-row items-center p-2 bg-gray-100 rounded-lg text-sm dark:text-gray-900">
                 <div>
                   <svg
                     className="w-5 h-5 mr-1"
