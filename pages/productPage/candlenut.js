@@ -203,7 +203,7 @@ export default function candlenut() {
               </Link>
             </div>
             <Link href="/contact">
-              <a className="w-full h-10 px-5 mt-5 font-bold text-white rounded-lg shadow hover:shadow-none bg-green-1000 hover:bg-opacity-80">
+              <a className="items-center px-4 py-2 font-bold text-white  rounded-lg shadow-sm bg-green-1000  hover:shadow-lg hover:bg-opacity-80">
                 {t.order}
               </a>
             </Link>

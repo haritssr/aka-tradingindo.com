@@ -230,7 +230,7 @@ export default function gambier() {
               </Link>
             </div>
             <Link href="/contact">
-              <a className="items-center px-4 py-2 font-bold text-white  rounded-lg shadow-sm bg-green-1000  hover:shadow-lg hover:bg-opacity-90">
+              <a className="items-center px-4 py-2 font-bold text-white  rounded-lg shadow-sm bg-green-1000  hover:shadow-lg hover:bg-opacity-80">
                 {t.order}
               </a>
             </Link>
