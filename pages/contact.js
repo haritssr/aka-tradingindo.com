@@ -37,7 +37,7 @@ export default function contact() {
   const ya =
     "font-semibold text-base text-gray-600  hover:bg-green-1000 hover:text-white rounded-md   py-2 px-3  dark:text-white";
   const ab =
-    "h-10 px-2  placeholder-gray-500 bg-gray-200 dark:bg-gray-300 rounded-md  focus:ring-2 focus:outline-none focus:ring-green-1000 w-full dark:placeholder-gray-700";
+    "h-10 px-2  placeholder-gray-500 bg-gray-200 rounded-md  focus:ring-2 focus:outline-none focus:ring-green-1000 w-full dark:placeholder-gray-700";
 
   return (
     <div className="min-h-screen mx-auto dark:bg-gray-900">
