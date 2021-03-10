@@ -185,22 +185,34 @@ export default function gambier() {
             {t.gambier.description}
             <br />
             <br />
-            <span className="text-gray-800 font-semibold">{t.gambier.CatechinContent}</span>
+            <span className="text-gray-800 font-semibold">
+              {t.gambier.CatechinContent}
+            </span>
             {t.gambier.isiCatechinContent}
             <br />
-            <span className="text-gray-800 font-semibold">{t.gambier.Industry}</span>
+            <span className="text-gray-800 font-semibold">
+              {t.gambier.Industry}
+            </span>
             {t.gambier.isiIndustry}
             <br />
-            <span className="text-gray-800 font-semibold">{t.gambier.ScientificName}</span>
+            <span className="text-gray-800 font-semibold">
+              {t.gambier.ScientificName}
+            </span>
             {t.gambier.isiScientificName}
             <br />
-            <span className="text-gray-800 font-semibold">{t.gambier.PlaceOfOrigin}</span>
+            <span className="text-gray-800 font-semibold">
+              {t.gambier.PlaceOfOrigin}
+            </span>
             {t.gambier.IsiPlaceOfOrigin}
             <br />
-            <span className="text-gray-800 font-semibold">{t.gambier.ExtractionType}</span>
+            <span className="text-gray-800 font-semibold">
+              {t.gambier.ExtractionType}
+            </span>
             {t.gambier.isiExtractionType}
             <br />
-            <span className="text-gray-800 font-semibold">{t.gambier.HSCode}</span>
+            <span className="text-gray-800 font-semibold">
+              {t.gambier.HSCode}
+            </span>
             {t.gambier.isiHSCode}
           </p>
 
@@ -218,8 +230,8 @@ export default function gambier() {
               </Link>
             </div>
             <Link href="/contact">
-              <a className="items-center px-4 py-2 font-bold text-white transition duration-300 transform rounded-lg shadow-sm bg-green-1000 hover:scale-95 hover:shadow-lg">
-                Order
+              <a className="items-center px-4 py-2 font-bold text-white  rounded-lg shadow-sm bg-green-1000  hover:shadow-lg hover:bg-opacity-90">
+                {t.order}
               </a>
             </Link>
           </div>

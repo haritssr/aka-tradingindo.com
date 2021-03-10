@@ -60,6 +60,7 @@ export const EN = {
     team: "Team",
     contact: "Contact",
   },
+  order: "Order",
 };
 
 export const ID = {
@@ -125,4 +126,5 @@ export const ID = {
     team: "Tim",
     contact: "Kontak",
   },
+  order: "Pesan",
 };

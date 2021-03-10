@@ -37,7 +37,7 @@ export default function contact() {
   const ya =
     "font-semibold text-base text-gray-600  hover:bg-green-1000 hover:text-white rounded-md   py-2 px-3  dark:text-white";
   const ab =
-    "h-10 px-2 mb-5 placeholder-gray-500 bg-gray-200 dark:bg-gray-300 rounded-md  focus:ring-2 focus:outline-none focus:ring-green-1000 w-full dark:placeholder-gray-700";
+    "h-10 px-2  placeholder-gray-500 bg-gray-200 dark:bg-gray-300 rounded-md  focus:ring-2 focus:outline-none focus:ring-green-1000 w-full dark:placeholder-gray-700";
 
   return (
     <div className="min-h-screen mx-auto dark:bg-gray-900">
@@ -301,10 +301,10 @@ export default function contact() {
 
         {/* enquiry */}
         <form
-          className="h-auto p-5 m-5 bg-gray-100 border rounded-lg md:mx-auto dark:bg-gray-800 dark:border-gray-600 md:mr-5"
+          className="h-auto p-5 m-5 space-y-5 bg-gray-100 border rounded-lg md:mx-auto dark:bg-gray-800 dark:border-gray-600 md:mr-5"
           onSubmit={sendEmail}
         >
-          <div className="grid grid-cols-1 sm:grid-cols-2">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
             <input
               placeholder={`${t.form.fullName}`}
               className={ab}
@@ -313,7 +313,7 @@ export default function contact() {
               name="full_name"
             />
 
-            <div className="sm:pl-2">
+            <div className="">
               <input
                 placeholder={`${t.form.companyName}`}
                 className={ab}
@@ -330,7 +330,7 @@ export default function contact() {
               type="email"
               name="email"
             />
-            <div className="sm:pl-2">
+            <div className="">
               <input
                 placeholder={`${t.form.phoneNumber}`}
                 className={ab}
@@ -377,7 +377,7 @@ export default function contact() {
             Send
           </button> */}
           <input
-            className="w-full h-10 px-5 mt-5 font-bold text-white transition duration-200 transform border-green-400 rounded-lg shadow bg-green-1000 hover:bg-opacity-90 hover:scale-95"
+            className="w-full h-10 px-5 mt-5 font-bold text-white rounded-lg shadow hover:shadow-none bg-green-1000 hover:bg-opacity-80"
             type="submit"
             value={`${t.form.send}`}
           />
