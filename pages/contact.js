@@ -206,10 +206,10 @@ export default function contact() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
               {/* phone number */}
-              <div className="flex flex-row items-center p-2 bg-gray-100 rounded-lg text-sm dark:text-gray-900">
+              <div className="flex flex-row items-center p-2 bg-gray-100 rounded-lg text-sm dark:text-gray-900 overflow-hidden">
                 <div>
                   <svg
-                    className="w-5 h-5 mr-1"
+                    className="w-5 h-5 mr-2"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
@@ -227,10 +227,10 @@ export default function contact() {
               </div>
 
               {/* email */}
-              <div className="flex flex-row items-center p-2 bg-gray-100 rounded-lg text-sm dark:text-gray-900">
+              <div className="flex flex-row items-center p-2 bg-gray-100 rounded-lg text-sm dark:text-gray-900 overflow-hidden">
                 <div>
                   <svg
-                    className="w-5 h-5 mr-1"
+                    className="w-5 h-5 mr-2"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
@@ -259,7 +259,7 @@ export default function contact() {
                 href="https://www.facebook.com/AKA-Trading-Indonesia-108120014669787"
                 target="_blank"
               >
-                <div className="flex flex-row items-center  bg-gray-100 rounded-lg p-2 hover:shadow-md">
+                <div className="flex flex-row items-center  bg-gray-100 rounded-lg p-2 hover:bg-gray-200">
                   <div className="h-5 w-5 mr-2">
                     <Image src="/fbSVG.svg" width="100" height="100" priority />
                   </div>
@@ -274,7 +274,7 @@ export default function contact() {
                 href="https://www.linkedin.com/company/aka-tradingindo"
                 target="_blank"
               >
-                <div className="flex flex-row items-center  bg-gray-100 rounded-lg p-2 hover:shadow-md">
+                <div className="flex flex-row items-center  bg-gray-100 rounded-lg p-2 hover:bg-gray-200">
                   <div className="h-5 w-5 mr-2">
                     <Image src="/lnSVG.svg" width="100" height="100" priority />
                   </div>
