@@ -48,7 +48,7 @@ export default function candlenut() {
                 className="block lg:hidden"
               >
                 <svg
-                  className="w-7 h-7 dark:text-white text-green-1000"
+                  className="w-10 h-10  dark:text-white text-green-1000"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
@@ -169,23 +169,35 @@ export default function candlenut() {
             {t.candlenut.description}
             <br />
             <br />
-            
-            <span className="text-gray-800 font-semibold">{t.candlenut.OilContent}</span>
+
+            <span className="text-gray-800 font-semibold">
+              {t.candlenut.OilContent}
+            </span>
             {t.candlenut.isiOilContent}
             <br />
-            <span className="text-gray-800 font-semibold">{t.candlenut.SuitableIndustry}</span>
+            <span className="text-gray-800 font-semibold">
+              {t.candlenut.SuitableIndustry}
+            </span>
             {t.candlenut.isiSuitableIndustry}
             <br />
-            <span className="text-gray-800 font-semibold">{t.candlenut.ScientificName}</span>
+            <span className="text-gray-800 font-semibold">
+              {t.candlenut.ScientificName}
+            </span>
             {t.candlenut.isiScientificName}
             <br />
-            <span className="text-gray-800 font-semibold">{t.candlenut.PlaceOfOrigin}</span>
+            <span className="text-gray-800 font-semibold">
+              {t.candlenut.PlaceOfOrigin}
+            </span>
             {t.candlenut.isiPlaceOfOrigin}
             <br />
-            <span className="text-gray-800 font-semibold">{t.candlenut.Type}</span>
+            <span className="text-gray-800 font-semibold">
+              {t.candlenut.Type}
+            </span>
             {t.candlenut.isiType}
             <br />
-            <span className="text-gray-800 font-semibold">{t.candlenut.HSCode}</span>
+            <span className="text-gray-800 font-semibold">
+              {t.candlenut.HSCode}
+            </span>
             {t.candlenut.isiHSCode}
           </p>
 
