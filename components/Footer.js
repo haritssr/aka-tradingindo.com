@@ -17,7 +17,7 @@ export default function Footer() {
           </a>
         </div>
       </div>
-      <div className="p-3 text-xs text-center text-gray-500 text-sm:text-sm bg-opacity-10 dark:text-gray-500 bg-green-1000 dark:bg-gray-800">
+      <div className="p-3 text-xs text-center text-gray-500 text-sm:text-sm bg-opacity-10 dark:text-gray-500 bg-green-1000 dark:bg-gray-comp">
         COPYRIGHT&copy;2021&nbsp;&nbsp; PT.AKA TRADING INDONESIA. ALL RIGHTS
         RESERVED
       </div>

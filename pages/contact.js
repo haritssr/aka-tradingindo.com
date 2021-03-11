@@ -35,7 +35,7 @@ export default function contact() {
   const { theme, setTheme } = useTheme();
   const [isOpen, setIsOpen] = useState(false);
   const ya =
-    "font-semibold text-base text-gray-600  hover:bg-green-1000 hover:text-gray-text rounded-md   py-2 px-3  dark:text-white";
+    "font-semibold text-base text-gray-600  hover:bg-green-1000 hover:text-gray-text rounded-md   py-2 px-3  dark:text-gray-text";
   const ab =
     "h-10 px-2  placeholder-gray-500 bg-gray-200 rounded-md  focus:ring-2 focus:outline-none focus:ring-green-1000 w-full dark:placeholder-gray-text dark:bg-gray-button2";
 
@@ -155,7 +155,7 @@ export default function contact() {
             <button
               aria-label="Toggle Dark Mode"
               type="button"
-              className="items-center inline-block p-1 pb-1 m-5 ml-1 text-base font-semibold text-gray-600 rounded-md h-7 w-7 lg:m-0 focus:outline-none hover:bg-gray-100 "
+              className="items-center inline-block p-1 pb-1 m-5 ml-2 text-base font-semibold text-gray-600 rounded-md h-7 w-7 lg:m-0 focus:outline-none hover:bg-gray-100 "
               onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
             >
               <svg
@@ -366,7 +366,7 @@ export default function contact() {
           />
 
           <textarea
-            className="w-full p-2 placeholder-gray-500 bg-gray-200 rounded-md focus:ring-2 focus:outline-none focus:ring-green-1000"
+            className="w-full p-2 placeholder-gray-500 dark:placeholder-gray-text bg-gray-200 rounded-md focus:ring-2 focus:outline-none focus:ring-green-1000 dark:bg-gray-button2"
             name="message"
             id="message"
             cols="20"
