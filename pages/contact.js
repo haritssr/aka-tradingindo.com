@@ -35,13 +35,13 @@ export default function contact() {
   const { theme, setTheme } = useTheme();
   const [isOpen, setIsOpen] = useState(false);
   const ya =
-    "font-semibold text-base text-gray-600  hover:bg-green-1000 hover:text-white rounded-md   py-2 px-3  dark:text-white";
+    "font-semibold text-base text-gray-600  hover:bg-green-1000 hover:text-gray-text rounded-md   py-2 px-3  dark:text-white";
   const ab =
-    "h-10 px-2  placeholder-gray-500 bg-gray-200 rounded-md  focus:ring-2 focus:outline-none focus:ring-green-1000 w-full dark:placeholder-gray-700";
+    "h-10 px-2  placeholder-gray-500 bg-gray-200 rounded-md  focus:ring-2 focus:outline-none focus:ring-green-1000 w-full dark:placeholder-gray-text dark:bg-gray-button2";
 
   return (
-    <div className="min-h-screen mx-auto dark:bg-gray-900">
-      <section className="fixed top-0 z-20 w-full h-auto p-3 px-5 bg-white shadow-lg md:px-10 dark:bg-gray-800">
+    <div className="min-h-screen mx-auto dark:bg-gray-bkg">
+      <section className="fixed top-0 z-20 w-full h-auto p-3 px-5 bg-white shadow-lg md:px-10 dark:bg-gray-comp">
         <Head>
           <title>{`${t.nav.contact} | AKA Trading Indonesia`}</title>
           <link rel="icon" href="/logo.ico" />
@@ -177,7 +177,7 @@ export default function contact() {
 
       <div className="flex flex-col sm:px-5 md:flex-row pt-24">
         <div>
-          <div className=" m-5 font-sans text-gray-700 rounded-lg dark:text-white space-y-2 bg-gray-50 dark:bg-gray-900">
+          <div className=" m-5 font-sans text-gray-700 rounded-lg dark:text-gray-text space-y-2 ">
             <div className="mb-2 text-xl font-semibold">Head Office</div>
             <div></div>
 
@@ -206,7 +206,7 @@ export default function contact() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
               {/* phone number */}
-              <div className="flex flex-row items-center p-2 bg-gray-100 rounded-lg text-sm dark:text-gray-900 overflow-hidden">
+              <div className="flex flex-row items-center p-2 bg-gray-100 rounded-lg text-sm dark:text-gray-text dark:bg-gray-comp overflow-hidden">
                 <div>
                   <svg
                     className="w-5 h-5 mr-2"
@@ -227,7 +227,7 @@ export default function contact() {
               </div>
 
               {/* email */}
-              <div className="flex flex-row items-center p-2 bg-gray-100 rounded-lg text-sm dark:text-gray-900 overflow-hidden">
+              <div className="flex flex-row items-center p-2 bg-gray-100 rounded-lg text-sm dark:text-gray-text dark:bg-gray-comp overflow-hidden">
                 <div>
                   <svg
                     className="w-5 h-5 mr-2"
@@ -259,12 +259,12 @@ export default function contact() {
                 href="https://www.facebook.com/AKA-Trading-Indonesia-108120014669787"
                 target="_blank"
               >
-                <div className="flex flex-row items-center  bg-gray-100 rounded-lg p-2 hover:bg-gray-200">
+                <div className="flex flex-row items-center  bg-gray-100 rounded-lg p-2 hover:bg-gray-200   dark:bg-gray-comp">
                   <div className="h-5 w-5 mr-2">
                     <Image src="/fbSVG.svg" width="100" height="100" priority />
                   </div>
 
-                  <div className="text-blue-fb font-bold text-sm">
+                  <div className="text-blue-fb font-bold text-sm ">
                     AKA Trading Indonesia
                   </div>
                 </div>
@@ -274,12 +274,12 @@ export default function contact() {
                 href="https://www.linkedin.com/company/aka-tradingindo"
                 target="_blank"
               >
-                <div className="flex flex-row items-center  bg-gray-100 rounded-lg p-2 hover:bg-gray-200">
+                <div className="flex flex-row items-center  bg-gray-100 rounded-lg p-2 hover:bg-gray-200  dark:bg-gray-comp">
                   <div className="h-5 w-5 mr-2">
                     <Image src="/lnSVG.svg" width="100" height="100" priority />
                   </div>
 
-                  <div className="text-blue-ln font-bold text-sm">
+                  <div className="text-blue-ln font-bold text-sm ">
                     AKA Trading Indonesia
                   </div>
                 </div>
@@ -301,7 +301,7 @@ export default function contact() {
 
         {/* enquiry */}
         <form
-          className="h-auto p-5 m-5 space-y-5 bg-gray-100 border rounded-lg md:mx-auto dark:bg-gray-800 dark:border-gray-600 md:mr-5"
+          className="h-auto p-5 m-5 space-y-5 bg-gray-100 border rounded-lg md:mx-auto dark:bg-gray-comp dark:border-gray-button2 md:mr-5"
           onSubmit={sendEmail}
         >
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
