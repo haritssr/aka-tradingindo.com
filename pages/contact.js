@@ -1,4 +1,3 @@
-import Breadcomb from "../components/Breadcomb";
 import Footer from "../components/Footer";
 import Head from "next/head";
 import Image from "next/image";
@@ -45,11 +44,6 @@ export default function contact() {
         <Head>
           <title>{`${t.nav.contact} | AKA Trading Indonesia`}</title>
           <link rel="icon" href="/logo.ico" />
-          <link rel="preconnect" href="https://fonts.gstatic.com" />
-          <link
-            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
-            rel="stylesheet"
-          />
         </Head>
         <div className="flex flex-col items-center rounded-lg lg:justify-between lg:flex-row">
           <div className="flex flex-row items-center justify-between w-full lg:w-1/3">
@@ -141,7 +135,7 @@ export default function contact() {
                   EN
                 </button>
               </div>
-              {`|`}
+              <span className={ya}>|</span>
               <div className="inline-block">
                 <button
                   className={ya}
@@ -172,8 +166,6 @@ export default function contact() {
 
         {/* {props.children} */}
       </section>
-
-      {/* <Nav title="Contact | AKA Trading Indo"></Nav> */}
 
       <div className="flex flex-col sm:px-5 md:flex-row pt-24">
         <div>
@@ -206,7 +198,7 @@ export default function contact() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
               {/* phone number */}
-              <div className="flex flex-row items-center p-2 bg-gray-100 rounded-lg text-sm dark:text-gray-text dark:bg-gray-comp overflow-hidden">
+              <div className="flex flex-row items-center p-2 bg-gray-100 rounded-lg text-sm dark:text-gray-text dark:bg-gray-comp overflow-hidden ">
                 <div>
                   <svg
                     className="w-5 h-5 mr-2"
@@ -301,7 +293,7 @@ export default function contact() {
 
         {/* enquiry */}
         <form
-          className="h-auto p-5 m-5 space-y-5 bg-gray-100 border rounded-lg md:mx-auto dark:bg-gray-comp dark:border-gray-button2 md:mr-5"
+          className="h-auto p-5 m-5 space-y-5 bg-gray-100 border-2 rounded-lg md:mx-auto dark:bg-gray-comp dark:border-gray-button2 md:mr-5"
           onSubmit={sendEmail}
         >
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
@@ -373,9 +365,6 @@ export default function contact() {
             rows="5"
           ></textarea>
 
-          {/* <button className="w-full h-10 px-5 mt-5 font-bold text-white border-green-400 rounded-lg shadow bg-green-1000 hover:bg-opacity-90">
-            Send
-          </button> */}
           <input
             className="w-full h-10 px-5 mt-5 font-bold text-white rounded-lg shadow hover:shadow-none bg-green-1000 hover:bg-opacity-80"
             type="submit"

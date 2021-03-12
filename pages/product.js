@@ -1,5 +1,5 @@
 import Footer from "../components/Footer";
-// import Nav from "../components/Nav";
+
 import Product from "../components/Product";
 import Head from "next/head";
 import Image from "next/image";
@@ -15,19 +15,13 @@ export default function product() {
   const { theme, setTheme } = useTheme();
   const [isOpen, setIsOpen] = useState(false);
   const ya =
-    "font-semibold text-base text-gray-600  hover:bg-green-1000 hover:text-white rounded-md   py-2 px-3  dark:text-white";
+    "font-semibold text-base text-gray-600  hover:bg-green-1000 hover:text-white rounded-md   py-2 px-3  dark:text-gray-text";
   return (
-    <div className="min-h-screen mx-auto dark:bg-gray-900">
-      {/* <Nav title="Product | AKA Trading Indo"></Nav> */}
-      <section className="fixed top-0 z-20 w-full h-auto p-3 px-5 bg-white shadow-lg md:px-10 dark:bg-gray-800">
+    <div className="min-h-screen mx-auto dark:bg-gray-bkg">
+      <section className="fixed top-0 z-20 w-full h-auto p-3 px-5 bg-white shadow-lg md:px-10 dark:bg-gray-comp">
         <Head>
           <title>{`${t.nav.product} | AKA Trading Indonesia`}</title>
           <link rel="icon" href="/logo.ico" />
-          <link rel="preconnect" href="https://fonts.gstatic.com" />
-          <link
-            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
-            rel="stylesheet"
-          />
         </Head>
         <div className="flex flex-col items-center rounded-lg lg:justify-between lg:flex-row">
           <div className="flex flex-row items-center justify-between w-full lg:w-1/3">
@@ -119,7 +113,7 @@ export default function product() {
                   EN
                 </button>
               </div>
-              {`|`}
+              <span className={ya}>|</span>
               <div className="inline-block">
                 <button
                   className={ya}
@@ -132,7 +126,7 @@ export default function product() {
             <button
               aria-label="Toggle Dark Mode"
               type="button"
-              className="items-center inline-block p-1 pb-1 m-5 ml-1 text-base font-semibold text-gray-600 rounded-md h-7 w-7 lg:m-0 focus:outline-none hover:bg-gray-100 "
+              className="items-center inline-block p-1 pb-1 m-5 ml-2 text-base font-semibold text-gray-600 rounded-md h-7 w-7 lg:m-0 focus:outline-none hover:bg-gray-100 "
               onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
             >
               <svg
@@ -166,20 +160,6 @@ export default function product() {
             product="/productPage/candlenut"
           />
         </div>
-        {/* <div className="mb-5 sm:mx-0">
-          <Product
-            image="/c.jpg"
-            productName={`${t.name.cinnamon}`}
-            product="/productPage/cinnamon"
-          />
-        </div>
-        <div className="mb-5 sm:mx-0">
-          <Product
-            image="/c.jpg"
-            productName={`${t.name.coffeebean}`}
-            product="/productPage/coffeebean"
-          />
-        </div> */}
       </div>
       <Footer />
     </div>

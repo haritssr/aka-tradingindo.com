@@ -1,4 +1,3 @@
-// import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 import Head from "next/head";
 import Image from "next/image";
@@ -7,6 +6,7 @@ import { useState } from "react";
 import { useRouter } from "next/router";
 import { useTheme } from "next-themes";
 import { EN, ID } from "../translation";
+
 export default function about() {
   const router = useRouter();
   const { locale } = router;
@@ -14,20 +14,13 @@ export default function about() {
   const { theme, setTheme } = useTheme();
   const [isOpen, setIsOpen] = useState(false);
   const ya =
-    "font-semibold text-base text-gray-600  hover:bg-green-1000 hover:text-white rounded-md  py-2 px-3  dark:text-white active:bg-green-1000 active:text-white";
+    "font-semibold text-base text-gray-600  hover:bg-green-1000 hover:text-white rounded-md  py-2 px-3  dark:text-gray-text active:bg-green-1000 active:text-white";
   return (
-    <div className="min-h-screen dark:bg-gray-900 pt-28">
-      {/* <Nav title="About Us | AKA Trading Indo"></Nav> */}
-
-      <section className="fixed top-0 z-20 w-full h-auto p-3 px-5 bg-white shadow-lg md:px-10 dark:bg-gray-800 ">
+    <div className="min-h-screen dark:bg-gray-bkg pt-28">
+      <section className="fixed top-0 z-20 w-full h-auto p-3 px-5 bg-white shadow-lg md:px-10 dark:bg-gray-comp ">
         <Head>
           <title>{` ${t.nav.about} | AKA Trading Indonesia`}</title>
           <link rel="icon" href="/logo.ico" />
-          <link rel="preconnect" href="https://fonts.gstatic.com" />
-          <link
-            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
-            rel="stylesheet"
-          />
         </Head>
         <div className="flex flex-col items-center rounded-lg lg:justify-between lg:flex-row">
           <div className="flex flex-row items-center justify-between w-full lg:w-1/3">
@@ -119,7 +112,7 @@ export default function about() {
                   EN
                 </button>
               </div>
-              {`|`}
+              <span className={ya}>|</span>
               <div className="inline-block">
                 <button
                   className={ya}
@@ -132,7 +125,7 @@ export default function about() {
             <button
               aria-label="Toggle Dark Mode"
               type="button"
-              className="items-center inline-block p-1 pb-1 m-5 ml-1 text-base font-semibold text-gray-600 rounded-md h-7 w-7 lg:m-0 focus:outline-none hover:bg-gray-100 "
+              className="items-center inline-block p-1 pb-1 m-5 ml-2 text-base font-semibold text-gray-600 rounded-md h-7 w-7 lg:m-0 focus:outline-none hover:bg-gray-100 "
               onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
             >
               <svg
@@ -149,11 +142,11 @@ export default function about() {
 
         {/* {props.children} */}
       </section>
-      <div className="p-5 mx-5 text-lg font-normal text-gray-800 md:rounded-t-xl md:mx-10 bg-green-1000 bg-opacity-10 dark:text-white dark:border">
+
+      <div className="p-5 mx-5 text-lg  font-medium  rounded-xl md:rounded-b-none md:mx-10 bg-gray-200 text-gray-700 dark:text-gray-text border-2 dark:bg-gray-comp dark:border-gray-button2">
         {t.about}
       </div>
       <div className="mt-5 overflow-hidden md:mt-0 md:mx-10 h-50 md:h-auto">
-        {/* <img src="/abp.png" className="object-cover w-full h-full sm:rounded-b-xl" alt="es" /> */}
         <div className="flex flex-col overflow-hidden rounded-b-lg md:flex-row">
           <div>
             <Image src="/abp1.png" width={1400} height={1000} priority />

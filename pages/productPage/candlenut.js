@@ -204,18 +204,18 @@ export default function candlenut() {
           <div className="flex flex-row items-center justify-between mt-10">
             <div className="flex flex-row justify-start font-semibold">
               <Link href="/productPage/gambier">
-                <a className="px-4 py-2 mr-5 font-semibold text-gray-600 border-2 rounded-lg">
+                <a className="px-4 py-2 mr-5 font-semibold text-gray-500 border-2 border-gray-500 rounded-lg">
                   prev
                 </a>
               </Link>
               <Link href="/productPage/gambier">
-                <a className="px-4 py-2 mr-5 font-semibold text-gray-600 border-2 rounded-lg ">
+                <a className="px-4 py-2 mr-5 font-semibold text-gray-500 border-2 border-gray-500 rounded-lg ">
                   next
                 </a>
               </Link>
             </div>
             <Link href="/contact">
-              <a className="items-center px-4 py-2 font-bold text-white  rounded-lg shadow-sm bg-green-1000  hover:shadow-lg hover:bg-opacity-80">
+              <a className="items-center px-6 py-2 font-bold text-white rounded-lg  bg-green-1000 ">
                 {t.order}
               </a>
             </Link>

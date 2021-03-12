@@ -13,17 +13,12 @@ export default function Nav(props) {
   const { theme, setTheme } = useTheme();
   const [isOpen, setIsOpen] = useState(false);
   const ya =
-    "font-semibold text-base text-gray-600  hover:bg-green-1000 hover:text-white rounded-md py-2 px-3 dark:text-white";
+    "font-semibold text-base text-gray-600  hover:bg-green-1000 hover:text-white rounded-md py-2 px-3 dark:text-gray-text";
   return (
-    <section className="fixed top-0 z-20 w-full h-auto p-3 px-5 bg-white shadow-lg md:px-10 dark:bg-gray-800">
+    <section className="fixed top-0 z-20 w-full h-auto p-3 px-5 bg-white shadow-lg md:px-10 dark:bg-gray-comp">
       <Head>
         <title>{props.title}</title>
         <link rel="icon" href="/logo.ico" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
-          rel="stylesheet"
-        />
       </Head>
       <div className="flex flex-col items-center rounded-lg lg:justify-between lg:flex-row">
         <div className="flex flex-row items-center justify-between w-full lg:w-1/3">
@@ -115,7 +110,7 @@ export default function Nav(props) {
                 EN
               </button>
             </div>
-            {`|`}
+            <span className={ya}>|</span>
             <div className="inline-block">
               <button
                 className={ya}
@@ -126,24 +121,24 @@ export default function Nav(props) {
             </div>
           </div>
           <button
-              aria-label="Toggle Dark Mode"
-              type="button"
-              className="items-center inline-block p-1 pb-1 m-5 ml-1 text-base font-semibold text-gray-600 rounded-md h-7 w-7 lg:m-0 focus:outline-none hover:bg-gray-100 "
-              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+            aria-label="Toggle Dark Mode"
+            type="button"
+            className="items-center inline-block p-1 pb-1 m-5 ml-2 text-base font-semibold text-gray-600 rounded-md h-7 w-7 lg:m-0 focus:outline-none hover:bg-gray-100 "
+            onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+          >
+            <svg
+              className="w-5 h-5 text-gray-600 dark:text-white dark:hover:text-gray-600"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
             >
-              <svg
-                className="w-5 h-5 text-gray-600 dark:text-white dark:hover:text-gray-600"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-              >
-                <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
-              </svg>
-            </button>
+              <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
+            </svg>
+          </button>
         </div>
       </div>
 
-      {props.children}
+      {/* {props.children} */}
     </section>
   );
 }

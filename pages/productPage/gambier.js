@@ -21,11 +21,11 @@ export default function gambier() {
   const { theme, setTheme } = useTheme();
   const [isOpen, setIsOpen] = useState(false);
   const ya =
-    "font-semibold text-base text-gray-600  hover:bg-green-1000 hover:text-white rounded-md   py-2 px-3  dark:text-white";
+    "font-semibold text-base text-gray-600  hover:bg-green-1000 hover:text-white rounded-md   py-2 px-3  dark:text-gray-text";
   return (
     <div className="min-h-screen mx-auto">
       {/* <Nav title="Gambier | AKA Trading Indo"></Nav> */}
-      <section className="fixed top-0 z-20 w-full h-auto p-3 px-5 bg-white shadow-lg md:px-10 dark:bg-gray-800 ">
+      <section className="fixed top-0 z-20 w-full h-auto p-3 px-5 bg-white shadow-lg md:px-10 dark:bg-gray-comp ">
         <Head>
           <title>Gambier | AKA Trading Indonesia</title>
           <link rel="icon" href="/logo.ico" />
@@ -219,18 +219,18 @@ export default function gambier() {
           <div className="flex flex-row items-center justify-between mt-10">
             <div className="flex flex-row justify-start font-semibold">
               <Link href="/productPage/candlenut">
-                <a className="px-4 py-2 mr-5 font-semibold text-gray-600 border-2 rounded-lg">
+                <a className="px-4 py-2 mr-5 font-semibold text-gray-500 border-2 border-gray-500 rounded-lg">
                   prev
                 </a>
               </Link>
               <Link href="/productPage/candlenut">
-                <a className="px-4 py-2 mr-5 font-semibold text-gray-600 border-2 rounded-lg ">
+                <a className="px-4 py-2 mr-5 font-semibold text-gray-500 border-2 border-gray-500 rounded-lg ">
                   next
                 </a>
               </Link>
             </div>
             <Link href="/contact">
-              <a className="items-center px-4 py-2 font-bold text-white  rounded-lg shadow-sm bg-green-1000  hover:shadow-lg hover:bg-opacity-80">
+              <a className="items-center px-6 py-2 font-bold text-white rounded-lg  bg-green-1000 ">
                 {t.order}
               </a>
             </Link>

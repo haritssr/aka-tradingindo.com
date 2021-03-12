@@ -4,7 +4,7 @@ import Hero from "../components/Hero.js";
 
 export default function Home() {
   return (
-    <div className="min-h-screen mx-auto dark:bg-gray-900">
+    <div className="min-h-screen mx-auto dark:bg-gray-bkg">
       <Nav title="AKA Trading Indonesia"></Nav>
       <Hero />
       <Footer />

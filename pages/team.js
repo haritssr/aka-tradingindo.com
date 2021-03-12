@@ -9,7 +9,7 @@ export default function team() {
   const { locale } = router;
   const t = locale === "ID" ? ID : EN;
   return (
-    <div className="min-h-screen mx-auto border-t-2 border-white dark:bg-gray-900">
+    <div className="min-h-screen mx-auto border-t-2 border-white dark:bg-gray-bkg">
       <Nav title={` ${t.nav.team} | AKA Trading Indonesia`}></Nav>
       <Breadcomb name="TEAM" />
       <div className="z-0 grid max-w-6xl grid-cols-1 mx-auto sm:grid-cols-2 sm:justify-evenly md:grid-cols-3">
