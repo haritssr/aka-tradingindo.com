@@ -87,31 +87,31 @@ export default function gambier() {
           >
             <div className="m-5 ml-0 lg:m-1">
               <Link href="/">
-                <a className={ya}>Home</a>
+                <a className={ya}>{t.nav.home}</a>
               </Link>
             </div>
 
             <div className="m-5 ml-0 lg:m-1">
               <Link href="/about">
-                <a className={ya}>About Us</a>
+                <a className={ya}>{t.nav.about}</a>
               </Link>
             </div>
 
             <div className="m-5 ml-0 lg:m-1">
               <Link href="/product">
-                <a className={ya}>Products</a>
+                <a className={ya}>{t.nav.product}</a>
               </Link>
             </div>
 
             <div className="m-5 ml-0 lg:m-1">
               <Link href="/team">
-                <a className={ya}>Team</a>
+                <a className={ya}>{t.nav.team}</a>
               </Link>
             </div>
 
             <div className="m-5 ml-0 lg:m-1">
               <Link href="/contact">
-                <a className={ya}>Contact</a>
+                <a className={ya}>{t.nav.contact}</a>
               </Link>
             </div>
             <div>
