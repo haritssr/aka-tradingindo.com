@@ -43,7 +43,7 @@ export default function product() {
                 className="block lg:hidden"
               >
                 <svg
-                  className="w-10 h-10  dark:text-white text-green-1000"
+                  className="w-10 h-10 dark:text-white text-green-1000"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
@@ -113,7 +113,7 @@ export default function product() {
                   EN
                 </button>
               </div>
-              <span className={ya}>|</span>
+              {`|`}
               <div className="inline-block">
                 <button
                   className={ya}

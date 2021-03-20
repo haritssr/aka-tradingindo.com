@@ -135,7 +135,7 @@ export default function contact() {
                   EN
                 </button>
               </div>
-              <span className={ya}>|</span>
+              {`|`}
               <div className="inline-block">
                 <button
                   className={ya}
@@ -167,9 +167,9 @@ export default function contact() {
         {/* {props.children} */}
       </section>
 
-      <div className="flex flex-col sm:px-5 md:flex-row pt-24">
+      <div className="flex flex-col pt-24 sm:px-5 md:flex-row">
         <div>
-          <div className=" m-5 font-sans text-gray-700 rounded-lg dark:text-gray-text space-y-2 ">
+          <div className="m-5 space-y-2 font-sans text-gray-700 rounded-lg  dark:text-gray-text">
             <div className="mb-2 text-xl font-semibold">Head Office</div>
             <div></div>
 
@@ -196,9 +196,9 @@ export default function contact() {
                 Tanjung Barat, Jagakarsa – Jakarta Selatan 12530
               </div>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+            <div className="grid grid-cols-1 gap-2 md:grid-cols-2">
               {/* phone number */}
-              <div className="flex flex-row items-center p-2 bg-gray-100 rounded-lg text-sm dark:text-gray-text dark:bg-gray-comp overflow-hidden ">
+              <div className="flex flex-row items-center p-2 overflow-hidden text-sm bg-gray-100 rounded-lg dark:text-gray-text dark:bg-gray-comp ">
                 <div>
                   <svg
                     className="w-5 h-5 mr-2"
@@ -219,7 +219,7 @@ export default function contact() {
               </div>
 
               {/* email */}
-              <div className="flex flex-row items-center p-2 bg-gray-100 rounded-lg text-sm dark:text-gray-text dark:bg-gray-comp overflow-hidden">
+              <div className="flex flex-row items-center p-2 overflow-hidden text-sm bg-gray-100 rounded-lg dark:text-gray-text dark:bg-gray-comp">
                 <div>
                   <svg
                     className="w-5 h-5 mr-2"
@@ -251,12 +251,12 @@ export default function contact() {
                 href="https://www.facebook.com/AKA-Trading-Indonesia-108120014669787"
                 target="_blank"
               >
-                <div className="flex flex-row items-center  bg-gray-100 rounded-lg p-2 hover:bg-gray-200   dark:bg-gray-comp">
-                  <div className="h-5 w-5 mr-2">
+                <div className="flex flex-row items-center p-2 bg-gray-100 rounded-lg hover:bg-gray-200 dark:bg-gray-comp">
+                  <div className="w-5 h-5 mr-2">
                     <Image src="/fbSVG.svg" width="100" height="100" priority />
                   </div>
 
-                  <div className="text-blue-fb font-bold text-sm ">
+                  <div className="text-sm font-bold text-blue-fb ">
                     AKA Trading Indonesia
                   </div>
                 </div>
@@ -266,12 +266,12 @@ export default function contact() {
                 href="https://www.linkedin.com/company/aka-tradingindo"
                 target="_blank"
               >
-                <div className="flex flex-row items-center  bg-gray-100 rounded-lg p-2 hover:bg-gray-200  dark:bg-gray-comp">
-                  <div className="h-5 w-5 mr-2">
+                <div className="flex flex-row items-center p-2 bg-gray-100 rounded-lg hover:bg-gray-200 dark:bg-gray-comp">
+                  <div className="w-5 h-5 mr-2">
                     <Image src="/lnSVG.svg" width="100" height="100" priority />
                   </div>
 
-                  <div className="text-blue-ln font-bold text-sm ">
+                  <div className="text-sm font-bold text-blue-ln ">
                     AKA Trading Indonesia
                   </div>
                 </div>
@@ -296,7 +296,7 @@ export default function contact() {
           className="h-auto p-5 m-5 space-y-5 bg-gray-100 border-2 rounded-lg md:mx-auto dark:bg-gray-comp dark:border-gray-button2 md:mr-5"
           onSubmit={sendEmail}
         >
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+          <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
             <input
               placeholder={`${t.form.fullName}`}
               className={ab}
@@ -358,7 +358,7 @@ export default function contact() {
           />
 
           <textarea
-            className="w-full p-2 placeholder-gray-500 dark:placeholder-gray-text bg-gray-200 rounded-md focus:ring-2 focus:outline-none focus:ring-green-1000 dark:bg-gray-button2"
+            className="w-full p-2 placeholder-gray-500 bg-gray-200 rounded-md dark:placeholder-gray-text focus:ring-2 focus:outline-none focus:ring-green-1000 dark:bg-gray-button2"
             name="message"
             id="message"
             cols="20"
