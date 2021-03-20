@@ -14,11 +14,11 @@ export default function candlenut() {
   const { theme, setTheme } = useTheme();
   const [isOpen, setIsOpen] = useState(false);
   const ya =
-    "font-semibold text-base text-gray-600  hover:bg-green-1000 hover:text-white rounded-md   py-2 px-3  dark:text-white";
+    "font-semibold text-base text-gray-600  hover:bg-green-1000 hover:text-white rounded-md   py-2 px-3  dark:text-gray-text";
   return (
     <div className="min-h-screen mx-auto">
       {/* <Nav title="Candlenut | AKA Trading Indo"></Nav> */}
-      <section className="fixed top-0 z-20 w-full h-auto p-3 px-5 bg-white shadow-lg md:px-10 dark:bg-gray-800">
+      <section className="fixed top-0 z-20 w-full h-auto p-3 px-5 bg-white shadow-lg md:px-10 dark:bg-gray-comp">
         <Head>
           <title>Candlenut | AKA Trading Indonesia</title>
           <link rel="icon" href="/logo.ico" />
@@ -48,7 +48,7 @@ export default function candlenut() {
                 className="block lg:hidden"
               >
                 <svg
-                  className="w-10 h-10  dark:text-white text-green-1000"
+                  className="w-10 h-10 dark:text-white text-green-1000"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
@@ -170,32 +170,32 @@ export default function candlenut() {
             <br />
             <br />
 
-            <span className="text-gray-800 font-semibold">
+            <span className="font-semibold text-gray-800">
               {t.candlenut.OilContent}
             </span>
             {t.candlenut.isiOilContent}
             <br />
-            <span className="text-gray-800 font-semibold">
+            <span className="font-semibold text-gray-800">
               {t.candlenut.SuitableIndustry}
             </span>
             {t.candlenut.isiSuitableIndustry}
             <br />
-            <span className="text-gray-800 font-semibold">
+            <span className="font-semibold text-gray-800">
               {t.candlenut.ScientificName}
             </span>
             {t.candlenut.isiScientificName}
             <br />
-            <span className="text-gray-800 font-semibold">
+            <span className="font-semibold text-gray-800">
               {t.candlenut.PlaceOfOrigin}
             </span>
             {t.candlenut.isiPlaceOfOrigin}
             <br />
-            <span className="text-gray-800 font-semibold">
+            <span className="font-semibold text-gray-800">
               {t.candlenut.Type}
             </span>
             {t.candlenut.isiType}
             <br />
-            <span className="text-gray-800 font-semibold">
+            <span className="font-semibold text-gray-800">
               {t.candlenut.HSCode}
             </span>
             {t.candlenut.isiHSCode}
@@ -215,7 +215,7 @@ export default function candlenut() {
               </Link>
             </div>
             <Link href="/contact">
-              <a className="items-center px-6 py-2 font-bold text-white rounded-lg  bg-green-1000 ">
+              <a className="items-center px-6 py-2 font-bold text-white rounded-lg bg-green-1000 ">
                 {t.order}
               </a>
             </Link>
