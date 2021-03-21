@@ -169,7 +169,7 @@ export default function contact() {
 
       <div className="flex flex-col pt-24 sm:px-5 md:flex-row">
         <div>
-          <div className="m-5 space-y-2 font-sans text-gray-700 rounded-lg  dark:text-gray-text">
+          <div className="m-5 space-y-2 font-sans text-gray-700 rounded-lg dark:text-gray-text">
             <div className="mb-2 text-xl font-semibold">Head Office</div>
             <div></div>
 
@@ -366,7 +366,7 @@ export default function contact() {
           ></textarea>
 
           <input
-            className="w-full h-10 px-5 mt-5 font-bold text-white rounded-lg shadow hover:shadow-none bg-green-1000 hover:bg-opacity-80"
+            className="w-full h-10 px-5 mt-5 font-bold text-white rounded-lg shadow hover:shadow-none bg-green-1000 hover:bg-green-900"
             type="submit"
             value={`${t.form.send}`}
           />

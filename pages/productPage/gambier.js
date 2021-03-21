@@ -55,7 +55,7 @@ export default function gambier() {
                 className="block lg:hidden"
               >
                 <svg
-                  className="w-10 h-10  dark:text-white text-green-1000"
+                  className="w-10 h-10 dark:text-white text-green-1000"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
@@ -185,32 +185,32 @@ export default function gambier() {
             {t.gambier.description}
             <br />
             <br />
-            <span className="text-gray-800 font-semibold">
+            <span className="font-semibold text-gray-800">
               {t.gambier.CatechinContent}
             </span>
             {t.gambier.isiCatechinContent}
             <br />
-            <span className="text-gray-800 font-semibold">
+            <span className="font-semibold text-gray-800">
               {t.gambier.Industry}
             </span>
             {t.gambier.isiIndustry}
             <br />
-            <span className="text-gray-800 font-semibold">
+            <span className="font-semibold text-gray-800">
               {t.gambier.ScientificName}
             </span>
             {t.gambier.isiScientificName}
             <br />
-            <span className="text-gray-800 font-semibold">
+            <span className="font-semibold text-gray-800">
               {t.gambier.PlaceOfOrigin}
             </span>
             {t.gambier.IsiPlaceOfOrigin}
             <br />
-            <span className="text-gray-800 font-semibold">
+            <span className="font-semibold text-gray-800">
               {t.gambier.ExtractionType}
             </span>
             {t.gambier.isiExtractionType}
             <br />
-            <span className="text-gray-800 font-semibold">
+            <span className="font-semibold text-gray-800">
               {t.gambier.HSCode}
             </span>
             {t.gambier.isiHSCode}
@@ -219,18 +219,18 @@ export default function gambier() {
           <div className="flex flex-row items-center justify-between mt-10">
             <div className="flex flex-row justify-start font-semibold">
               <Link href="/productPage/candlenut">
-                <a className="px-4 py-2 mr-5 font-semibold text-gray-500 border-2 border-gray-500 rounded-lg">
+                <a className="px-4 py-2 mr-5 font-semibold text-gray-500 border-2 border-gray-500 rounded-lg hover:text-gray-700 hover:border-gray-700">
                   prev
                 </a>
               </Link>
               <Link href="/productPage/candlenut">
-                <a className="px-4 py-2 mr-5 font-semibold text-gray-500 border-2 border-gray-500 rounded-lg ">
+                <a className="px-4 py-2 mr-5 font-semibold text-gray-500 border-2 border-gray-500 rounded-lg hover:text-gray-700 hover:border-gray-700">
                   next
                 </a>
               </Link>
             </div>
             <Link href="/contact">
-              <a className="items-center px-6 py-2 font-bold text-white rounded-lg  bg-green-1000 ">
+              <a className="items-center px-6 py-2 font-bold text-white rounded-lg bg-green-1000 hover:bg-green-900">
                 {t.order}
               </a>
             </Link>
