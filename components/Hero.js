@@ -9,7 +9,6 @@ export default function Hero() {
       <img
         src="/z.jpg"
         className="absolute inset-0 object-cover w-full h-full"
-        alt="es"
       />
       <div className="relative py-10 bg-gray-900 bg-opacity-30">
         <div className="w-full p-10 sm:max-w-3xl ">
@@ -18,9 +17,7 @@ export default function Hero() {
           </div>
           <div className="mb-2 leading-relaxed text-center text-white md:text-left"></div>
           <div className="text-center text-white md:text-left">----------</div>
-          <p className="text-center text-white md:text-left">
-            {t.bahan}
-          </p>
+          <p className="text-center text-white md:text-left">{t.bahan}</p>
         </div>
       </div>
     </div>
