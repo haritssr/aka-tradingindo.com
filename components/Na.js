@@ -1,23 +1,24 @@
+import Footer from "../components/Footer";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { Children, useState } from "react";
 import { useRouter } from "next/router";
 import { useTheme } from "next-themes";
 import { EN, ID } from "../translation";
 
-export default function Nav(props) {
+export default function Na({ Children }) {
   const router = useRouter();
   const { locale } = router;
   const t = locale === "ID" ? ID : EN;
   const { theme, setTheme } = useTheme();
   const [isOpen, setIsOpen] = useState(false);
   const ya =
-    "font-medium text-base text-gray-600  dark:hover:bg-gray-500 hover:bg-gray-200 rounded-md  py-1 px-2  dark:text-white ";
+    "font-semibold text-base text-gray-600  hover:bg-green-1000 hover:text-white rounded-md  py-2 px-3  dark:text-gray-text active:bg-green-1000 active:text-white";
   return (
-    <section className="fixed top-0 z-20 w-full h-auto p-3 px-5 bg-white shadow-lg md:px-10 dark:bg-gray-comp">
+    <section className="fixed top-0 z-20 w-full h-auto p-3 px-5 bg-white shadow-lg md:px-10 dark:bg-gray-comp ">
       <Head>
-        <title>{props.title}</title>
+        <title>{` ${t.nav.about} | AKA Trading Indonesia`}</title>
         <link rel="icon" href="/logo.ico" />
       </Head>
       <div className="flex flex-col items-center rounded-lg lg:justify-between lg:flex-row">
@@ -99,39 +100,15 @@ export default function Nav(props) {
               <a className={ya}>{t.nav.contact}</a>
             </Link>
           </div>
-
-          {/* i18n */}
-          <div>
-            <div className="inline-block">
-              <button
-                className={ya}
-                onClick={() => {
-                  router.push("/", "/", { locale: "EN" });
-                }}
-              >
-                EN
-              </button>
-            </div>
-            {`|`}
-            <div className="inline-block">
-              <button
-                className={ya}
-                onClick={() => router.push("/", "/", { locale: "ID" })}
-              >
-                ID
-              </button>
-            </div>
-          </div>
-
-          {/* dark-mode */}
+          {Children}
           <button
             aria-label="Toggle Dark Mode"
             type="button"
-            className="items-center inline-block p-1 pb-1 m-5 ml-2 text-base font-semibold text-gray-600 rounded-md h-7 w-7 lg:m-0 focus:outline-none hover:bg-gray-200 dark:hover:bg-gray-500 "
+            className="items-center inline-block p-1 pb-1 m-5 ml-2 text-base font-semibold text-gray-600 rounded-md h-7 w-7 lg:m-0 focus:outline-none hover:bg-gray-100 "
             onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
           >
             <svg
-              className="w-5 h-5 text-gray-600 dark:text-white "
+              className="w-5 h-5 text-gray-600 dark:text-white dark:hover:text-gray-600"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
               fill="currentColor"

@@ -34,7 +34,7 @@ export default function contact() {
   const { theme, setTheme } = useTheme();
   const [isOpen, setIsOpen] = useState(false);
   const ya =
-    "font-semibold text-base text-gray-600  hover:bg-green-1000 hover:text-gray-text rounded-md   py-2 px-3  dark:text-gray-text";
+    "font-medium text-base text-gray-600  dark:hover:bg-gray-500 hover:bg-gray-200 rounded-md  py-1 px-2  dark:text-white ";
   const ab =
     "h-10 px-2  placeholder-gray-500 bg-gray-200 rounded-md  focus:ring-2 focus:outline-none focus:ring-green-1000 w-full dark:placeholder-gray-text dark:bg-gray-button2";
 
@@ -149,11 +149,11 @@ export default function contact() {
             <button
               aria-label="Toggle Dark Mode"
               type="button"
-              className="items-center inline-block p-1 pb-1 m-5 ml-2 text-base font-semibold text-gray-600 rounded-md h-7 w-7 lg:m-0 focus:outline-none hover:bg-gray-100 "
+              className="items-center inline-block p-1 pb-1 m-5 ml-2 text-base font-semibold text-gray-600 rounded-md h-7 w-7 lg:m-0 focus:outline-none hover:bg-gray-200 dark:hover:bg-gray-500 "
               onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
             >
               <svg
-                className="w-5 h-5 text-gray-600 dark:text-white dark:hover:text-gray-600"
+                className="w-5 h-5 text-gray-600 dark:text-white"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
                 fill="currentColor"

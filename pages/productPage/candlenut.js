@@ -14,7 +14,7 @@ export default function candlenut() {
   const { theme, setTheme } = useTheme();
   const [isOpen, setIsOpen] = useState(false);
   const ya =
-    "font-semibold text-base text-gray-600  hover:bg-green-1000 hover:text-white rounded-md   py-2 px-3  dark:text-gray-text";
+    "font-medium text-base text-gray-600  dark:hover:bg-gray-500 hover:bg-gray-200 rounded-md  py-1 px-2  dark:text-white ";
   return (
     <div className="min-h-screen mx-auto">
       {/* <Nav title="Candlenut | AKA Trading Indo"></Nav> */}

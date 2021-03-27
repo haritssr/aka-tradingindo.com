@@ -16,9 +16,9 @@
     "react-flagpack": "^0.1.1"
   },
   "devDependencies": {
-    "@tailwindcss/jit": "^0.1.1",
+    "@tailwindcss/jit": "^0.1.12",
     "autoprefixer": "^10.2.5",
     "postcss": "^8.2.8",
-    "tailwindcss": "^2.0.3"
+    "tailwindcss": "^2.0.4"
   }
 }
