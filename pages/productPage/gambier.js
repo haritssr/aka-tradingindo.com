@@ -6,6 +6,7 @@ import { useState } from "react";
 import { useRouter } from "next/router";
 import { useTheme } from "next-themes";
 import { EN, ID } from "../../translation";
+import DarkModeButton from "../../components/DarkModeButton";
 
 export default function gambier() {
   const memperbesar = function () {
@@ -21,7 +22,7 @@ export default function gambier() {
   const { theme, setTheme } = useTheme();
   const [isOpen, setIsOpen] = useState(false);
   const ya =
-    "font-medium text-base text-gray-600  dark:hover:bg-gray-500 hover:bg-gray-200 rounded-md  py-1 px-2  dark:text-white ";
+  "font-medium text-base text-gray-500 hover:text-gray-700 dark:text-gray-300 dark:hover:text-white  rounded-md  py-1 px-2   ";
   return (
     <div className="min-h-screen mx-auto">
       {/* <Nav title="Gambier | AKA Trading Indo"></Nav> */}
@@ -137,21 +138,8 @@ export default function gambier() {
                 </button>
               </div>
             </div>
-            <button
-              aria-label="Toggle Dark Mode"
-              type="button"
-              className="items-center inline-block p-1 pb-1 m-5 ml-1 text-base font-semibold text-gray-600 rounded-md h-7 w-7 lg:m-0 focus:outline-none hover:bg-gray-100 "
-              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-            >
-              <svg
-                className="w-5 h-5 text-gray-600 dark:text-white dark:hover:text-gray-600"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-              >
-                <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
-              </svg>
-            </button>
+            {/* dark-mode */}
+          <DarkModeButton />
           </div>
         </div>
 
