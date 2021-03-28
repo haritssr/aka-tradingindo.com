@@ -35,7 +35,7 @@ export default function contact() {
   const { theme, setTheme } = useTheme();
   const [isOpen, setIsOpen] = useState(false);
   const ya =
-  "font-medium text-base text-gray-500 hover:text-gray-700 dark:text-gray-300 dark:hover:text-white  rounded-md  py-1 px-2   ";
+    "font-medium text-base text-gray-500 hover:text-gray-700 dark:text-gray-300 dark:hover:text-white  rounded-md  py-1 px-2   ";
   const ab =
     "h-10 px-2  placeholder-gray-500 bg-gray-200 rounded-md  focus:ring-2 focus:outline-none focus:ring-green-1000 w-full dark:placeholder-gray-text dark:bg-gray-button2";
 
@@ -147,8 +147,7 @@ export default function contact() {
               </div>
             </div>
 
-            {/* dark-mode */}
-          <DarkModeButton />
+            <DarkModeButton />
           </div>
         </div>
 

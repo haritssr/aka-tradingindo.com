@@ -1,4 +1,6 @@
+import { useTheme } from "next-themes";
 export default function DarkModeButton() {
+  const { theme, setTheme } = useTheme();
   return (
     <button
       aria-label="Toggle Dark Mode"

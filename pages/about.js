@@ -3,19 +3,17 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import { useRouter } from "next/router";
-import { useTheme } from "next-themes";
-import { EN, ID } from "../translation";
+
 import DarkModeButton from "../components/DarkModeButton";
 
 export default function about() {
   const router = useRouter();
   const { locale } = router;
   const t = locale === "ID" ? ID : EN;
-  const { theme, setTheme } = useTheme();
+
   const [isOpen, setIsOpen] = useState(false);
   const ya =
-  "font-medium text-base text-gray-500 hover:text-gray-700 dark:text-gray-300 dark:hover:text-white  rounded-md  py-1 px-2   ";
+    "font-medium text-base text-gray-500 hover:text-gray-700 dark:text-gray-300 dark:hover:text-white  rounded-md  py-1 px-2   ";
   return (
     <div className="min-h-screen dark:bg-gray-bkg pt-28">
       <section className="fixed top-0 z-20 w-full h-auto p-3 px-5 bg-white shadow-lg md:px-10 dark:bg-gray-comp ">
@@ -124,7 +122,7 @@ export default function about() {
               </div>
             </div>
             {/* dark-mode */}
-          <DarkModeButton />
+            <DarkModeButton />
           </div>
         </div>
 
