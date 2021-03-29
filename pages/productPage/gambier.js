@@ -156,7 +156,7 @@ export default function gambier() {
             priority
           />
 
-          <div id="gambar" onclick={memperbesar}>
+          <div id="gambar" onClick={memperbesar}>
             <Image
               className="w-full h-auto transform rounded-xl hover:scale-150"
               src="/gambir2.jpg"
@@ -207,18 +207,18 @@ export default function gambier() {
           <div className="flex flex-row items-center justify-between mt-10">
             <div className="flex flex-row justify-start font-semibold">
               <Link href="/productPage/candlenut">
-                <a className="px-4 py-2 mr-5 font-semibold text-gray-500 border-2 border-gray-500 rounded-lg hover:text-gray-700 hover:border-gray-700">
+                <a className="px-4 py-2 mr-5 font-semibold text-gray-500 border-[1.3px] border-gray-500 rounded-lg hover:text-gray-700 hover:border-gray-700">
                   prev
                 </a>
               </Link>
               <Link href="/productPage/candlenut">
-                <a className="px-4 py-2 mr-5 font-semibold text-gray-500 border-2 border-gray-500 rounded-lg hover:text-gray-700 hover:border-gray-700">
+                <a className="px-4 py-2 mr-5 font-semibold text-gray-500 border-[1.3px] border-gray-500 rounded-lg hover:text-gray-700 hover:border-gray-700">
                   next
                 </a>
               </Link>
             </div>
             <Link href="/contact">
-              <a className="items-center px-6 py-2 font-bold text-white rounded-lg bg-green-1000 hover:bg-green-900">
+              <a className="py-2 px-6 hover:shadow-xl hover:bg-opacity-80 bg-green-1000  text-white rounded font-semibold border-b-[3px] border-green-900 transition-transform duration-300 transform hover:-translate-y-1">
                 {t.order}
               </a>
             </Link>

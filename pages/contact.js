@@ -37,7 +37,7 @@ export default function contact() {
   const ya =
     "font-medium text-base text-gray-500 hover:text-gray-700 dark:text-gray-300 dark:hover:text-white  rounded-md  py-1 px-2   ";
   const ab =
-    "h-10 px-2  placeholder-gray-500 bg-gray-200 rounded-md  focus:ring-2 focus:outline-none focus:ring-green-1000 w-full dark:placeholder-gray-text dark:bg-gray-button2";
+    "h-10 px-2  placeholder-gray-500 focus:placeholder-gray-800 bg-gray-200 rounded-md   focus:outline-none  w-full  dark:placeholder-gray-400 dark:focus:hover:placeholder-white dark:bg-gray-button2";
 
   return (
     <div className="min-h-screen mx-auto dark:bg-gray-bkg">
@@ -280,7 +280,7 @@ export default function contact() {
 
         {/* enquiry */}
         <form
-          className="h-auto p-5 m-5 space-y-5 bg-gray-100 border-2 rounded-lg md:mx-auto dark:bg-gray-comp dark:border-gray-button2 md:mr-5"
+          className="h-auto p-5 m-5 space-y-5 bg-gray-100 border-[1.3px] border-gray-300 rounded-lg md:mx-auto dark:bg-gray-comp dark:border-gray-button2 md:mr-5"
           onSubmit={sendEmail}
         >
           <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
@@ -353,7 +353,7 @@ export default function contact() {
           ></textarea>
 
           <input
-            className="w-full h-10 px-5 mt-5 font-bold text-white rounded-lg shadow hover:shadow-none bg-green-1000 hover:bg-green-900"
+            className="w-20 h-10 px-5 mt-5 font-semibold text-white rounded-lg shadow bg-green-1000 border-green-900 hover:shadow-xl hover:bg-opacity-80 border-b-[3px] transition-transform duration-300 transform hover:-translate-y-1"
             type="submit"
             value={`${t.form.send}`}
           />
