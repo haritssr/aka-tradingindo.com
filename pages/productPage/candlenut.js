@@ -77,7 +77,7 @@ export default function candlenut() {
           <div
             className={` ${
               !isOpen ? "hidden" : "block"
-            } lg:flex flex-col lg:flex-row lg:justify-around lg:w-2/3 w-full border-b-2 border-gray-500 lg:border-none items-center `}
+            } lg:flex flex-col lg:flex-row lg:justify-around lg:w-2/3 w-full items-center `}
           >
             <div className="m-5 ml-0 lg:m-1">
               <Link href="/">

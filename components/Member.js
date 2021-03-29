@@ -1,9 +1,9 @@
 import Image from "next/image";
 export default function Member(props) {
   return (
-    <div className="w-3/4 h-auto mx-auto text-center  transition-transform duration-300 transform shadow-lg bg-green-1000 border-b-2 hover:border-green-1000 border-green-900 hover:bg-opacity-95 rounded-2xl hover:scale-105 hover:shadow-2xl">
+    <div className="w-3/4 h-auto mx-auto text-center  transition-transform duration-300 transform shadow-lg bg-green-1000 border-b-2 hover:border-green-1000 border-green-900  rounded-2xl hover:scale-105 hover:shadow-2xl">
       <div className="p-5">
-        <div className="shadow-2xl rounded-full  bg-blue-500 h-[150px] w-[150px] mx-auto my-5">
+        <div className="shadow-2xl rounded-full  h-[150px] w-[150px] mx-auto my-5">
           <Image
             className="rounded-full "
             src={`${props.image}`}

@@ -16,7 +16,7 @@ export default function product() {
   const { theme, setTheme } = useTheme();
   const [isOpen, setIsOpen] = useState(false);
   const ya =
-  "font-medium text-base text-gray-500 hover:text-gray-700 dark:text-gray-300 dark:hover:text-white  rounded-md  py-1 px-2   ";
+    "font-medium text-base text-gray-500 hover:text-gray-700 dark:text-gray-300 dark:hover:text-white  rounded-md  py-1 px-2   ";
   return (
     <div className="min-h-screen mx-auto dark:bg-gray-bkg">
       <section className="fixed top-0 z-20 w-full h-auto p-3 px-5 bg-white shadow-lg md:px-10 dark:bg-gray-comp">
@@ -72,7 +72,7 @@ export default function product() {
           <div
             className={` ${
               !isOpen ? "hidden" : "block"
-            } lg:flex flex-col lg:flex-row lg:justify-around lg:w-2/3 w-full border-b-2 border-gray-500 lg:border-none items-center `}
+            } lg:flex flex-col lg:flex-row lg:justify-around lg:w-2/3 w-full items-center `}
           >
             <div className="m-5 ml-0 lg:m-1">
               <Link href="/">
@@ -125,7 +125,7 @@ export default function product() {
               </div>
             </div>
             {/* dark-mode */}
-          <DarkModeButton />
+            <DarkModeButton />
           </div>
         </div>
 

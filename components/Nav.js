@@ -73,7 +73,7 @@ export default function Nav(props) {
           <div
             className={` ${
               !isOpen ? "hidden" : "block"
-            } items-center flex-col lg:flex lg:flex-row lg:justify-around lg:w-2/3   `}
+            } items-center flex-col lg:flex lg:flex-row lg:justify-around lg:w-2/3 w-full  `}
           >
             <div className="m-5 ml-0 lg:m-1">
               <Link href="/">
