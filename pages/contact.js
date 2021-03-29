@@ -353,7 +353,7 @@ export default function contact() {
           ></textarea>
 
           <input
-            className="w-20 h-10 px-5 mt-5 font-semibold text-white rounded-lg shadow bg-green-1000 border-green-900 hover:shadow-xl hover:bg-opacity-80 border-b-[3px] transition-transform duration-300 transform hover:-translate-y-1"
+            className=" h-10 px-5 mt-5 font-semibold text-white rounded-lg shadow bg-green-1000 border-green-900 hover:shadow-xl hover:bg-opacity-80 border-b-[3px] transition-transform duration-300 transform hover:-translate-y-1"
             type="submit"
             value={`${t.form.send}`}
           />
