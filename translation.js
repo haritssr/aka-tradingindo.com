@@ -36,6 +36,7 @@ export const EN = {
     isiHSCode: "32019010",
   },
   candlenut: {
+    title: "Candlenut (Aleurites moluccanus)",
     description:
       "We are providing freshly peeled candlenut from a natural plantation that is cultivated and processed traditionally. In Indonesia, we use candlenut as a natural thickener and gives white colour to our cuisine. However, it can also contribute to a savoury flavour to the cuisine. Other than that, candlenut can produce oil that could benefit skin and hair. Hence, this candlenut is surely good either to be consumed or to be applied to the body. ",
     OilContent: "Oil Content: ",
@@ -102,6 +103,7 @@ export const ID = {
     isiHSCode: "32019010",
   },
   candlenut: {
+    title: "Kemiri",
     description:
       "Kami menyediakan kemiri yang sudah dikupas dari perkebunan alami yang dibudidayakan dan diolah secara tradisional. Di Indonesia, kami menggunakan kemiri sebagai pengental alami dan untuk memberikan warna putih pada masakan kami. Namun, kemiri juga bisa memberikan rasa gurih pada masakan. Selain itu, kemiri dapat menghasilkan minyak yang bermanfaat bagi kulit dan rambut. Oleh karena itu, kemiri ini sangat baik untuk dikonsumsi ataupun dioleskan ke tubuh secara langsung.",
     OilContent: "Kadar Minyak: ",
