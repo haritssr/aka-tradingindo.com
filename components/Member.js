@@ -14,20 +14,12 @@ export default function Member(props) {
           />
         </div>
         <div className="text-lg font-bold text-gray-200">{props.name}</div>
-        <div className="text-sm  text-gray-300">
-          {props.departement}
-        </div>
+        <div className="text-sm  text-gray-300">{props.departement}</div>
         <div className="flex flex-row items-center justify-center mt-5 space-x-5">
           {/* IG */}
           <a target="_blank" rel="noopener noreferrer" href={`${props.ig}`}>
             <div className="h-8 w-8 ">
-              <Image
-                className=""
-                src="/igc.svg"
-                width="100"
-                height="100"
-                priority
-              />
+              <Image src="/igc.svg" width="100" height="100" priority />
             </div>
           </a>
 
