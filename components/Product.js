@@ -4,7 +4,7 @@ export default function Product(props) {
   return (
     <>
       <Link href={`${props.product}`}>
-        <div className="z-0 w-5/6 h-auto m-5 mx-auto overflow-hidden transition duration-200 transform shadow-lg cursor-pointer rounded-md hover:scale-105 hover:shadow-2xl  ">
+        <div className="z-0 w-5/6 h-auto m-5 mx-auto overflow-hidden transition duration-200 ease-in-out transform shadow-lg cursor-pointer rounded-md hover:scale-105 hover:shadow-2xl  ">
           <Image
             className="z-0"
             src={`${props.image}`}
