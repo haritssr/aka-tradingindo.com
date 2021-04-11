@@ -192,13 +192,39 @@ export default function candlenut() {
           <div className="flex flex-row items-center justify-between mt-10">
             <div className="flex flex-row justify-start font-semibold">
               <Link href="/productPage/gambier">
-                <a className="px-4 py-2 mr-5 font-semibold text-gray-500 border-[1.5px] border-gray-500 rounded-md hover:text-gray-700 hover:border-gray-700">
-                  prev
+                <a className="px-4 py-2 mr-5 font-semibold text-gray-400 border-2 border-gray-400 rounded-md hover:text-gray-700 hover:border-gray-700">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={3}
+                      d="M10 19l-7-7m0 0l7-7m-7 7h18"
+                    />
+                  </svg>
                 </a>
               </Link>
               <Link href="/productPage/gambier">
-                <a className="px-4 py-2 mr-5 font-semibold text-gray-500 border-[1.5px] border-gray-500 rounded-md hover:text-gray-700 hover:border-gray-700 ">
-                  next
+                <a className="px-4 py-2 mr-5 font-semibold text-gray-400 border-2 border-gray-400 rounded-md hover:text-gray-700 hover:border-gray-700 ">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={3}
+                      d="M14 5l7 7m0 0l-7 7m7-7H3"
+                    />
+                  </svg>
                 </a>
               </Link>
             </div>

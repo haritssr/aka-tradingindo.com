@@ -352,11 +352,13 @@ export default function contact() {
             rows="5"
           ></textarea>
 
-          <input
-            className=" h-10 px-5 mt-5 font-semibold text-white rounded-md shadow bg-green-1000 hover:shadow-xl hover:bg-opacity-90  transform hover:-translate-y-1"
-            type="submit"
-            value={`${t.form.send}`}
-          />
+          <div className="flex justify-end ">
+            <input
+              className=" h-10 px-5 font-semibold text-white rounded-md shadow bg-green-1000 hover:shadow-xl hover:bg-opacity-90  transform hover:-translate-y-1"
+              type="submit"
+              value={`${t.form.send}`}
+            />
+          </div>
         </form>
       </div>
       <Footer />
