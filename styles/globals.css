@@ -32,3 +32,6 @@ a {
 .border {
   border: 1px solid white;
 }
+.careT {
+  caret-color: white;
+}
