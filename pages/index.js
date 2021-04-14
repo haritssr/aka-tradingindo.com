@@ -1,37 +1,40 @@
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
-import Hero from "../components/Hero.js";
-import Na from "../components/Na";
+import { useRouter } from "next/router";
+import { EN, ID } from "../translation";
 
-export default function Home() {
+function Home() {
   return (
     <div className="min-h-screen mx-auto dark:bg-gray-bkg">
       <Nav title="AKA Trading Indonesia"></Nav>
       <Hero />
       <Footer />
-      {/* <Na>
-        <div>
-          <div className="inline-block">
-            <button
-              className="font-semibold text-base text-gray-600  hover:bg-green-1000 hover:text-white rounded-md  py-2 px-3  dark:text-gray-text active:bg-green-1000 active:text-white"
-              onClick={() => {
-                router.push("/about", "/", { locale: "EN" });
-              }}
-            >
-              EN
-            </button>
-          </div>
-          {`|`}
-          <div className="inline-block">
-            <button
-              className="font-semibold text-base text-gray-600  hover:bg-green-1000 hover:text-white rounded-md  py-2 px-3  dark:text-gray-text active:bg-green-1000 active:text-white"
-              onClick={() => router.push("/about", "/", { locale: "ID" })}
-            >
-              ID
-            </button>
-          </div>
-        </div>
-      </Na> */}
     </div>
   );
 }
+
+function Hero() {
+  const router = useRouter();
+  const { locale } = router;
+  const t = locale === "ID" ? ID : EN;
+  return (
+    <div className="relative mt-20">
+      <img
+        src="/z.jpg"
+        className="absolute inset-0 object-cover w-full h-full"
+      />
+      <div className="relative py-10 bg-gray-900 bg-opacity-40">
+        <div className="w-full p-10 sm:max-w-3xl ">
+          <div className="mb-4 text-2xl font-medium text-center text-white md:text-5xl md:text-left title-font">
+            <p className="leading-normal"> {t.hero}</p>
+          </div>
+          <div className="mb-2 leading-relaxed text-center text-white md:text-left"></div>
+          <div className="text-center text-white md:text-left">----------</div>
+          <p className="text-center text-white md:text-left">{t.bahan}</p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default Home;

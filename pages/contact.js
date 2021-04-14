@@ -32,8 +32,7 @@ export default function contact() {
   const router = useRouter();
   const { locale } = router;
   const t = locale === "ID" ? ID : EN;
-  const { theme, setTheme } = useTheme();
-  const [isOpen, setIsOpen] = useState(false);
+    const [isOpen, setIsOpen] = useState(false);
   const ya =
     "font-medium text-base text-gray-500 hover:text-gray-700 dark:text-gray-300 dark:hover:text-white  rounded-md  py-1 px-2   ";
   const ab =
