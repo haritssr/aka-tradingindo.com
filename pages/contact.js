@@ -8,6 +8,8 @@ import { useTheme } from "next-themes";
 import { EN, ID } from "../translation";
 import emailjs from "emailjs-com";
 import DarkModeButton from "../components/DarkModeButton";
+import { FaLinkedin, FaFacebookSquare } from "react-icons/fa";
+
 export default function contact() {
   function sendEmail(e) {
     e.preventDefault();
@@ -29,6 +31,7 @@ export default function contact() {
       );
   }
 
+  
   const router = useRouter();
   const { locale } = router;
   const t = locale === "ID" ? ID : EN;
@@ -238,11 +241,12 @@ export default function contact() {
                 target="_blank"
               >
                 <div className="flex flex-row items-center p-2 bg-gray-100 rounded-lg hover:bg-gray-200 dark:bg-gray-comp">
-                  <div className="w-5 h-5 mr-2">
-                    <Image src="/fbSVG.svg" width="100" height="100" priority />
-                  </div>
+                  {/* <div className="w-5 h-5 mr-2">
+                    <Image src="/facebook.svg" width="100" height="100" priority />
+                  </div> */}
+                  <FaFacebookSquare color="#1777F2" size={20}/>
 
-                  <div className="text-sm font-bold text-blue-fb ">
+                  <div className="text-sm font-bold text-blue-fb ml-2">
                     AKA Trading Indonesia
                   </div>
                 </div>
@@ -253,11 +257,12 @@ export default function contact() {
                 target="_blank"
               >
                 <div className="flex flex-row items-center p-2 bg-gray-100 rounded-lg hover:bg-gray-200 dark:bg-gray-comp">
-                  <div className="w-5 h-5 mr-2">
-                    <Image src="/lnSVG.svg" width="100" height="100" priority />
-                  </div>
+                  {/* <div className="w-5 h-5 mr-2">
+                    <Image src="/linkedin.svg" width="100" height="100" priority />
+                  </div> */}
+                  <FaLinkedin color="#2867B2" size={20}/>
 
-                  <div className="text-sm font-bold text-blue-ln ">
+                  <div className="text-sm font-bold text-blue-ln ml-2">
                     AKA Trading Indonesia
                   </div>
                 </div>
