@@ -14,7 +14,7 @@ export default function Nav(props) {
   const { theme, setTheme } = useTheme();
   const [isOpen, setIsOpen] = useState(false);
   const ya =
-    "font-medium text-base text-gray-500 hover:text-gray-700 dark:text-gray-300 dark:hover:text-white  rounded-md  py-1 px-2   ";
+    "font-medium text-base text-gray-600 hover:text-gray-700 dark:text-gray-300 dark:hover:text-white  rounded-md  py-1 pl-0 md:pl-2 pr-2   ";
   return (
     <>
       <Head>
@@ -22,7 +22,7 @@ export default function Nav(props) {
         <link rel="icon" href="/logo.ico" />
       </Head>
 
-      <section className="fixed top-0 z-20 w-full h-auto p-3 px-5 blur shadow-lg md:px-10 dark:bg-gray-comp">
+      <section className="fixed top-0 z-20 w-full h-auto p-3 px-5 blur border-b border-gray-300 md:px-10 dark:bg-gray-comp">
         <div className="flex flex-col items-center lg:justify-between lg:flex-row">
           <div className="flex flex-row items-center justify-between lg:w-1/3 w-full">
             <div className="flex items-center w-40 h-14">
@@ -109,7 +109,7 @@ export default function Nav(props) {
             <div>
               <div className="inline-block">
                 <button
-                  className={ya}
+                  className={`${ya} pl-1`}
                   onClick={() => {
                     router.push("/", "/", { locale: "EN" });
                   }}
@@ -120,7 +120,7 @@ export default function Nav(props) {
               {`|`}
               <div className="inline-block">
                 <button
-                  className={ya}
+                  className={`${ya} ml-1 pl-1`}
                   onClick={() => router.push("/", "/", { locale: "ID" })}
                 >
                   ID

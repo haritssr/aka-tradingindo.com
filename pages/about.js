@@ -14,10 +14,10 @@ export default function about() {
 
   const [isOpen, setIsOpen] = useState(false);
   const ya =
-    "font-medium text-base text-gray-500 hover:text-gray-700 dark:text-gray-300 dark:hover:text-white  rounded-md  py-1 px-2   ";
+    "font-medium text-base text-gray-500 hover:text-gray-700 dark:text-gray-300 dark:hover:text-white  rounded-md  py-1 pl-0 md:pl-2 pr-2   ";
   return (
     <div className="min-h-screen dark:bg-gray-bkg pt-28">
-      <section className="fixed top-0 z-20 w-full h-auto p-3 px-5 blur shadow-lg md:px-10 dark:bg-gray-comp ">
+      <section className="fixed top-0 z-20 w-full h-auto p-3 px-5 blur border-b border-gray-300 md:px-10 dark:bg-gray-comp ">
         <Head>
           <title>{` ${t.nav.about} | AKA Trading Indonesia`}</title>
           <link rel="icon" href="/logo.ico" />
@@ -104,7 +104,7 @@ export default function about() {
             <div>
               <div className="inline-block">
                 <button
-                  className={ya}
+                  className={`${ya} pl-1`}
                   onClick={() => {
                     router.push("/about", "/", { locale: "EN" });
                   }}
@@ -115,7 +115,7 @@ export default function about() {
               {`|`}
               <div className="inline-block">
                 <button
-                  className={ya}
+                  className={`${ya} ml-1 pl-1`}
                   onClick={() => router.push("/about", "/", { locale: "ID" })}
                 >
                   ID
