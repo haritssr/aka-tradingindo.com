@@ -19,7 +19,7 @@ export default function candlenut() {
   return (
     <div className="min-h-screen mx-auto">
       {/* <Nav title="Candlenut | AKA Trading Indo"></Nav> */}
-      <section className="fixed top-0 z-20 w-full h-auto p-3 px-5 blur shadow-lg md:px-10 dark:bg-gray-comp">
+      <section className="fixed top-0 z-20 w-full h-auto p-3 px-5 blur dark:border-gray-button2 border-b border-gray-300 font-inter md:px-10 dark:bg-gray-comp">
         <Head>
           <title>Candlenut | AKA Trading Indonesia</title>
           <link rel="icon" href="/logo.ico" />
@@ -139,7 +139,7 @@ export default function candlenut() {
         </div>
       </section>
 
-      <div className="grid grid-cols-1 p-5 pt-24 space-y-3 md:m-5 md:grid-cols-2">
+      <div className="grid grid-cols-1 p-5 pt-24 space-y-3 md:m-5 md:grid-cols-2 font-inter">
         <div className="space-y-3 -auto md:p-5 md:px-0">
           <Image
             className="w-full h-auto transform rounded-xl hover:scale-150"

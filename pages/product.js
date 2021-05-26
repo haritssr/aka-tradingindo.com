@@ -16,7 +16,7 @@ function product() {
     "font-medium text-base text-gray-600 hover:text-gray-700 dark:text-gray-300 dark:hover:text-white  rounded-md  py-1 pl-0 md:pl-2 pr-2  ";
   return (
     <div className="min-h-screen mx-auto dark:bg-gray-bkg">
-      <section className="fixed top-0 z-20 w-full h-auto p-3 px-5 blur border-b border-gray-300 md:px-10 dark:bg-gray-comp">
+      <section className="fixed top-0 z-20 w-full h-auto p-3 px-5 blur dark:border-gray-button2 border-b border-gray-300 md:px-10 dark:bg-gray-comp font-inter">
         <Head>
           <title>{`${t.nav.product} | AKA Trading Indonesia`}</title>
           <link rel="icon" href="/logo.ico" />
@@ -164,7 +164,7 @@ function Product(props) {
             priority
           />
           <div className="flex flex-col p-3 -mt-2 bg-transparent cursor-pointer to-green-1000 from-green-950 bg-gradient-to-b hover:bg-opacity-70">
-            <div className="px-2 text-xl font-bold text-left text-white dark:text-white">
+            <div className="px-2 text-xl font-bold font-inter text-left text-white dark:text-white">
               {props.productName}
             </div>
           </div>

@@ -18,7 +18,7 @@ export default function Footer() {
         </div>
       </div>
       <div className=" flex flex-col sm:flex-row justify-center p-3 text-xs text-center text-gray-800 sm:text-sm bg-opacity-10 dark:text-gray-100 bg-gray-700 dark:bg-gray-comp ">
-        <div><span className="text-gray-500">COPYRIGHT &copy; 2021 ∙</span> PT.AKA TRADING INDONESIA ∙&nbsp;</div>
+        <div><span className="text-gray-500">COPYRIGHT &copy; 2021 </span> ∙ PT. AKA TRADING INDONESIA ∙ &nbsp;</div>
         <div className="text-gray-500">ALL RIGHTS RESERVED</div>
       </div>
     </div>

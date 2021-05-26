@@ -14,10 +14,10 @@ export default function about() {
 
   const [isOpen, setIsOpen] = useState(false);
   const ya =
-    "font-medium text-base text-gray-500 hover:text-gray-700 dark:text-gray-300 dark:hover:text-white  rounded-md  py-1 pl-0 md:pl-2 pr-2   ";
+    "font-medium text-base text-gray-500 hover:text-gray-700 dark:text-gray-300 dark:hover:text-white  rounded-md  py-1 pl-0 md:pl-2 pr-2 ";
   return (
     <div className="min-h-screen dark:bg-gray-bkg pt-28">
-      <section className="fixed top-0 z-20 w-full h-auto p-3 px-5 blur border-b border-gray-300 md:px-10 dark:bg-gray-comp ">
+      <section className="fixed top-0 z-20 w-full h-auto p-3 px-5 blur dark:border-gray-button2 border-b border-gray-300 md:px-10 dark:bg-gray-comp font-inter">
         <Head>
           <title>{` ${t.nav.about} | AKA Trading Indonesia`}</title>
           <link rel="icon" href="/logo.ico" />
@@ -130,7 +130,7 @@ export default function about() {
         {/* {props.children} */}
       </section>
 
-      <div className="p-5 mx-5 text-lg font-normal text-gray-700 bg-gray-200 border  md:mx-10 dark:text-gray-text dark:bg-gray-comp dark:border-gray-button2">
+      <div className="p-5 mx-5 text-lg font-inter text-gray-800 bg-gray-200 border  md:mx-10 dark:text-gray-text dark:bg-gray-comp dark:border-gray-button2 rounded-lg sm:rounded-b-none">
         {t.about}
       </div>
       <div className="mt-5 overflow-hidden md:mt-0 md:mx-10 h-50 md:h-auto">

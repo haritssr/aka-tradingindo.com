@@ -22,7 +22,7 @@ export default function Nav(props) {
         <link rel="icon" href="/logo.ico" />
       </Head>
 
-      <section className="fixed top-0 z-20 w-full h-auto p-3 px-5 blur border-b border-gray-300 md:px-10 dark:bg-gray-comp">
+      <section className="fixed top-0 z-20 w-full h-auto p-3 px-5 blur border-b dark:border-gray-button2 border-gray-300 md:px-10 dark:bg-gray-comp font-inter">
         <div className="flex flex-col items-center lg:justify-between lg:flex-row">
           <div className="flex flex-row items-center justify-between lg:w-1/3 w-full">
             <div className="flex items-center w-40 h-14">

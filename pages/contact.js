@@ -43,7 +43,7 @@ export default function contact() {
 
   return (
     <div className="min-h-screen mx-auto dark:bg-gray-bkg">
-      <section className="fixed top-0 z-20 w-full h-auto p-3 px-5 blur border-b border-gray-300 md:px-10 dark:bg-gray-comp">
+      <section className="fixed top-0 z-20 w-full h-auto p-3 px-5 blur dark:border-gray-button2 border-b border-gray-300 md:px-10 dark:bg-gray-comp font-inter">
         <Head>
           <title>{`${t.nav.contact} | AKA Trading Indonesia`}</title>
           <link rel="icon" href="/logo.ico" />
@@ -284,7 +284,7 @@ export default function contact() {
 
         {/* enquiry */}
         <form
-          className="h-auto p-5 m-5 space-y-5 bg-gray-100 border-[1.3px] border-gray-300 rounded-lg md:mx-auto dark:bg-gray-comp dark:border-gray-button2 md:mr-5"
+          className="h-auto p-5 m-5 space-y-5 bg-gray-100 border-2 border-gray-300 rounded-lg md:mx-auto dark:bg-gray-comp dark:border-gray-button2 md:mr-5"
           onSubmit={sendEmail}
         >
           <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
