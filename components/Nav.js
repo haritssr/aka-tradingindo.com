@@ -14,7 +14,7 @@ export default function Nav(props) {
   const { theme, setTheme } = useTheme();
   const [isOpen, setIsOpen] = useState(false);
   const ya =
-    "font-medium text-base text-gray-600 hover:text-gray-700 dark:text-gray-300 dark:hover:text-white  rounded-md  py-1 pl-0 md:pl-2 pr-2   ";
+    "font-medium text-base text-gray-600 hover:text-gray-700 dark:text-gray-300 dark:hover:text-white  rounded-md  py-1 pl-0 md:pl-2 pr-2 font-courgette  ";
   return (
     <>
       <Head>

@@ -22,7 +22,9 @@ module.exports = {
         },
       },
       fontFamily: {
-        inter:["Inter"]
+        inter:["Inter"],
+        satisfy:["Satisfy"],
+        courgette:["Courgette"]
       },
     },
   },
