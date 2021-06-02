@@ -24,7 +24,8 @@ module.exports = {
       fontFamily: {
         inter:["Inter"],
         satisfy:["Satisfy"],
-        courgette:["Courgette"]
+        courgette:["Courgette"],
+        EBGaramond:["EB+Garamond"]
       },
     },
   },

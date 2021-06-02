@@ -130,7 +130,7 @@ export default function about() {
         {/* {props.children} */}
       </section>
 
-      <div className="p-5 mx-5 text-lg font-inter text-gray-800 bg-gray-200 border  md:mx-10 dark:text-gray-text dark:bg-gray-comp dark:border-gray-button2 rounded-lg sm:rounded-b-none">
+      <div className="p-5 mx-5 text-lg text-gray-800 bg-gray-200 border  md:mx-10 dark:text-gray-text dark:bg-gray-comp dark:border-gray-button2 rounded-lg sm:rounded-b-none font-EBGaramond">
         {t.about}
       </div>
       <div className="mt-5 overflow-hidden md:mt-0 md:mx-10 h-50 md:h-auto">
