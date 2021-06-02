@@ -25,7 +25,7 @@ module.exports = {
         inter:["Inter"],
         satisfy:["Satisfy"],
         courgette:["Courgette"],
-        EBGaramond:["EB+Garamond"]
+        EBGaramond:["EB Garamond"]
       },
     },
   },

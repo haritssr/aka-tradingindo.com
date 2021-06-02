@@ -22,7 +22,7 @@ export default function gambier() {
   const { theme, setTheme } = useTheme();
   const [isOpen, setIsOpen] = useState(false);
   const ya =
-    "font-medium text-base text-gray-500 hover:text-gray-700 dark:text-gray-300 dark:hover:text-white  rounded-md  py-1 px-2   ";
+    "font-medium text-base text-gray-500 hover:text-gray-700 dark:text-gray-300 dark:hover:text-white  rounded-md  py-1 px-2  font-EBGaramond ";
   return (
     <div className="min-h-screen mx-auto">
       {/* <Nav title="Gambier | AKA Trading Indo"></Nav> */}

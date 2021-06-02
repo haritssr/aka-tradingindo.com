@@ -14,7 +14,7 @@ export default function about() {
 
   const [isOpen, setIsOpen] = useState(false);
   const ya =
-    "font-medium text-base text-gray-500 hover:text-gray-700 dark:text-gray-300 dark:hover:text-white  rounded-md  py-1 pl-0 md:pl-2 pr-2 ";
+    "font-medium text-base text-gray-500 hover:text-gray-700 dark:text-gray-300 dark:hover:text-white  rounded-md  py-1 pl-0 md:pl-2 pr-2 font-EBGaramond";
   return (
     <div className="min-h-screen dark:bg-gray-bkg pt-28">
       <section className="fixed top-0 z-20 w-full h-auto p-3 px-5 blur dark:border-gray-button2 border-b border-gray-300 md:px-10 dark:bg-gray-comp font-inter">

@@ -37,7 +37,7 @@ export default function contact() {
   const t = locale === "ID" ? ID : EN;
     const [isOpen, setIsOpen] = useState(false);
   const ya =
-    "font-medium text-base text-gray-600 hover:text-gray-700 dark:text-gray-300 dark:hover:text-white  rounded-md  py-1 pl-0 md:pl-2 pr-2  ";
+    "font-medium text-base text-gray-600 hover:text-gray-700 dark:text-gray-300 dark:hover:text-white  rounded-md  py-1 pl-0 md:pl-2 pr-2 font-EBGaramond ";
   const ab =
     "h-10 px-2 placeholder-gray-500 focus:placeholder-gray-800 bg-gray-200 rounded-md  focus:outline-none  w-full  dark:placeholder-gray-400 dark:focus:hover:placeholder-white dark:bg-gray-button2 ";
 
