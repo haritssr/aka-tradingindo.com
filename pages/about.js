@@ -146,7 +146,7 @@ export default function about() {
             <article className="flex items-center lg:justify-center ">
               <div className="inline-block">
                 <button
-                  className={`${navigation}`}
+                  className={`${navigation} px-2`}
                   onClick={() => {
                     router.push("/about", "/", { locale: "EN" });
                   }}
@@ -157,7 +157,7 @@ export default function about() {
               {`|`}
               <div className="inline-block">
                 <button
-                  className={`${navigation}`}
+                  className={`${navigation} px-2`}
                   onClick={() => router.push("/about", "/", { locale: "ID" })}
                 >
                   ID
@@ -191,10 +191,7 @@ export default function about() {
       <div className="max-w-5xl px-5 mx-auto lg:px-0">
         {/* AKA Trading Indonesia adalah ... */}
         <div className="mt-32 mb-20 text-3xl font-EBGaramond">
-          AKA Trading Indonesia merupakan perusahaan eksportir yang didirikan
-          pada tahun 2021. Saat ini kami sedang mengutamakan untuk mengekspor
-          gambir, kemiri, kayu manis, biji kopi, dan komoditas lainnya dengan
-          kualitas terbaik berdasarkan pesanan pelanggan.
+          {t.about.top}
         </div>
 
         {/* Tujuan Kami */}
@@ -204,14 +201,9 @@ export default function about() {
           </article>
           <article className="font-EBGaramond sm:w-1/2">
             <div className="mb-3 text-4xl font-semibold text-green-1000">
-              Tujuan Kami
+              {t.about.tujuanTitle}
             </div>
-            <div className="text-2xl">
-              Kami bertujuan untuk membantu para petani mendapatkan nilai lebih
-              dan memenuhi kebutuhan dunia akan komoditas tertentu yang dapat
-              kami tawarkan. Perencanaan progresif kami di masa depan adalah
-              untuk mendiversifikasi komoditas kami dan memperluas layanan kami.
-            </div>
+            <div className="text-2xl">{t.about.tujuan}</div>
           </article>
         </section>
 
@@ -222,14 +214,9 @@ export default function about() {
           </article>
           <article className="font-EBGaramond sm:w-1/2">
             <div className="mb-3 text-4xl font-semibold text-green-1000">
-              Komitmen Kami
+              {t.about.komitmenTitle}
             </div>
-            <div className="text-2xl">
-              Kami berkomitmen untuk mengimplementasikan rencana kami dengan
-              terlebih dahulu menambahkan nilai lebih pada komoditas kami
-              terkini untuk menghasilkan lebih banyak manfaat bagi lebih banyak
-              orang melalui program inovatif.
-            </div>
+            <div className="text-2xl">{t.about.komitmen}</div>
           </article>
         </section>
 
@@ -240,15 +227,9 @@ export default function about() {
           </article>
           <article className="font-EBGaramond sm:w-1/2">
             <div className="mb-3 text-4xl font-semibold text-green-1000">
-              Prinsip Kami
+              {t.about.prinsipTitle}
             </div>
-            <div className="text-2xl">
-              Dalam praktik bisnis, kami memegang prinsip "People, Profit, and
-              Peace". Kami percaya bahwa jika kami memperlakukan tim dan
-              orang-orang sekitar kami dengan integritas, maka pada akhirnya
-              akan menghasilkan keuntungan dan kedamaian di setiap aspek bisnis
-              yang ada
-            </div>
+            <div className="text-2xl">{t.about.prinsip}</div>
           </article>
         </section>
       </div>

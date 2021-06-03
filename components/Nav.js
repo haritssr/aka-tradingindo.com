@@ -146,7 +146,7 @@ export default function Nav(props) {
             <article className="flex items-center lg:justify-center ">
               <div className="inline-block">
                 <button
-                  className={`${navigation}`}
+                  className={`${navigation} px-2`}
                   onClick={() => {
                     router.push("/", "/", { locale: "EN" });
                   }}
@@ -157,7 +157,7 @@ export default function Nav(props) {
               {`|`}
               <div className="inline-block">
                 <button
-                  className={`${navigation}`}
+                  className={`${navigation} px-2`}
                   onClick={() => router.push("/", "/", { locale: "ID" })}
                 >
                   ID

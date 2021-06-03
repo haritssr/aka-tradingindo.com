@@ -171,7 +171,7 @@ export default function contact() {
             <article className="flex items-center lg:justify-center ">
               <div className="inline-block">
                 <button
-                  className={`${navigation}`}
+                  className={`${navigation} px-2`}
                   onClick={() => {
                     router.push("/", "/", { locale: "EN" });
                   }}
@@ -182,7 +182,7 @@ export default function contact() {
               {`|`}
               <div className="inline-block">
                 <button
-                  className={`${navigation}`}
+                  className={`${navigation} px-2`}
                   onClick={() => router.push("/", "/", { locale: "ID" })}
                 >
                   ID
@@ -225,28 +225,27 @@ export default function contact() {
             </div>
             <div className="grid grid-cols-1 gap-2 md:grid-cols-2">
               {/* phone number */}
-              <div className="flex flex-row items-center p-2 overflow-hidden text-sm bg-gray-100 rounded-lg dark:text-gray-text dark:bg-gray-comp ">
-                <div>
-                  <svg
-                    className="w-5 h-5 mr-2"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-                    />
-                  </svg>
-                </div>
+              <div className="flex flex-row items-center p-2 overflow-hidden text-sm border rounded-lg border-green-1000 dark:text-gray-text dark:bg-gray-comp ">
+                <svg
+                  className="w-5 h-5 mr-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                  />
+                </svg>
+
                 <div className="">081223191932</div>
               </div>
 
               {/* email */}
-              <div className="flex flex-row items-center p-2 overflow-hidden text-sm bg-gray-100 rounded-lg dark:text-gray-text dark:bg-gray-comp">
+              <div className="flex flex-row items-center p-2 overflow-hidden text-sm border rounded-lg border-green-1000 dark:text-gray-text dark:bg-gray-comp">
                 <div>
                   <svg
                     className="w-5 h-5 mr-2"
@@ -278,10 +277,7 @@ export default function contact() {
                 href="https://www.facebook.com/AKA-Trading-Indonesia-108120014669787"
                 target="_blank"
               >
-                <div className="flex flex-row items-center p-2 bg-gray-100 rounded-lg hover:bg-gray-200 dark:bg-gray-comp">
-                  {/* <div className="w-5 h-5 mr-2">
-                    <Image src="/facebook.svg" width="100" height="100" priority />
-                  </div> */}
+                <div className="flex flex-row items-center p-2 border rounded-lg border-blue-fb hover:bg-gray-50 dark:bg-gray-comp">
                   <FaFacebookSquare color="#1777F2" size={20} />
 
                   <div className="ml-2 text-sm font-bold text-blue-fb">
@@ -289,15 +285,13 @@ export default function contact() {
                   </div>
                 </div>
               </a>
+
               {/* ln */}
               <a
                 href="https://www.linkedin.com/company/aka-tradingindo"
                 target="_blank"
               >
-                <div className="flex flex-row items-center p-2 bg-gray-100 rounded-lg hover:bg-gray-200 dark:bg-gray-comp">
-                  {/* <div className="w-5 h-5 mr-2">
-                    <Image src="/linkedin.svg" width="100" height="100" priority />
-                  </div> */}
+                <div className="flex flex-row items-center p-2 border rounded-lg border-blue-ln hover:bg-gray-50 dark:bg-gray-comp">
                   <FaLinkedin color="#2867B2" size={20} />
 
                   <div className="ml-2 text-sm font-bold text-blue-ln">
@@ -396,7 +390,7 @@ export default function contact() {
 
           <div className="flex justify-end ">
             <input
-              className="h-10 px-5 font-semibold text-white transform rounded-md shadow bg-green-1000 hover:shadow-xl hover:bg-opacity-90 hover:-translate-y-1"
+              className="h-10 px-5 font-semibold text-white rounded bg-green-1000"
               type="submit"
               value={`${t.form.send}`}
             />

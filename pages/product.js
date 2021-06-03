@@ -7,8 +7,9 @@ import { useRouter } from "next/router";
 import { EN, ID } from "../translation";
 import DarkModeButton from "../components/DarkModeButton";
 import { HiOutlineChevronRight } from "react-icons/hi";
+import ProductCard from "../components/ProductCard";
 
-function product() {
+export default function product() {
   const router = useRouter();
   const { locale } = router;
   const t = locale === "ID" ? ID : EN;
@@ -145,7 +146,7 @@ function product() {
             <article className="flex items-center lg:justify-center ">
               <div className="inline-block">
                 <button
-                  className={`${navigation}`}
+                  className={`${navigation} px-2`}
                   onClick={() => {
                     router.push("/product", "/", { locale: "EN" });
                   }}
@@ -156,7 +157,7 @@ function product() {
               {`|`}
               <div className="inline-block">
                 <button
-                  className={`${navigation}`}
+                  className={`${navigation} px-2`}
                   onClick={() => router.push("/product", "/", { locale: "ID" })}
                 >
                   ID
@@ -169,14 +170,14 @@ function product() {
 
       <div className="z-0 grid max-w-6xl grid-cols-1 pt-32 mx-auto sm:px-5 sm:grid-cols-2 md:grid-cols-3">
         <div className="mb-5 sm:mx-0">
-          <Product
+          <ProductCard
             image="/gambir1.jpg"
             productName={`${t.name.gambier}`}
             product="/gambier"
           />
         </div>
         <div className="mb-5 sm:mx-0">
-          <Product
+          <ProductCard
             className="object-cover"
             image="/kemiri2.jpg"
             productName={`${t.name.candlenut}`}
@@ -189,30 +190,3 @@ function product() {
     </main>
   );
 }
-
-function Product(props) {
-  return (
-    <>
-      <Link href={`${props.product}`}>
-        <div className="z-0 w-5/6 h-auto m-5 mx-auto cursor-pointer ">
-          <div>
-            <Image
-              className="z-0"
-              src={`${props.image}`}
-              width={1080}
-              height={705}
-              priority
-            />
-          </div>
-          <div className="flex flex-col p-3 -mt-2 cursor-pointer bg-green-1000 hover:bg-opacity-70">
-            <div className="px-2 text-xl font-bold text-left text-white font-inter dark:text-white">
-              {props.productName}
-            </div>
-          </div>
-        </div>
-      </Link>
-    </>
-  );
-}
-
-export default product;
