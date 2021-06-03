@@ -9,6 +9,7 @@ import { EN, ID } from "../translation";
 import emailjs from "emailjs-com";
 import DarkModeButton from "../components/DarkModeButton";
 import { FaLinkedin, FaFacebookSquare } from "react-icons/fa";
+import { HiOutlineChevronRight } from "react-icons/hi";
 
 export default function contact() {
   function sendEmail(e) {
@@ -31,108 +32,148 @@ export default function contact() {
       );
   }
 
-  
   const router = useRouter();
   const { locale } = router;
   const t = locale === "ID" ? ID : EN;
-    const [isOpen, setIsOpen] = useState(false);
-  const ya =
-    "font-medium text-base text-gray-600 hover:text-gray-700 dark:text-gray-300 dark:hover:text-white  rounded-md  py-1 pl-0 md:pl-2 pr-2 font-EBGaramond ";
+  const [isOpen, setIsOpen] = useState(false);
+  const navigation =
+    " text-sm text-gray-600 hover:underline dark:text-gray-300 dark:hover:text-white py-4 font-inter lg:px-5 lg:py-0 block text-center ";
   const ab =
-    "h-10 px-2 placeholder-gray-500 focus:placeholder-gray-800 bg-gray-200 rounded-md  focus:outline-none  w-full  dark:placeholder-gray-400 dark:focus:hover:placeholder-white dark:bg-gray-button2 ";
+    "h-10 px-2 placeholder-gray-500 focus:placeholder-gray-800 bg-gray-200 rounded  focus:outline-none  w-full  dark:placeholder-gray-400 dark:focus:hover:placeholder-white dark:bg-gray-button2 focus:ring focus:ring-1 focus:ring-green-1000 border border-gray-500";
 
   return (
-    <div className="min-h-screen mx-auto dark:bg-gray-bkg">
-      <section className="fixed top-0 z-20 w-full h-auto p-3 px-5 blur dark:border-gray-button2 border-b border-gray-300 md:px-10 dark:bg-gray-comp font-inter">
-        <Head>
-          <title>{`${t.nav.contact} | AKA Trading Indonesia`}</title>
-          <link rel="icon" href="/logo.ico" />
-        </Head>
-        <div className="flex flex-col items-center rounded-lg lg:justify-between lg:flex-row">
-          <div className="flex flex-row items-center justify-between w-full lg:w-1/3">
-            <div className="flex items-center w-40 h-14">
+    <div className="min-h-screen mx-auto dark:bg-gray-bkg ">
+      <Head>
+        <title>{`${t.nav.contact} ∙ AKA Trading Indonesia`}</title>
+        <link rel="icon" href="/logo.ico" />
+      </Head>
+      {/* fixed wrapper */}
+      <nav className="fixed top-0 z-20 w-full h-auto p-3 px-5 bg-white border-b border-black dark:border-gray-button2 md:px-10 dark:bg-gray-comp font-inter">
+        {/* max-w-5xl */}
+        <section className="flex flex-col items-center max-w-5xl mx-auto lg:justify-between lg:flex-row">
+          {/*  */}
+          <article className="flex flex-row items-center justify-between w-full lg:justify-start lg:space-x-5 lg:w-1/3">
+            {/* Mobile & Desktop -  Logo */}
+            <article className="flex w-8 h-8 ">
               <Link href="/">
-                <Image
-                  className="p-2 cursor-pointer"
-                  src="/IMG_2685.PNG"
-                  width={2245}
-                  height={913}
-                  priority
-                />
+                <a className="block">
+                  <Image
+                    src="/Logo.PNG"
+                    width="1000px"
+                    height="1000px"
+                    layout="intrinsic"
+                    priority
+                  />
+                </a>
               </Link>
-            </div>
+            </article>
 
-            <div>
+            {/* Mobile & Desktop -  Logo Name */}
+            <article className="text-lg font-bold font-EBGaramond text-green-1000 md:text-2xl">
+              AKA Trading Indonesia
+            </article>
+
+            {/* Mobile - Hamburger Menu - lg:hidden */}
+            <article>
               <button
                 onClick={() => setIsOpen(!isOpen)}
-                className="block lg:hidden"
+                className="block lg:hidden focus:outline-none"
               >
                 <svg
-                  className="w-10 h-10 dark:text-white text-green-1000"
+                  className="w-8 h-8 dark:text-white text-green-1000"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
                 >
+                  {/* Hamburger */}
                   <path
                     className={!isOpen ? "block" : "hidden"}
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
+                    strokeWidth={1}
                     d="M4 6h16M4 12h16M4 18h16"
                   />
+                  {/* X */}
                   <path
                     className={isOpen ? "block" : "hidden"}
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
+                    strokeWidth={1}
                     d="M6 18L18 6M6 6l12 12"
                   />
                 </svg>
               </button>
-            </div>
-          </div>
+            </article>
+          </article>
 
-          <div
+          {/* Mobile & Desktop - Navigation Link */}
+          <article
             className={` ${
               !isOpen ? "hidden" : "block"
-            } lg:flex flex-col lg:flex-row lg:justify-around lg:w-2/3 w-full  items-center `}
+            } items-center flex-col lg:flex lg:flex-row lg:justify-end lg:w-2/3 w-full divide-y lg:divide-y-0 lg:divide-x  divide-gray-500 pt-5 lg:pt-0`}
           >
-            <div className="m-5 ml-0 lg:m-1">
-              <Link href="/">
-                <a className={ya}>{t.nav.home}</a>
-              </Link>
-            </div>
-
-            <div className="m-5 ml-0 lg:m-1">
-              <Link href="/about">
-                <a className={ya}>{t.nav.about}</a>
-              </Link>
-            </div>
-
-            <div className="m-5 ml-0 lg:m-1">
-              <Link href="/product">
-                <a className={ya}>{t.nav.product}</a>
-              </Link>
-            </div>
-
-            <div className="m-5 ml-0 lg:m-1">
-              <Link href="/team">
-                <a className={ya}>{t.nav.team}</a>
-              </Link>
-            </div>
-
-            <div className="m-5 ml-0 lg:m-1">
-              <Link href="/contact">
-                <a className={ya}>{t.nav.contact}</a>
-              </Link>
-            </div>
             <div>
+              <Link href="/">
+                <a className="flex items-center justify-between ">
+                  <div className={navigation}>{t.nav.home}</div>
+                  <div className="lg:hidden">
+                    <HiOutlineChevronRight className="w-5 h-5 text-gray-600" />
+                  </div>
+                </a>
+              </Link>
+            </div>
+
+            <div>
+              <Link href="/about">
+                <a className="flex items-center justify-between">
+                  <div className={navigation}>{t.nav.about}</div>
+                  <div className="lg:hidden">
+                    <HiOutlineChevronRight className="w-5 h-5 text-gray-600" />
+                  </div>
+                </a>
+              </Link>
+            </div>
+
+            <div>
+              <Link href="/product">
+                <a className="flex items-center justify-between">
+                  <div className={navigation}>{t.nav.product}</div>
+                  <div className="lg:hidden">
+                    <HiOutlineChevronRight className="w-5 h-5 text-gray-600" />
+                  </div>
+                </a>
+              </Link>
+            </div>
+
+            <div>
+              <Link href="/team">
+                <a className="flex items-center justify-between">
+                  <div className={navigation}>{t.nav.team}</div>
+                  <div className="lg:hidden">
+                    <HiOutlineChevronRight className="w-5 h-5 text-gray-600" />
+                  </div>
+                </a>
+              </Link>
+            </div>
+
+            <div>
+              <Link href="/contact">
+                <a className="flex items-center justify-between">
+                  <div className={navigation}>{t.nav.contact}</div>
+                  <div className="lg:hidden">
+                    <HiOutlineChevronRight className="w-5 h-5 text-gray-600" />
+                  </div>
+                </a>
+              </Link>
+            </div>
+
+            {/* Dark mode button */}
+            <DarkModeButton />
+
+            {/* Internasionalization button */}
+            <article className="flex items-center lg:justify-center ">
               <div className="inline-block">
                 <button
-                  className={`${ya} pl-1`}
+                  className={`${navigation}`}
                   onClick={() => {
-                    router.push("/contact", "/", { locale: "EN" });
+                    router.push("/", "/", { locale: "EN" });
                   }}
                 >
                   EN
@@ -141,24 +182,21 @@ export default function contact() {
               {`|`}
               <div className="inline-block">
                 <button
-                  className={`${ya} ml-1 pl-1`}
-                  onClick={() => router.push("/contact", "/", { locale: "ID" })}
+                  className={`${navigation}`}
+                  onClick={() => router.push("/", "/", { locale: "ID" })}
                 >
-                   ID
+                  ID
                 </button>
               </div>
-            </div>
+            </article>
+          </article>
+        </section>
+      </nav>
 
-            <DarkModeButton />
-          </div>
-        </div>
-
-        {/* {props.children} */}
-      </section>
-
-      <div className="flex flex-col pt-24 sm:px-5 md:flex-row">
-        <div>
-          <div className="m-5 space-y-2 font-sans text-gray-700 rounded-lg dark:text-gray-text">
+      <section className="grid max-w-5xl grid-cols-1 gap-5 px-5 pt-24 mx-auto lg:grid-cols-2 lg:px-0 md:flex-row">
+        {/* Concact + Maps */}
+        <article>
+          <div className="space-y-2 font-sans text-gray-700 rounded-lg dark:text-gray-text">
             <div className="mb-2 text-xl font-semibold">Head Office</div>
             <div></div>
 
@@ -244,9 +282,9 @@ export default function contact() {
                   {/* <div className="w-5 h-5 mr-2">
                     <Image src="/facebook.svg" width="100" height="100" priority />
                   </div> */}
-                  <FaFacebookSquare color="#1777F2" size={20}/>
+                  <FaFacebookSquare color="#1777F2" size={20} />
 
-                  <div className="text-sm font-bold text-blue-fb ml-2">
+                  <div className="ml-2 text-sm font-bold text-blue-fb">
                     AKA Trading Indonesia
                   </div>
                 </div>
@@ -260,9 +298,9 @@ export default function contact() {
                   {/* <div className="w-5 h-5 mr-2">
                     <Image src="/linkedin.svg" width="100" height="100" priority />
                   </div> */}
-                  <FaLinkedin color="#2867B2" size={20}/>
+                  <FaLinkedin color="#2867B2" size={20} />
 
-                  <div className="text-sm font-bold text-blue-ln ml-2">
+                  <div className="ml-2 text-sm font-bold text-blue-ln">
                     AKA Trading Indonesia
                   </div>
                 </div>
@@ -273,18 +311,18 @@ export default function contact() {
           {/* maps */}
           <div>
             <iframe
-              className={`w-full p-5 h-80`}
+              className={`w-full mt-5 h-80`}
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.656300461767!2d106.83740851413296!3d-6.30880499543414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ed2b940afd89%3A0x6186386a52b3ee04!2sQP%20OFFICE!5e0!3m2!1sen!2sid!4v1613370918140!5m2!1sen!2sid"
               allowFullScreen
               aria-hidden="false"
               tabIndex={0}
             />
           </div>
-        </div>
+        </article>
 
         {/* enquiry */}
         <form
-          className="h-auto p-5 m-5 space-y-5 bg-gray-100 border-2 border-gray-300 rounded-lg md:mx-auto dark:bg-gray-comp dark:border-gray-button2 md:mr-5"
+          className="h-auto p-5 space-y-5 bg-gray-100 border rounded border-green-1000 md:mx-auto dark:bg-gray-comp dark:border-gray-button2 md:mr-5"
           onSubmit={sendEmail}
         >
           <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
@@ -349,7 +387,7 @@ export default function contact() {
           />
 
           <textarea
-            className="w-full p-2 placeholder-gray-500 bg-gray-200 rounded-md dark:placeholder-gray-text focus:ring-2 focus:outline-none focus:ring-green-1000 dark:bg-gray-button2"
+            className="w-full p-2 placeholder-gray-500 bg-gray-200 rounded-md dark:placeholder-gray-text focus:ring-1 focus:outline-none focus:ring-green-1000 dark:bg-gray-button2"
             name="message"
             id="message"
             cols="20"
@@ -358,13 +396,13 @@ export default function contact() {
 
           <div className="flex justify-end ">
             <input
-              className=" h-10 px-5 font-semibold text-white rounded-md shadow bg-green-1000 hover:shadow-xl hover:bg-opacity-90  transform hover:-translate-y-1"
+              className="h-10 px-5 font-semibold text-white transform rounded-md shadow bg-green-1000 hover:shadow-xl hover:bg-opacity-90 hover:-translate-y-1"
               type="submit"
               value={`${t.form.send}`}
             />
           </div>
         </form>
-      </div>
+      </section>
       <Footer />
     </div>
   );

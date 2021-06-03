@@ -1,5 +1,5 @@
 module.exports = {
-  mode:"jit",
+  mode: "jit",
   purge: ["./components/**/*.js", "./pages/**/*.js"],
   darkMode: "class", // or 'media' or 'class'
   theme: {
@@ -22,10 +22,8 @@ module.exports = {
         },
       },
       fontFamily: {
-        inter:["Inter"],
-        satisfy:["Satisfy"],
-        courgette:["Courgette"],
-        EBGaramond:["EB Garamond"]
+        inter: ["Inter"],
+        EBGaramond: ["EB Garamond"],
       },
     },
   },
