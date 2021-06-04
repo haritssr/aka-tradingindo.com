@@ -191,6 +191,7 @@ export default function about() {
       <div className="max-w-5xl px-5 mx-auto lg:px-0">
         {/* AKA Trading Indonesia adalah ... */}
         <div className="mt-32 mb-20 text-3xl font-EBGaramond">
+          <span className="text-4xl font-bold">AKA Trading Indonesia</span>{" "}
           {t.about.top}
         </div>
 

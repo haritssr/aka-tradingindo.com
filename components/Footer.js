@@ -61,7 +61,7 @@ export default function Footer() {
             Barat, Jagakarsa – Jakarta Selatan 12530
           </div>
           <div className="mt-5 text-gray-500">
-            Copyright &copy; 2021. All Right Reserved
+            Copyright &copy; 2021. All Right Reserved.
           </div>
         </section>
       </main>

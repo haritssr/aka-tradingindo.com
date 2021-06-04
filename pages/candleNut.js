@@ -173,7 +173,7 @@ export default function candleNut() {
       </nav>
 
       <div className="grid max-w-5xl grid-cols-1 p-5 pt-24 mx-auto space-y-3 md:grid-cols-2 font-inter">
-        <div className="space-y-3 md:p-5 md:px-0">
+        <div className="space-y-3 md:pr-5 md:px-0">
           <Image
             className="w-full h-auto "
             src="/kemiri.jpg"

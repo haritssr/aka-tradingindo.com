@@ -170,86 +170,87 @@ export default function gambier() {
           </article>
         </section>
       </nav>
-
-      <div className="grid grid-cols-1 p-5 pt-24 space-y-3 md:pt-20 md:m-5 md:grid-cols-2 md:space-y-0 font-inter">
-        <div className="h-auto space-y-3 md:p-5 md:px-0">
-          <Image
-            className="w-full h-auto "
-            src="/gambir1.jpg"
-            width={1080}
-            height={805}
-            priority
-          />
-
-          <div>
+      <div className="max-w-5xl p-5 mx-auto sm:p-0">
+        <div className="grid grid-cols-1 pt-24 space-y-3 md:pt-20 md:m-5 md:grid-cols-2 md:space-y-0 font-inter">
+          <div className="h-auto space-y-3 md:p-5 md:px-0">
             <Image
               className="w-full h-auto "
-              src="/gambir2.jpg"
+              src="/gambir1.jpg"
               width={1080}
               height={805}
+              priority
             />
-          </div>
-        </div>
-        <div className="text-gray-900 md:p-5">
-          <div className="pl-3 mt-4 mb-2 text-2xl font-bold border-l-4 border-black md:mt-0 md:mb-5 md:text-4xl">
-            Gambier (Uncaria Gambir)
-          </div>
-          <p className="">
-            {t.gambier.description}
-            <br />
-            <br />
-            <span className="font-semibold text-gray-800">
-              {t.gambier.CatechinContent}
-            </span>
-            {t.gambier.isiCatechinContent}
-            <br />
-            <span className="font-semibold text-gray-800">
-              {t.gambier.Industry}
-            </span>
-            {t.gambier.isiIndustry}
-            <br />
-            <span className="font-semibold text-gray-800">
-              {t.gambier.ScientificName}
-            </span>
-            {t.gambier.isiScientificName}
-            <br />
-            <span className="font-semibold text-gray-800">
-              {t.gambier.PlaceOfOrigin}
-            </span>
-            {t.gambier.IsiPlaceOfOrigin}
-            <br />
-            <span className="font-semibold text-gray-800">
-              {t.gambier.ExtractionType}
-            </span>
-            {t.gambier.isiExtractionType}
-            <br />
-            <span className="font-semibold text-gray-800">
-              {t.gambier.HSCode}
-            </span>
-            {t.gambier.isiHSCode}
-          </p>
 
-          {/* next/prev */}
-          <div className="flex flex-row items-center justify-between mt-10">
-            <div className="flex flex-row justify-start font-semibold">
-              <Link href="/candleNut">
-                <a className="px-4 py-1 hover:bg-gray-100">
-                  <HiOutlineChevronLeft size={30} />
-                </a>
-              </Link>
-              <Link href="/candleNut">
-                <a className="px-4 py-1 hover:bg-gray-100">
-                  <HiOutlineChevronRight size={30} />
+            <div>
+              <Image
+                className="w-full h-auto "
+                src="/gambir2.jpg"
+                width={1080}
+                height={805}
+              />
+            </div>
+          </div>
+          <div className="text-gray-900 md:p-5">
+            <div className="pl-3 mt-4 mb-2 text-2xl font-bold border-l-4 border-black md:mt-0 md:mb-5 md:text-4xl">
+              Gambier (Uncaria Gambir)
+            </div>
+            <p className="">
+              {t.gambier.description}
+              <br />
+              <br />
+              <span className="font-semibold text-gray-800">
+                {t.gambier.CatechinContent}
+              </span>
+              {t.gambier.isiCatechinContent}
+              <br />
+              <span className="font-semibold text-gray-800">
+                {t.gambier.Industry}
+              </span>
+              {t.gambier.isiIndustry}
+              <br />
+              <span className="font-semibold text-gray-800">
+                {t.gambier.ScientificName}
+              </span>
+              {t.gambier.isiScientificName}
+              <br />
+              <span className="font-semibold text-gray-800">
+                {t.gambier.PlaceOfOrigin}
+              </span>
+              {t.gambier.IsiPlaceOfOrigin}
+              <br />
+              <span className="font-semibold text-gray-800">
+                {t.gambier.ExtractionType}
+              </span>
+              {t.gambier.isiExtractionType}
+              <br />
+              <span className="font-semibold text-gray-800">
+                {t.gambier.HSCode}
+              </span>
+              {t.gambier.isiHSCode}
+            </p>
+
+            {/* next/prev */}
+            <div className="flex flex-row items-center justify-between mt-10">
+              <div className="flex flex-row justify-start font-semibold">
+                <Link href="/candleNut">
+                  <a className="px-4 py-1 hover:bg-gray-100">
+                    <HiOutlineChevronLeft size={30} />
+                  </a>
+                </Link>
+                <Link href="/candleNut">
+                  <a className="px-4 py-1 hover:bg-gray-100">
+                    <HiOutlineChevronRight size={30} />
+                  </a>
+                </Link>
+              </div>
+
+              {/* Order Button */}
+              <Link href="/contact">
+                <a className="px-6 py-2 font-semibold text-white hover:bg-opacity-80 bg-green-1000 hover:-translate-y-1">
+                  {t.order}
                 </a>
               </Link>
             </div>
-
-            {/* Order Button */}
-            <Link href="/contact">
-              <a className="px-6 py-2 font-semibold text-white transform rounded-md hover:shadow-xl hover:bg-opacity-90 bg-green-1000 hover:-translate-y-1">
-                {t.order}
-              </a>
-            </Link>
           </div>
         </div>
       </div>
