@@ -24,9 +24,9 @@ export default function Footer() {
             <Link href="/product">
               <a className="hover:underline dark:text-white">{t.nav.product}</a>
             </Link>
-            <Link href="/team">
+            {/* <Link href="/team">
               <a className="hover:underline dark:text-white">{t.nav.team}</a>
-            </Link>
+            </Link> */}
             <Link href="/contact">
               <a className="hover:underline dark:text-white">{t.nav.contact}</a>
             </Link>

@@ -117,7 +117,7 @@ export default function about() {
               </Link>
             </div>
 
-            <div>
+            {/* <div>
               <Link href="/team">
                 <a className="flex items-center justify-between">
                   <div className={navigation}>{t.nav.team}</div>
@@ -126,7 +126,7 @@ export default function about() {
                   </div>
                 </a>
               </Link>
-            </div>
+            </div> */}
 
             <div>
               <Link href="/contact">

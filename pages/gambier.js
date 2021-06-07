@@ -118,7 +118,7 @@ export default function gambier() {
               </Link>
             </div>
 
-            <div>
+            {/* <div>
               <Link href="/team">
                 <a className="flex items-center justify-between">
                   <div className={navigation}>{t.nav.team}</div>
@@ -127,7 +127,7 @@ export default function gambier() {
                   </div>
                 </a>
               </Link>
-            </div>
+            </div> */}
 
             <div>
               <Link href="/contact">

@@ -116,7 +116,7 @@ export default function Nav(props) {
               </Link>
             </div>
 
-            <div>
+            {/* <div>
               <Link href="/team">
                 <a className="flex items-center justify-between">
                   <div className={navigation}>{t.nav.team}</div>
@@ -125,7 +125,7 @@ export default function Nav(props) {
                   </div>
                 </a>
               </Link>
-            </div>
+            </div> */}
 
             <div>
               <Link href="/contact">
