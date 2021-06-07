@@ -39,16 +39,16 @@ export default function contact() {
   const navigation =
     " text-sm text-gray-600 hover:underline dark:text-gray-300 dark:hover:text-white py-4 font-inter lg:px-5 lg:py-0 block text-center ";
   const ab =
-    "h-10 px-2 placeholder-gray-500 focus:placeholder-gray-800 bg-gray-200 rounded  focus:outline-none  w-full  dark:placeholder-gray-400 dark:focus:hover:placeholder-white dark:bg-gray-button2 focus:ring focus:ring-1 focus:ring-green-1000 border border-gray-500";
+    "h-10 px-2 placeholder-gray-500  bg-gray-200 rounded  focus:outline-none  w-full  dark:placeholder-black  focus:ring focus:ring-1 focus:ring-green-brand dark:focus:ring-gray-300 dark:bg-gray-300";
 
   return (
-    <div className="min-h-screen mx-auto dark:bg-gray-bkg ">
+    <main className="min-h-screen mx-auto dark:bg-gray-bkg ">
       <Head>
         <title>{`${t.nav.contact} ∙ AKA Trading Indonesia`}</title>
         <link rel="icon" href="/logo.ico" />
       </Head>
       {/* fixed wrapper */}
-      <nav className="fixed top-0 z-20 w-full h-auto p-3 px-5 bg-white border-b border-black dark:border-gray-button2 md:px-10 dark:bg-gray-comp font-inter">
+      <nav className="fixed top-0 z-20 w-full h-auto p-3 px-5 bg-white border-b border-black dark:border-gray-400 md:px-10 dark:bg-gray-bkg font-inter">
         {/* max-w-5xl */}
         <section className="flex flex-col items-center max-w-5xl mx-auto lg:justify-between lg:flex-row">
           {/*  */}
@@ -69,7 +69,7 @@ export default function contact() {
             </article>
 
             {/* Mobile & Desktop -  Logo Name */}
-            <article className="text-lg font-bold font-EBGaramond text-green-1000 md:text-2xl">
+            <article className="text-lg font-bold font-EBGaramond text-green-brand md:text-2xl">
               AKA Trading Indonesia
             </article>
 
@@ -80,7 +80,7 @@ export default function contact() {
                 className="block lg:hidden focus:outline-none"
               >
                 <svg
-                  className="w-8 h-8 dark:text-white text-green-1000"
+                  className="w-8 h-8 dark:text-white text-green-brand"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
@@ -196,7 +196,7 @@ export default function contact() {
       <section className="grid max-w-5xl grid-cols-1 gap-5 px-5 pt-24 mx-auto lg:grid-cols-2 lg:px-0 md:flex-row">
         {/* Concact + Maps */}
         <article>
-          <div className="space-y-2 font-sans text-gray-700 rounded-lg dark:text-gray-text">
+          <div className="space-y-2 font-sans text-gray-700 rounded-lg dark:text-white">
             <div className="mb-2 text-xl font-semibold">Head Office</div>
             <div></div>
 
@@ -224,8 +224,9 @@ export default function contact() {
               </div>
             </div>
             <div className="grid grid-cols-1 gap-2 md:grid-cols-2">
+              
               {/* phone number */}
-              <div className="flex flex-row items-center p-2 overflow-hidden text-sm border rounded-lg border-green-1000 dark:text-gray-text dark:bg-gray-comp ">
+              <div className="flex flex-row items-center p-2 overflow-hidden text-sm border rounded-lg border-green-brand dark:text-white dark:bg-gray-bkg hover:bg-gray-100 bg-gray-50">
                 <svg
                   className="w-5 h-5 mr-2"
                   xmlns="http://www.w3.org/2000/svg"
@@ -245,7 +246,7 @@ export default function contact() {
               </div>
 
               {/* email */}
-              <div className="flex flex-row items-center p-2 overflow-hidden text-sm border rounded-lg border-green-1000 dark:text-gray-text dark:bg-gray-comp">
+              <div className="flex flex-row items-center p-2 overflow-hidden text-sm border rounded-lg border-green-brand dark:text-white dark:bg-gray-bkg hover:bg-gray-100 bg-gray-50">
                 <div>
                   <svg
                     className="w-5 h-5 mr-2"
@@ -277,10 +278,9 @@ export default function contact() {
                 href="https://www.facebook.com/AKA-Trading-Indonesia-108120014669787"
                 target="_blank"
               >
-                <div className="flex flex-row items-center p-2 border rounded-lg border-blue-fb hover:bg-gray-50 dark:bg-gray-comp">
+                <div className="flex flex-row items-center p-2 border rounded-lg border-[#1777F2] hover:bg-gray-100 bg-gray-50 dark:bg-gray-bkg">
                   <FaFacebookSquare color="#1777F2" size={20} />
-
-                  <div className="ml-2 text-sm font-bold text-blue-fb">
+                  <div className="ml-2 text-sm font-bold text-[#1777F2]">
                     AKA Trading Indonesia
                   </div>
                 </div>
@@ -291,10 +291,9 @@ export default function contact() {
                 href="https://www.linkedin.com/company/aka-tradingindo"
                 target="_blank"
               >
-                <div className="flex flex-row items-center p-2 border rounded-lg border-blue-ln hover:bg-gray-50 dark:bg-gray-comp">
+                <div className="flex flex-row items-center p-2 border rounded-lg border-[#2867B2] hover:bg-gray-100 bg-gray-50 dark:bg-gray-bkg">
                   <FaLinkedin color="#2867B2" size={20} />
-
-                  <div className="ml-2 text-sm font-bold text-blue-ln">
+                  <div className="ml-2 text-sm font-bold text-[#2867B2]">
                     AKA Trading Indonesia
                   </div>
                 </div>
@@ -316,7 +315,7 @@ export default function contact() {
 
         {/* enquiry */}
         <form
-          className="h-auto p-5 space-y-5 bg-gray-100 border rounded border-green-1000 md:mx-auto dark:bg-gray-comp dark:border-gray-button2 md:mr-5"
+          className="h-auto p-5 space-y-5 bg-gray-100 border rounded dark:border-gray-400 border-green-brand md:mx-auto dark:bg-gray-bkg md:mr-5"
           onSubmit={sendEmail}
         >
           <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
@@ -381,7 +380,7 @@ export default function contact() {
           />
 
           <textarea
-            className="w-full p-2 placeholder-gray-500 bg-gray-200 rounded-md dark:placeholder-gray-text focus:ring-1 focus:outline-none focus:ring-green-1000 dark:bg-gray-button2"
+            className="w-full p-2 placeholder-gray-500 bg-gray-200 rounded-md dark:bg-gray-300 dark:placeholder-black focus:ring-1 focus:outline-none focus:ring-green-brand dark:focus:ring-gray-400 "
             name="message"
             id="message"
             cols="20"
@@ -390,7 +389,7 @@ export default function contact() {
 
           <div className="flex justify-end ">
             <input
-              className="h-10 px-5 font-semibold text-white rounded bg-green-1000"
+              className="h-10 px-5 font-semibold text-white rounded cursor-pointer bg-green-brand hover:bg-opacity-90"
               type="submit"
               value={`${t.form.send}`}
             />
@@ -398,6 +397,6 @@ export default function contact() {
         </form>
       </section>
       <Footer />
-    </div>
+    </main>
   );
 }

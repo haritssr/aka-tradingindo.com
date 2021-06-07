@@ -17,13 +17,13 @@ export default function product() {
   const navigation =
     " text-sm text-gray-600 hover:underline dark:text-gray-300 dark:hover:text-white py-4 font-inter lg:px-5 lg:py-0 block text-center ";
   return (
-    <main>
+    <main className="dark:bg-gray-bkg">
       <Head>
         <title>{`${t.nav.product} ∙ AKA Trading Indonesia`}</title>
         <link rel="icon" href="/logo.ico" />
       </Head>
       {/* fixed wrapper */}
-      <nav className="fixed top-0 z-20 w-full h-auto p-3 px-5 bg-white border-b border-black dark:border-gray-button2 md:px-10 dark:bg-gray-comp font-inter">
+      <nav className="fixed top-0 z-20 w-full h-auto p-3 px-5 bg-white border-b border-black dark:border-gray-400 md:px-10 dark:bg-gray-bkg font-inter">
         {/* max-w-5xl */}
         <section className="flex flex-col items-center max-w-5xl mx-auto lg:justify-between lg:flex-row">
           {/*  */}
@@ -44,7 +44,7 @@ export default function product() {
             </article>
 
             {/* Mobile & Desktop -  Logo Name */}
-            <article className="text-lg font-bold font-EBGaramond text-green-1000 md:text-2xl">
+            <article className="text-lg font-bold font-EBGaramond text-green-brand md:text-2xl">
               AKA Trading Indonesia
             </article>
 

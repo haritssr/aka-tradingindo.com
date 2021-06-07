@@ -22,7 +22,7 @@ export default function Nav(props) {
       </Head>
 
       {/* fixed wrapper */}
-      <nav className="fixed top-0 z-20 w-full h-auto p-3 px-5 bg-white border-b border-black dark:border-gray-button2 md:px-10 dark:bg-gray-comp font-inter">
+      <nav className="fixed top-0 z-20 w-full h-auto p-3 px-5 bg-white border-b border-black dark:border-gray-400 md:px-10 dark:bg-gray-bkg font-inter">
         {/* max-w-5xl */}
         <section className="flex flex-col items-center max-w-5xl mx-auto lg:justify-between lg:flex-row">
           {/*  */}
@@ -43,7 +43,7 @@ export default function Nav(props) {
             </article>
 
             {/* Mobile & Desktop -  Logo Name */}
-            <article className="text-lg font-bold font-EBGaramond text-green-1000 md:text-2xl">
+            <article className="text-lg font-bold font-EBGaramond text-green-brand md:text-2xl">
               AKA Trading Indonesia
             </article>
 
@@ -54,7 +54,7 @@ export default function Nav(props) {
                 className="block lg:hidden focus:outline-none"
               >
                 <svg
-                  className="w-8 h-8 dark:text-white text-green-1000"
+                  className="w-8 h-8 dark:text-white text-green-brand"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
@@ -115,7 +115,7 @@ export default function Nav(props) {
                 </a>
               </Link>
             </div>
-            
+
             <div>
               <Link href="/team">
                 <a className="flex items-center justify-between">
@@ -126,7 +126,7 @@ export default function Nav(props) {
                 </a>
               </Link>
             </div>
-            
+
             <div>
               <Link href="/contact">
                 <a className="flex items-center justify-between">
@@ -138,7 +138,6 @@ export default function Nav(props) {
               </Link>
             </div>
 
-            
             {/* Dark mode button */}
             <DarkModeButton />
 

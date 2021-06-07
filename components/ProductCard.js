@@ -9,7 +9,7 @@ export default function ProductCard(props) {
           <div>
             <Image src={`${props.image}`} width={1080} height={705} priority />
           </div>
-          <div className="flex flex-col px-3 py-4 -mt-2 cursor-pointer bg-green-1000 hover:bg-opacity-70">
+          <div className="flex flex-col px-3 py-4 -mt-2 cursor-pointer bg-green-brand hover:bg-opacity-70">
             <div className="px-2 text-2xl font-bold text-left text-white font-EBGaramond dark:text-white">
               {props.productName}
             </div>

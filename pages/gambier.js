@@ -24,7 +24,7 @@ export default function gambier() {
         <link rel="icon" href="/logo.ico" />
       </Head>
       {/* fixed wrapper */}
-      <nav className="fixed top-0 z-20 w-full h-auto p-3 px-5 bg-white border-b border-black dark:border-gray-button2 md:px-10 dark:bg-gray-comp font-inter">
+      <nav className="fixed top-0 z-20 w-full h-auto p-3 px-5 bg-white border-b border-black dark:border-gray-400 md:px-10 dark:bg-gray-bkg font-inter">
         {/* max-w-5xl */}
         <section className="flex flex-col items-center max-w-5xl mx-auto lg:justify-between lg:flex-row">
           {/*  */}

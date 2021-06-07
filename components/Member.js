@@ -12,9 +12,9 @@ export default function Member({
   titleLinkedIn,
 }) {
   return (
-    <main className="w-3/4 h-auto mx-auto text-center bg-green-1000 rounded-2xl hover:scale-105 hover:shadow-2xl">
+    <main className="w-3/4 h-auto mx-auto text-center bg-green-brand rounded-2xl hover:scale-105 hover:shadow-2xl">
       <div className="p-5">
-        <div className=" rounded-full  h-[150px] w-[150px] mx-auto my-5 border-2 border-green-900">
+        <div className=" rounded-full  h-[150px] w-[150px] mx-auto my-5 ">
           <Image
             className="rounded-full "
             src={`${image}`}

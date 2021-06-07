@@ -17,13 +17,13 @@ export default function about() {
   const navigation =
     " text-sm text-gray-600 hover:underline dark:text-gray-300 dark:hover:text-white py-4 font-inter lg:px-5 lg:py-0 block text-center ";
   return (
-    <div>
+    <main className="dark:bg-gray-bkg">
       <Head>
         <title>{` ${t.nav.about} ∙ AKA Trading Indonesia`}</title>
         <link rel="icon" href="/logo.ico" />
       </Head>
       {/* fixed wrapper */}
-      <nav className="fixed top-0 z-20 w-full h-auto p-3 px-5 bg-white border-b border-black dark:border-gray-button2 md:px-10 dark:bg-gray-comp font-inter">
+      <nav className="fixed top-0 z-20 w-full h-auto p-3 px-5 bg-white border-b border-black dark:border-gray-400 md:px-10 dark:bg-gray-bkg font-inter">
         {/* max-w-5xl */}
         <section className="flex flex-col items-center max-w-5xl mx-auto lg:justify-between lg:flex-row">
           {/*  */}
@@ -44,7 +44,7 @@ export default function about() {
             </article>
 
             {/* Mobile & Desktop -  Logo Name */}
-            <article className="text-lg font-bold font-EBGaramond text-green-1000 md:text-2xl">
+            <article className="text-lg font-bold font-EBGaramond text-green-brand md:text-2xl">
               AKA Trading Indonesia
             </article>
 
@@ -55,7 +55,7 @@ export default function about() {
                 className="block lg:hidden focus:outline-none"
               >
                 <svg
-                  className="w-8 h-8 dark:text-white text-green-1000"
+                  className="w-8 h-8 dark:text-white text-green-brand"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
@@ -168,30 +168,12 @@ export default function about() {
         </section>
       </nav>
 
-      {/* AKA Trading Indonesia */}
-      {/* <div className="p-5 mx-5 text-lg text-gray-800 bg-gray-200 border rounded-lg md:mx-10 dark:text-gray-text dark:bg-gray-comp dark:border-gray-button2 sm:rounded-b-none font-EBGaramond">
-        {t.about}
-      </div> */}
-
-      {/* Gambar */}
-      {/* <div className="mt-5 overflow-hidden md:mt-0 md:mx-10 h-50 md:h-auto">
-        <div className="flex flex-col overflow-hidden rounded-b-lg md:flex-row">
-          <div>
-            <Image src="/abp1.png" width={1400} height={1000} priority />
-          </div>
-          <div>
-            <Image src="/abp2.png" width={1400} height={1000} priority />
-          </div>
-          <div>
-            <Image src="/abp3.png" width={1400} height={1000} priority />
-          </div>
-        </div>
-      </div> */}
+     
 
       <div className="max-w-5xl px-5 mx-auto lg:px-0">
         {/* AKA Trading Indonesia adalah ... */}
-        <div className="mt-32 mb-20 text-3xl font-EBGaramond">
-          <span className="text-4xl font-bold">AKA Trading Indonesia</span>{" "}
+        <div className="pt-20 text-3xl sm:pt-24 mb-14 font-EBGaramond dark:text-white">
+          <span className="text-4xl font-bold ">AKA Trading Indonesia</span>{" "}
           {t.about.top}
         </div>
 
@@ -201,10 +183,10 @@ export default function about() {
             <Image src="/abp1.png" width="880px" height="626px" priority />
           </article>
           <article className="font-EBGaramond sm:w-1/2">
-            <div className="mb-3 text-4xl font-semibold text-green-1000">
+            <div className="mb-3 text-4xl font-semibold text-green-brand">
               {t.about.tujuanTitle}
             </div>
-            <div className="text-2xl">{t.about.tujuan}</div>
+            <div className="text-2xl dark:text-white">{t.about.tujuan}</div>
           </article>
         </section>
 
@@ -214,10 +196,10 @@ export default function about() {
             <Image src="/abp2.png" width="880px" height="626px" priority />
           </article>
           <article className="font-EBGaramond sm:w-1/2">
-            <div className="mb-3 text-4xl font-semibold text-green-1000">
+            <div className="mb-3 text-4xl font-semibold text-green-brand">
               {t.about.komitmenTitle}
             </div>
-            <div className="text-2xl">{t.about.komitmen}</div>
+            <div className="text-2xl dark:text-white">{t.about.komitmen}</div>
           </article>
         </section>
 
@@ -227,15 +209,15 @@ export default function about() {
             <Image src="/abp3.png" width="880px" height="626px" priority />
           </article>
           <article className="font-EBGaramond sm:w-1/2">
-            <div className="mb-3 text-4xl font-semibold text-green-1000">
+            <div className="mb-3 text-4xl font-semibold text-green-brand">
               {t.about.prinsipTitle}
             </div>
-            <div className="text-2xl">{t.about.prinsip}</div>
+            <div className="text-2xl dark:text-white">{t.about.prinsip}</div>
           </article>
         </section>
       </div>
 
       <Footer />
-    </div>
+    </main>
   );
 }
