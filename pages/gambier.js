@@ -45,7 +45,7 @@ export default function gambier() {
             </article>
 
             {/* Mobile & Desktop -  Logo Name */}
-            <article className="text-lg font-bold font-EBGaramond text-green-1000 md:text-2xl">
+            <article className="text-lg font-bold font-EBGaramond text-green-brand md:text-2xl">
               AKA Trading Indonesia
             </article>
 
@@ -149,7 +149,7 @@ export default function gambier() {
                 <button
                   className={`${navigation} px-2`}
                   onClick={() => {
-                    router.push("/candleNut", "/", { locale: "EN" });
+                    router.push("/gambier", "/", { locale: "EN" });
                   }}
                 >
                   EN
@@ -160,7 +160,7 @@ export default function gambier() {
                 <button
                   className={`${navigation} px-2`}
                   onClick={() =>
-                    router.push("/candleNut", "/", { locale: "ID" })
+                    router.push("/gambier", "/", { locale: "ID" })
                   }
                 >
                   ID
@@ -246,7 +246,7 @@ export default function gambier() {
 
               {/* Order Button */}
               <Link href="/contact">
-                <a className="px-6 py-2 font-semibold text-white hover:bg-opacity-80 bg-green-1000 hover:-translate-y-1">
+                <a className="px-6 py-2 font-semibold text-white rounded hover:bg-opacity-80 bg-green-brand hover:-translate-y-1">
                   {t.order}
                 </a>
               </Link>

@@ -266,9 +266,9 @@ export default function contact() {
                 <div className="">
                   <a
                     className="hover:underline"
-                    href="mailto:eksportiraka@gmail.com?subject=Website aka-tradingindo.com&body=Hi, i want to ask something about some stuff "
+                    href="mailto:AKAtradingindo@gmail.com?subject=Website aka-tradingindo.com&body=Hi, i want to ask something about some stuff "
                   >
-                    eksportirAKA@gmail.com
+                    AKAtradingindo@gmail.com
                   </a>
                 </div>
               </div>

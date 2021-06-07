@@ -46,7 +46,7 @@ export default function candleNut() {
             </article>
 
             {/* Mobile & Desktop -  Logo Name */}
-            <article className="text-lg font-bold font-EBGaramond text-green-1000 md:text-2xl">
+            <article className="text-lg font-bold font-EBGaramond text-green-brand md:text-2xl">
               AKA Trading Indonesia
             </article>
 
@@ -172,8 +172,8 @@ export default function candleNut() {
         </section>
       </nav>
 
-      <div className="grid max-w-5xl grid-cols-1 p-5 pt-24 mx-auto space-y-3 md:grid-cols-2 font-inter">
-        <div className="space-y-3 md:pr-5 md:px-0">
+      <div className="grid max-w-5xl grid-cols-1 p-5 pt-24 mx-auto space-y-3 md:grid-cols-2 font-inter md:pt-20 ">
+        <div className="space-y-3 md:p-5 md:px-0">
           <Image
             className="w-full h-auto "
             src="/kemiri.jpg"
@@ -182,7 +182,7 @@ export default function candleNut() {
             priority
           />
         </div>
-        <div className="text-gray-900 md:p-5">
+        <div className="text-gray-900 md:p-5 ">
           <div className="pl-3 mt-4 mb-2 text-2xl font-bold border-l-4 border-black md:mt-0 md:mb-5 md:text-4xl ">
             {t.candlenut.title}
           </div>
@@ -239,7 +239,7 @@ export default function candleNut() {
 
             {/* Order Button */}
             <Link href="/contact">
-              <a className="px-6 py-2 text-white transform hover:shadow-xl hover:bg-opacity-90 bg-green-1000 hover:-translate-y-1">
+              <a className="px-6 py-2 text-white transform rounded hover:shadow-xl hover:bg-opacity-90 bg-green-brand hover:-translate-y-1">
                 {t.order}
               </a>
             </Link>
