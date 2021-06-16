@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function Member({
+const Member = ({
   name,
   image,
   departement,
@@ -10,7 +10,7 @@ export default function Member({
   titleIg,
   titleFb,
   titleLinkedIn,
-}) {
+}) => {
   return (
     <main className="w-3/4 h-auto mx-auto text-center bg-green-brand rounded-2xl hover:scale-105 hover:shadow-2xl">
       <div className="p-5">
@@ -66,4 +66,4 @@ export default function Member({
       </div>
     </main>
   );
-}
+};

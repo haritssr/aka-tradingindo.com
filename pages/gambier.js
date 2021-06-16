@@ -10,7 +10,7 @@ import DarkModeButton from "../components/DarkModeButton";
 import { HiOutlineChevronRight } from "react-icons/hi";
 import { HiOutlineChevronLeft } from "react-icons/hi";
 
-export default function gambier() {
+const gambier = () => {
   const router = useRouter();
   const { locale } = router;
   const t = locale === "ID" ? ID : EN;
@@ -159,9 +159,7 @@ export default function gambier() {
               <div className="inline-block">
                 <button
                   className={`${navigation} px-2`}
-                  onClick={() =>
-                    router.push("/gambier", "/", { locale: "ID" })
-                  }
+                  onClick={() => router.push("/gambier", "/", { locale: "ID" })}
                 >
                   ID
                 </button>
@@ -170,9 +168,12 @@ export default function gambier() {
           </article>
         </section>
       </nav>
-      <div className="max-w-5xl p-5 mx-auto sm:p-0">
+
+      <main className="max-w-5xl p-5 mx-auto sm:p-0">
+        {/* Grid */}
         <div className="grid grid-cols-1 pt-24 space-y-3 md:pt-20 md:m-5 md:grid-cols-2 md:space-y-0 font-inter">
-          <div className="h-auto space-y-3 md:p-5 md:px-0">
+          {/* Image */}
+          <section className="h-auto space-y-3 md:p-5 md:px-0">
             <Image
               className="w-full h-auto "
               src="/gambir1.jpg"
@@ -189,12 +190,14 @@ export default function gambier() {
                 height={805}
               />
             </div>
-          </div>
-          <div className="text-gray-900 md:p-5">
+          </section>
+
+          {/* Information */}
+          <section className="text-gray-900 md:p-5">
             <div className="pl-3 mt-4 mb-2 text-2xl font-bold border-l-4 border-black md:mt-0 md:mb-5 md:text-4xl">
               Gambier (Uncaria Gambir)
             </div>
-            <p className="">
+            <p>
               {t.gambier.description}
               <br />
               <br />
@@ -229,9 +232,9 @@ export default function gambier() {
               {t.gambier.isiHSCode}
             </p>
 
-            {/* next/prev */}
-            <div className="flex flex-row items-center justify-between mt-10">
-              <div className="flex flex-row justify-start font-semibold">
+            <section className="flex flex-row items-center justify-between mt-10">
+              {/* next/prev */}
+              <article className="flex flex-row justify-start font-semibold">
                 <Link href="/candleNut">
                   <a className="px-4 py-1 hover:bg-gray-100">
                     <HiOutlineChevronLeft size={30} />
@@ -242,19 +245,20 @@ export default function gambier() {
                     <HiOutlineChevronRight size={30} />
                   </a>
                 </Link>
-              </div>
-
+              </article>
               {/* Order Button */}
               <Link href="/contact">
                 <a className="px-6 py-2 font-semibold text-white rounded hover:bg-opacity-80 bg-green-brand hover:-translate-y-1">
                   {t.order}
                 </a>
               </Link>
-            </div>
-          </div>
+            </section>
+          </section>
         </div>
-      </div>
+      </main>
       <Footer />
     </main>
   );
-}
+};
+
+export default gambier;

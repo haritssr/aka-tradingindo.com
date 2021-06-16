@@ -8,7 +8,7 @@ import { EN, ID } from "../translation";
 import DarkModeButton from "../components/DarkModeButton";
 import { HiOutlineChevronRight } from "react-icons/hi";
 
-export default function about() {
+const about = () => {
   const router = useRouter();
   const { locale } = router;
   const t = locale === "ID" ? ID : EN;
@@ -16,12 +16,14 @@ export default function about() {
 
   const navigation =
     " text-sm text-gray-600 hover:underline dark:text-gray-300 dark:hover:text-white py-4 font-inter lg:px-5 lg:py-0 block text-center ";
+
   return (
     <main className="dark:bg-gray-bkg">
       <Head>
         <title>{` ${t.nav.about} ∙ AKA Trading Indonesia`}</title>
         <link rel="icon" href="/logo.ico" />
       </Head>
+
       {/* fixed wrapper */}
       <nav className="fixed top-0 z-20 w-full h-auto p-3 px-5 bg-white border-b border-black dark:border-gray-400 md:px-10 dark:bg-gray-bkg font-inter">
         {/* max-w-5xl */}
@@ -168,14 +170,12 @@ export default function about() {
         </section>
       </nav>
 
-     
-
-      <div className="max-w-5xl px-5 mx-auto lg:px-0">
+      <main className="max-w-5xl px-5 mx-auto lg:px-0">
         {/* AKA Trading Indonesia adalah ... */}
-        <div className="pt-20 text-3xl sm:pt-24 mb-14 font-EBGaramond dark:text-white">
+        <section className="pt-20 text-3xl sm:pt-24 mb-14 font-EBGaramond dark:text-white">
           <span className="text-4xl font-bold ">AKA Trading Indonesia</span>{" "}
           {t.about.top}
-        </div>
+        </section>
 
         {/* Tujuan Kami */}
         <section className="flex flex-col mb-20 space-y-5 sm:flex-row sm:space-y-0 sm:space-x-5">
@@ -215,9 +215,11 @@ export default function about() {
             <div className="text-2xl dark:text-white">{t.about.prinsip}</div>
           </article>
         </section>
-      </div>
+      </main>
 
       <Footer />
     </main>
   );
-}
+};
+
+export default about;

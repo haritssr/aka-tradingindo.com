@@ -1,11 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
 
-export default function ProductCard(props) {
+const ProductCard = (props) => {
   return (
-    <>
+    <main>
       <Link href={`${props.product}`}>
-        <div className="w-5/6 h-auto m-5 mx-auto cursor-pointer ">
+        <a className="block w-5/6 h-auto m-5 mx-auto cursor-pointer ">
           <div>
             <Image src={`${props.image}`} width={1080} height={705} priority />
           </div>
@@ -14,8 +14,10 @@ export default function ProductCard(props) {
               {props.productName}
             </div>
           </div>
-        </div>
+        </a>
       </Link>
-    </>
+    </main>
   );
-}
+};
+
+export default ProductCard;

@@ -1,7 +1,8 @@
 import { useRouter } from "next/router";
 import { EN, ID } from "../translation";
 import Link from "next/link";
-export default function Footer() {
+
+const Footer = () => {
   const router = useRouter();
   const { locale } = router;
   const t = locale === "ID" ? ID : EN;
@@ -9,12 +10,14 @@ export default function Footer() {
     // outermost layer
     <main className="bottom-0 mt-40 bg-gray-100 border-t dark:border-gray-400 lg:py-5 dark:bg-gray-bkg">
       {/* max-w-5xl */}
-      <main className="flex flex-col w-full h-auto max-w-5xl p-5 mx-auto space-y-5 lg:p-0 sm:space-y-0 sm:flex-row">
+      <main className="flex flex-col w-full h-auto max-w-5xl px-5 py-10 mx-auto space-y-5 lg:px-0 sm:space-y-0 sm:flex-row">
         {/* Navigation + Product */}
         <section className="grid grid-cols-2 mb-10 sm:w-1/2 sm:mb-0">
           {/* Navigation */}
           <article className="flex flex-col space-y-1 ">
-            <div className="text-sm font-light text-gray-500 dark:text-white">Navigation</div>
+            <div className="text-sm font-light text-gray-500 dark:text-white">
+              Navigation
+            </div>
             <Link href="/">
               <a className="hover:underline dark:text-white">{t.nav.home}</a>
             </Link>
@@ -34,7 +37,9 @@ export default function Footer() {
 
           {/* Product */}
           <article className="flex flex-col space-y-1 ">
-            <div className="text-sm font-light text-gray-500 dark:text-white">Product</div>
+            <div className="text-sm font-light text-gray-500 dark:text-white">
+              Product
+            </div>
             <Link href="/gambier">
               <a className="hover:underline dark:text-white">
                 <div>Gambir</div>
@@ -49,7 +54,7 @@ export default function Footer() {
         </section>
 
         {/* Identity */}
-        <section className="mt-10 text-sm sm:w-1/2 dark:text-white">
+        <section className="pt-10 mt-10 text-sm border-t border-gray-500 sm:pt-0 sm:w-1/2 dark:text-white sm:border-0">
           <div className="text-4xl font-semibold font-EBGaramond text-green-brand ">
             AKA Trading Indonesia
           </div>
@@ -67,4 +72,6 @@ export default function Footer() {
       </main>
     </main>
   );
-}
+};
+
+export default Footer;

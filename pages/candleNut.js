@@ -10,7 +10,7 @@ import DarkModeButton from "../components/DarkModeButton";
 import { HiOutlineChevronRight } from "react-icons/hi";
 import { HiOutlineChevronLeft } from "react-icons/hi";
 
-export default function candleNut() {
+const candleNut = () => {
   const router = useRouter();
   const { locale } = router;
   const t = locale === "ID" ? ID : EN;
@@ -19,7 +19,7 @@ export default function candleNut() {
   const navigation =
     " text-sm text-gray-600 hover:underline dark:text-gray-300 dark:hover:text-white py-4 font-inter lg:px-5 lg:py-0 block text-center ";
   return (
-    <div className="min-h-screen mx-auto">
+    <main className="min-h-screen mx-auto">
       <Head>
         <title>Candlenut ∙ AKA Trading Indonesia</title>
         <link rel="icon" href="/logo.ico" />
@@ -172,8 +172,9 @@ export default function candleNut() {
         </section>
       </nav>
 
-      <div className="grid max-w-5xl grid-cols-1 p-5 pt-24 mx-auto space-y-3 md:grid-cols-2 font-inter md:pt-20 ">
-        <div className="space-y-3 md:p-5 md:px-0">
+      <main className="grid max-w-5xl grid-cols-1 p-5 pt-24 mx-auto space-y-3 md:grid-cols-2 font-inter md:pt-20 ">
+        {/* Image */}
+        <section className="space-y-3 md:p-5 md:px-0">
           <Image
             className="w-full h-auto "
             src="/kemiri.jpg"
@@ -181,8 +182,10 @@ export default function candleNut() {
             height={1200}
             priority
           />
-        </div>
-        <div className="text-gray-900 md:p-5 ">
+        </section>
+
+        {/* Information */}
+        <section className="text-gray-900 md:p-5 ">
           <div className="pl-3 mt-4 mb-2 text-2xl font-bold border-l-4 border-black md:mt-0 md:mb-5 md:text-4xl ">
             {t.candlenut.title}
           </div>
@@ -222,9 +225,9 @@ export default function candleNut() {
             {t.candlenut.isiHSCode}
           </p>
 
-          {/* next/prev */}
-          <div className="flex flex-row items-center justify-between mt-10">
-            <div className="flex flex-row justify-start font-semibold">
+          <section className="flex flex-row items-center justify-between mt-10">
+            {/* next/prev */}
+            <article className="flex flex-row justify-start font-semibold">
               <Link href="/gambier">
                 <a className="px-4 py-1 hover:bg-gray-100">
                   <HiOutlineChevronLeft size={30} />
@@ -235,7 +238,7 @@ export default function candleNut() {
                   <HiOutlineChevronRight size={30} />
                 </a>
               </Link>
-            </div>
+            </article>
 
             {/* Order Button */}
             <Link href="/contact">
@@ -243,10 +246,12 @@ export default function candleNut() {
                 {t.order}
               </a>
             </Link>
-          </div>
-        </div>
-      </div>
+          </section>
+        </section>
+      </main>
       <Footer />
-    </div>
+    </main>
   );
-}
+};
+
+export default candleNut;

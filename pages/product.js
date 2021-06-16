@@ -9,7 +9,7 @@ import DarkModeButton from "../components/DarkModeButton";
 import { HiOutlineChevronRight } from "react-icons/hi";
 import ProductCard from "../components/ProductCard";
 
-export default function product() {
+const product = () => {
   const router = useRouter();
   const { locale } = router;
   const t = locale === "ID" ? ID : EN;
@@ -168,7 +168,8 @@ export default function product() {
         </section>
       </nav>
 
-      <div className="z-0 grid max-w-6xl grid-cols-1 pt-32 mx-auto sm:px-5 sm:grid-cols-2 md:grid-cols-3">
+      <main className="z-0 grid max-w-6xl grid-cols-1 pt-32 mx-auto sm:px-5 sm:grid-cols-2 md:grid-cols-3">
+        {/* Gambier */}
         <div className="mb-5 sm:mx-0">
           <ProductCard
             image="/gambir1.jpg"
@@ -176,6 +177,8 @@ export default function product() {
             product="/gambier"
           />
         </div>
+
+        {/* CandleNut */}
         <div className="mb-5 sm:mx-0">
           <ProductCard
             className="object-cover"
@@ -184,9 +187,11 @@ export default function product() {
             product="/candleNut"
           />
         </div>
-      </div>
+      </main>
 
       <Footer />
     </main>
   );
-}
+};
+
+export default product;

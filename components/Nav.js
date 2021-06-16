@@ -7,7 +7,7 @@ import { EN, ID } from "../translation";
 import DarkModeButton from "./DarkModeButton";
 import { HiOutlineChevronRight } from "react-icons/hi";
 
-export default function Nav(props) {
+const Nav = (props) => {
   const router = useRouter();
   const { locale } = router;
   const t = locale === "ID" ? ID : EN;
@@ -168,4 +168,6 @@ export default function Nav(props) {
       </nav>
     </main>
   );
-}
+};
+
+export default Nav;

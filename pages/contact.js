@@ -11,7 +11,7 @@ import DarkModeButton from "../components/DarkModeButton";
 import { FaLinkedin, FaFacebookSquare } from "react-icons/fa";
 import { HiOutlineChevronRight } from "react-icons/hi";
 
-export default function contact() {
+const contact = () => {
   function sendEmail(e) {
     e.preventDefault();
     emailjs
@@ -47,6 +47,7 @@ export default function contact() {
         <title>{`${t.nav.contact} ∙ AKA Trading Indonesia`}</title>
         <link rel="icon" href="/logo.ico" />
       </Head>
+
       {/* fixed wrapper */}
       <nav className="fixed top-0 z-20 w-full h-auto p-3 px-5 bg-white border-b border-black dark:border-gray-400 md:px-10 dark:bg-gray-bkg font-inter">
         {/* max-w-5xl */}
@@ -193,14 +194,15 @@ export default function contact() {
         </section>
       </nav>
 
-      <section className="grid max-w-5xl grid-cols-1 gap-5 px-5 pt-24 mx-auto lg:grid-cols-2 lg:px-0 md:flex-row">
-        {/* Concact + Maps */}
-        <article>
-          <div className="space-y-2 font-sans text-gray-700 rounded-lg dark:text-white">
+      <main className="grid max-w-5xl grid-cols-1 gap-5 px-5 pt-24 mx-auto lg:grid-cols-2 lg:px-0 md:flex-row">
+        {/* Address + Concact + Maps */}
+        <section>
+          {/* Address + Contact */}
+          <section className="space-y-2 font-sans text-gray-700 rounded-lg dark:text-white">
             <div className="mb-2 text-xl font-semibold">Head Office</div>
             <div></div>
 
-            {/* address */}
+            {/* Address */}
             <div className="flex flex-row items-start justify-start p-2">
               <div>
                 <svg
@@ -223,8 +225,9 @@ export default function contact() {
                 Tanjung Barat, Jagakarsa – Jakarta Selatan 12530
               </div>
             </div>
+
+            {/* Contact */}
             <div className="grid grid-cols-1 gap-2 md:grid-cols-2">
-              
               {/* phone number */}
               <div className="flex flex-row items-center p-2 overflow-hidden text-sm border rounded-lg border-green-brand dark:text-white dark:bg-gray-bkg hover:bg-gray-100 bg-gray-50">
                 <svg
@@ -299,7 +302,7 @@ export default function contact() {
                 </div>
               </a>
             </div>
-          </div>
+          </section>
 
           {/* maps */}
           <div>
@@ -311,7 +314,7 @@ export default function contact() {
               tabIndex={0}
             />
           </div>
-        </article>
+        </section>
 
         {/* enquiry */}
         <form
@@ -387,6 +390,7 @@ export default function contact() {
             rows="5"
           ></textarea>
 
+          {/* send button */}
           <div className="flex justify-end ">
             <input
               className="h-10 px-5 font-semibold text-white rounded cursor-pointer bg-green-brand hover:bg-opacity-90"
@@ -395,8 +399,10 @@ export default function contact() {
             />
           </div>
         </form>
-      </section>
+      </main>
       <Footer />
     </main>
   );
-}
+};
+
+export default contact;
