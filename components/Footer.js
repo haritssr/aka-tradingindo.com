@@ -40,27 +40,27 @@ const Footer = () => {
             </div>
             <Link href="/gambier">
               <a className="hover:underline dark:text-white">
-                <div>Gambir</div>
+                <div>{t.name.gambier}</div>
               </a>
             </Link>
             <Link href="/product.js">
               <a className="hover:underline dark:text-white">
-                <div>Coffe Bean</div>
+                <div>{t.name.coffeeBean}</div>
               </a>
             </Link>
             <Link href="/product.js">
               <a className="hover:underline dark:text-white">
-                <div>Corn</div>
+                <div>{t.name.corn}</div>
               </a>
             </Link>
             <Link href="/product.js">
               <a className="hover:underline dark:text-white">
-                <div>Tea</div>
+                <div>{t.name.tea}</div>
               </a>
             </Link>
             <Link href="/product.js">
               <a className="hover:underline dark:text-white">
-                <div>Pala</div>
+                <div>{t.name.pala}</div>
               </a>
             </Link>
           </article>
