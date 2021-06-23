@@ -187,6 +187,46 @@ const product = () => {
             product="/candleNut"
           />
         </div>
+
+        {/* Biji Kopi */}
+        <div className="mb-5 sm:mx-0">
+          <ProductCard
+            className="object-cover"
+            image="/coffee.jpg"
+            productName={`${t.name.coffeeBean}`}
+            product="/contact"
+          />
+        </div>
+
+        {/* Jagung */}
+        <div className="mb-5 sm:mx-0">
+          <ProductCard
+            className="object-cover"
+            image="/corn.jpg"
+            productName={`${t.name.corn}`}
+            product="/contact"
+          />
+        </div>
+
+        {/* Teh */}
+        <div className="mb-5 sm:mx-0">
+          <ProductCard
+            className="object-cover"
+            image="/tea.jpg"
+            productName={`${t.name.tea}`}
+            product="/contact"
+          />
+        </div>
+
+        {/* Pala */}
+        <div className="mb-5 sm:mx-0">
+          <ProductCard
+            className="object-cover"
+            image="/pala.jpg"
+            productName={`${t.name.pala}`}
+            product="/contact"
+          />
+        </div>
       </main>
 
       <Footer />
@@ -195,3 +235,4 @@ const product = () => {
 };
 
 export default product;
+

@@ -197,7 +197,7 @@ const gambier = () => {
             <div className="pl-3 mt-4 mb-2 text-2xl font-bold border-l-4 border-black md:mt-0 md:mb-5 md:text-4xl">
               Gambier (Uncaria Gambir)
             </div>
-            <p>
+            {/* <p>
               {t.gambier.description}
               <br />
               <br />
@@ -230,7 +230,7 @@ const gambier = () => {
                 {t.gambier.HSCode}
               </span>
               {t.gambier.isiHSCode}
-            </p>
+            </p> */}
 
             <section className="flex flex-row items-center justify-between mt-10">
               {/* next/prev */}

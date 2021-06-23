@@ -9,7 +9,7 @@ export const EN = {
     subject: "Subject",
     send: "Send",
   },
-  hero: "We provide commodities to fulfil your company’s specific needs.",
+  hero: "We provide commodities and other agricultural derivative products to meet your company's spesific needs.",
 
   about: {
     top: "is an exporter company established in 2021. Currently, we prioritize exporting the best-quality of Gambier, Candlenut, Cinnamon, Coffee bean, and other commodities based on customers’ orders.",
@@ -29,7 +29,10 @@ export const EN = {
     gambier: "Gambier",
     candlenut: "Candlenut",
     cinnamon: "Cinnamon",
-    coffeebean: "Coffee Bean",
+    coffeeBean: "Coffee Bean",
+    corn: "Corn",
+    tea: "Tea",
+    pala: "Pala",
   },
   gambier: {
     description:
@@ -87,7 +90,7 @@ export const ID = {
     subject: "Subjek",
     send: "Kirim Pesan",
   },
-  hero: "Kami menyediakan komoditas untuk memenuhi kebutuhan spesifik perusahaan Anda.",
+  hero: "Kami menyediakan komoditas dan produk turunan pertanian lainnya untuk memenuhi kebutuhan spesifik perusahaan Anda.",
   about: {
     top: " merupakan perusahaan eksportir yang didirikan pada tahun 2021. Saat ini kami sedang mengutamakan untuk mengekspor gambir, kemiri, kayu manis, biji kopi, dan komoditas lainnya dengan kualitas terbaik berdasarkan pesanan pelanggan.",
     tujuan:
@@ -105,7 +108,10 @@ export const ID = {
     gambier: "Gambir",
     candlenut: "Kemiri",
     cinnamon: "Kayu Manis",
-    coffeebean: "Biji Kopi",
+    coffeeBean: "Biji Kopi",
+    corn: "Jagung",
+    tea: "Teh",
+    pala: "Pala",
   },
   gambier: {
     description:

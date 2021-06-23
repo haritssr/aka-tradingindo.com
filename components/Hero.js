@@ -19,9 +19,9 @@ const Hero = () => {
             <p className="block leading-normal font-EBGaramond"> {t.hero}</p>
           </div>
 
-          <p className="block text-lg text-white bg-black border-t border-white text-centermt bg-opacity-30 md:text-left font-EBGaramond">
+          {/* <p className="block text-lg text-white bg-black border-t border-white text-centermt bg-opacity-30 md:text-left font-EBGaramond">
             {t.bahan}
-          </p>
+          </p> */}
         </div>
       </section>
     </div>

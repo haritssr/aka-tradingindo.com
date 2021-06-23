@@ -189,7 +189,8 @@ const candleNut = () => {
           <div className="pl-3 mt-4 mb-2 text-2xl font-bold border-l-4 border-black md:mt-0 md:mb-5 md:text-4xl ">
             {t.candlenut.title}
           </div>
-          <p>
+
+          {/* <p>
             {t.candlenut.description}
             <br />
             <br />
@@ -223,7 +224,7 @@ const candleNut = () => {
               {t.candlenut.HSCode}
             </span>
             {t.candlenut.isiHSCode}
-          </p>
+          </p> */}
 
           <section className="flex flex-row items-center justify-between mt-10">
             {/* next/prev */}

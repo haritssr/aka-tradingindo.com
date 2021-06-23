@@ -10,7 +10,7 @@ const Footer = () => {
     // outermost layer
     <main className="bottom-0 mt-40 bg-gray-100 border-t dark:border-gray-400 lg:py-5 dark:bg-gray-bkg">
       {/* max-w-5xl */}
-      <main className="flex flex-col w-full h-auto max-w-5xl px-5 py-10 mx-auto space-y-5 lg:px-0 sm:space-y-0 sm:flex-row">
+      <main className="flex flex-col w-full h-auto max-w-5xl px-5 py-5 mx-auto space-y-5 lg:px-0 sm:space-y-0 sm:flex-row">
         {/* Navigation + Product */}
         <section className="grid grid-cols-2 mb-10 sm:w-1/2 sm:mb-0">
           {/* Navigation */}
@@ -45,9 +45,24 @@ const Footer = () => {
                 <div>Gambir</div>
               </a>
             </Link>
-            <Link href="/candleNut.js">
+            <Link href="/product.js">
               <a className="hover:underline dark:text-white">
-                <div>Candlenut</div>
+                <div>Coffe Bean</div>
+              </a>
+            </Link>
+            <Link href="/product.js">
+              <a className="hover:underline dark:text-white">
+                <div>Corn</div>
+              </a>
+            </Link>
+            <Link href="/product.js">
+              <a className="hover:underline dark:text-white">
+                <div>Tea</div>
+              </a>
+            </Link>
+            <Link href="/product.js">
+              <a className="hover:underline dark:text-white">
+                <div>Pala</div>
               </a>
             </Link>
           </article>
