@@ -1,88 +1,71 @@
-import { useRouter } from "next/router";
-import { EN, ID } from "../translation";
-import Link from "next/link";
-
+import { useRouter } from 'next/router';
+import { EN, ID } from '../translation';
+import Link from 'next/link';
+import Image from 'next/image';
+import { FaFacebookSquare, FaInstagramSquare, FaLinkedin } from 'react-icons/fa';
+import { MdEmail } from 'react-icons/md';
 const Footer = () => {
   const router = useRouter();
   const { locale } = router;
-  const t = locale === "ID" ? ID : EN;
+  const t = locale === 'ID' ? ID : EN;
   return (
     // outermost layer
-    <main className="bottom-0 mt-40 bg-gray-100 border-t dark:border-gray-400 lg:py-5 dark:bg-gray-bkg">
+    <main className='bottom-0 mt-40 border bg-[#A0A7A7] dark:border-gray-400 '>
       {/* max-w-5xl */}
-      <main className="flex flex-col w-full h-auto max-w-5xl px-5 py-5 mx-auto space-y-5 lg:px-0 sm:space-y-0 sm:flex-row">
+      <main className='flex flex-col w-full h-auto max-w-5xl p-5 mx-auto space-y-5 lg:px-0 sm:space-y-0 sm:flex-row sm:justify-between sm:space-x-5 font-CGaramond'>
+        <div className='w-12 h-12'>
+          <Image src='/new/logo.PNG' width={100} height={100} layout='intrinsic' priority />
+        </div>
         {/* Navigation + Product */}
-        <section className="grid grid-cols-2 mb-10 sm:w-1/2 sm:mb-0">
+        <section className='flex mb-10 sm:mb-0 sm:w-28'>
           {/* Navigation */}
-          <article className="flex flex-col space-y-1 ">
-            <div className="text-sm font-light text-gray-500 dark:text-white">
-              Navigation
-            </div>
-            <Link href="/">
-              <a className="hover:underline dark:text-white">{t.nav.home}</a>
+          <article className='flex flex-col space-y-1 '>
+            <Link href='/'>
+              <a className='hover:underline'>{t.nav.home}</a>
             </Link>
-            <Link href="/about">
-              <a className="hover:underline dark:text-white">{t.nav.about}</a>
+            <Link href='/about'>
+              <a className='hover:underline'>{t.nav.about}</a>
             </Link>
-            <Link href="/product">
-              <a className="hover:underline dark:text-white">{t.nav.product}</a>
+            <Link href='/product'>
+              <a className='hover:underline'>{t.nav.product}</a>
             </Link>
-
-            <Link href="/contact">
-              <a className="hover:underline dark:text-white">{t.nav.contact}</a>
-            </Link>
-          </article>
-
-          {/* Product */}
-          <article className="flex flex-col space-y-1 ">
-            <div className="text-sm font-light text-gray-500 dark:text-white">
-              Product
-            </div>
-            <Link href="/gambier">
-              <a className="hover:underline dark:text-white">
-                <div>{t.name.gambier}</div>
-              </a>
-            </Link>
-            <Link href="/product.js">
-              <a className="hover:underline dark:text-white">
-                <div>{t.name.coffeeBean}</div>
-              </a>
-            </Link>
-            <Link href="/product.js">
-              <a className="hover:underline dark:text-white">
-                <div>{t.name.corn}</div>
-              </a>
-            </Link>
-            <Link href="/product.js">
-              <a className="hover:underline dark:text-white">
-                <div>{t.name.tea}</div>
-              </a>
-            </Link>
-            <Link href="/product.js">
-              <a className="hover:underline dark:text-white">
-                <div>{t.name.pala}</div>
-              </a>
+            <Link href='/contact'>
+              <a className='hover:underline'>{t.nav.contact}</a>
             </Link>
           </article>
         </section>
 
         {/* Identity */}
-        <section className="pt-10 mt-10 text-sm border-t border-gray-500 sm:pt-0 sm:w-1/2 dark:text-white sm:border-0">
-          <div className="text-4xl font-semibold font-EBGaramond text-green-brand ">
-            AKA Trading Indonesia
-          </div>
-          <div className="mt-5 text-base text-gray-700 dark:text-white">
-            PT. AKA Trading Indonesia
-          </div>
-          <div className="text-gray-700 dark:text-white">
-            QP Office, Perkantoran Tanjung Mas Raya, Blok B1 nomor 44, Tanjung
-            Barat, Jagakarsa – Jakarta Selatan 12530
-          </div>
-          <div className="mt-5 text-gray-500 dark:text-white">
-            Copyright &copy; 2021. All Right Reserved.
-          </div>
+        <section className='sm:pt-0 sm:border-0 sm:w-1/2'>
+          <div className='text-base '>PT. AKA Trading Indonesia</div>
+          <div>Head Office</div>
+          <div>Perkantoran Tanjung Mas Raya, Blok B1 nomor 44</div>
+          <div>Tanjung Barat, Jagakarsa, Jakarta Selatan - Indonesia 12530</div>
         </section>
+
+        {/* Link */}
+        <div className='flex flex-col'>
+          <div>Contact Us</div>
+          <div>+62-812-2319-1932</div>
+          <div className='flex flex-row mt-5'>
+            <a href='https://www.facebook.com/AKATradingIndo' target='_blank'>
+              <FaFacebookSquare className='w-7 h-7' />
+            </a>
+            <a href='https://www.instagram.com/akatradingindo/' target='_blank'>
+              <FaInstagramSquare className='w-7 h-7' />
+            </a>
+            <a href='https://www.linkedin.com/company/aka-tradingindo' target='_blank'>
+              <FaLinkedin className='w-7 h-7' />
+            </a>
+            <a href='mailto:akatradingindo@gmail.com'>
+              <MdEmail className='w-7 h-7' />
+            </a>
+          </div>
+        </div>
       </main>
+      <div className='max-w-5xl px-5 pb-3 mx-auto text-center text-gray-700 sm:px-0 font-CGaramond'>
+        Copyright &copy; 2021. All Right Reserved.
+      </div>
     </main>
   );
 };

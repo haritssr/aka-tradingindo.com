@@ -1,22 +1,22 @@
-import Link from "next/link";
-import Image from "next/image";
+import Link from 'next/link';
+import Image from 'next/image';
 
-const ProductCard = (props) => {
+const ProductCard = ({ product, image, productName }) => {
   return (
-    <main>
-      <Link href={`${props.product}`}>
-        <a className="block w-5/6 h-auto m-5 mx-auto cursor-pointer ">
-          <div>
-            <Image src={`${props.image}`} width={1080} height={705} priority />
-          </div>
-          <div className="flex flex-col px-3 py-4 -mt-2 cursor-pointer bg-green-brand hover:bg-opacity-70">
-            <div className="px-2 text-2xl font-bold text-left text-white font-EBGaramond dark:text-white">
-              {props.productName}
-            </div>
-          </div>
-        </a>
-      </Link>
-    </main>
+    <Link href={`${product}`}>
+      <a className='relative block text-center cursor-pointer '>
+        <Image
+          src={`${image}`}
+          width={1000}
+          height={1000}
+          priority
+          className='absolute z-0 object-cover w-full h-full rounded-md'
+        />
+        <div className='relative z-10 flex items-center justify-center h-full text-center'>
+          {productName}
+        </div>
+      </a>
+    </Link>
   );
 };
 

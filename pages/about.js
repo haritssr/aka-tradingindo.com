@@ -1,79 +1,73 @@
-import Footer from "../components/Footer";
-import Head from "next/head";
-import Image from "next/image";
-import Link from "next/link";
-import { useState } from "react";
-import { useRouter } from "next/router";
-import { EN, ID } from "../translation";
-import DarkModeButton from "../components/DarkModeButton";
-import { HiOutlineChevronRight } from "react-icons/hi";
+import Footer from '../components/Footer';
+import Head from 'next/head';
+import Image from 'next/image';
+import Link from 'next/link';
+import { useState } from 'react';
+import { useRouter } from 'next/router';
+import { EN, ID } from '../translation';
+import { HiOutlineChevronRight } from 'react-icons/hi';
 
 const about = () => {
   const router = useRouter();
   const { locale } = router;
-  const t = locale === "ID" ? ID : EN;
+  const t = locale === 'ID' ? ID : EN;
   const [isOpen, setIsOpen] = useState(false);
 
   const navigation =
-    " text-sm text-gray-600 hover:underline dark:text-gray-300 dark:hover:text-white py-4 font-inter lg:px-5 lg:py-0 block text-center ";
+    'text-gray-600 hover:underline py-4 font-CGaramond lg:px-5 lg:py-0 block text-center';
 
   return (
-    <main className="dark:bg-gray-bkg">
+    <main className='dark:bg-gray-bkg'>
       <Head>
         <title>{` ${t.nav.about} ∙ AKA Trading Indonesia`}</title>
-        <link rel="icon" href="/logo.ico" />
+        <link rel='icon' href='/logo.ico' />
       </Head>
 
       {/* fixed wrapper */}
-      <nav className="fixed top-0 z-20 w-full h-auto p-3 px-5 bg-white border-b border-black dark:border-gray-400 md:px-10 dark:bg-gray-bkg font-inter">
+      <nav className='fixed top-0 z-20 w-full h-auto px-5 py-2 bg-white font-inter'>
         {/* max-w-5xl */}
-        <section className="flex flex-col items-center max-w-5xl mx-auto lg:justify-between lg:flex-row">
+        <section className='flex flex-col items-center max-w-5xl mx-auto lg:justify-between lg:flex-row'>
           {/*  */}
-          <article className="flex flex-row items-center justify-between w-full lg:justify-start lg:space-x-5 lg:w-1/3">
+          <article className='flex flex-row items-center justify-between w-full lg:justify-start lg:space-x-5 lg:w-1/3'>
             {/* Mobile & Desktop -  Logo */}
-            <article className="flex w-8 h-8 ">
-              <Link href="/">
-                <a className="block">
+            <article className='flex items-center w-32 h-20 justiry-center'>
+              <Link href='/'>
+                <a className='block'>
                   <Image
-                    src="/Logo.PNG"
-                    width="1000px"
-                    height="1000px"
-                    layout="intrinsic"
+                    src='/new/logotulisan.PNG'
+                    width={2245}
+                    height={913}
+                    layout='intrinsic'
                     priority
                   />
                 </a>
               </Link>
             </article>
 
-            {/* Mobile & Desktop -  Logo Name */}
-            <article className="text-lg font-bold font-EBGaramond text-green-brand md:text-2xl">
-              AKA Trading Indonesia
-            </article>
-
             {/* Mobile - Hamburger Menu - lg:hidden */}
             <article>
               <button
                 onClick={() => setIsOpen(!isOpen)}
-                className="block lg:hidden focus:outline-none"
+                className='block lg:hidden focus:outline-none'
               >
                 <svg
-                  className="w-8 h-8 dark:text-white text-green-brand"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
+                  className='w-8 h-8 dark:text-white text-green-brand'
+                  xmlns='http://www.w3.org/2000/svg'
+                  fill='none'
+                  viewBox='0 0 24 24'
+                  stroke='currentColor'
                 >
                   {/* Hamburger */}
                   <path
-                    className={!isOpen ? "block" : "hidden"}
+                    className={!isOpen ? 'block' : 'hidden'}
                     strokeWidth={1}
-                    d="M4 6h16M4 12h16M4 18h16"
+                    d='M4 6h16M4 12h16M4 18h16'
                   />
                   {/* X */}
                   <path
-                    className={isOpen ? "block" : "hidden"}
+                    className={isOpen ? 'block' : 'hidden'}
                     strokeWidth={1}
-                    d="M6 18L18 6M6 6l12 12"
+                    d='M6 18L18 6M6 6l12 12'
                   />
                 </svg>
               </button>
@@ -83,84 +77,70 @@ const about = () => {
           {/* Mobile & Desktop - Navigation Link */}
           <article
             className={` ${
-              !isOpen ? "hidden" : "block"
-            } items-center flex-col lg:flex lg:flex-row lg:justify-end lg:w-2/3 w-full divide-y lg:divide-y-0 lg:divide-x  divide-gray-500 pt-5 lg:pt-0`}
+              !isOpen ? 'hidden' : 'block'
+            } items-center flex-col lg:flex lg:flex-row lg:justify-end lg:w-2/3 w-full divide-y lg:divide-y-0   divide-gray-500 pt-5 lg:pt-0`}
           >
             <div>
-              <Link href="/">
-                <a className="flex items-center justify-between ">
+              <Link href='/'>
+                <a className='flex items-center justify-between '>
                   <div className={navigation}>{t.nav.home}</div>
-                  <div className="lg:hidden">
-                    <HiOutlineChevronRight className="w-5 h-5 text-gray-600" />
+                  <div className='lg:hidden'>
+                    <HiOutlineChevronRight className='w-5 h-5 text-gray-600' />
                   </div>
                 </a>
               </Link>
             </div>
 
             <div>
-              <Link href="/about">
-                <a className="flex items-center justify-between">
+              <Link href='/about'>
+                <a className='flex items-center justify-between'>
                   <div className={navigation}>{t.nav.about}</div>
-                  <div className="lg:hidden">
-                    <HiOutlineChevronRight className="w-5 h-5 text-gray-600" />
+                  <div className='lg:hidden'>
+                    <HiOutlineChevronRight className='w-5 h-5 text-gray-600' />
                   </div>
                 </a>
               </Link>
             </div>
 
             <div>
-              <Link href="/product">
-                <a className="flex items-center justify-between">
+              <Link href='/product'>
+                <a className='flex items-center justify-between'>
                   <div className={navigation}>{t.nav.product}</div>
-                  <div className="lg:hidden">
-                    <HiOutlineChevronRight className="w-5 h-5 text-gray-600" />
+                  <div className='lg:hidden'>
+                    <HiOutlineChevronRight className='w-5 h-5 text-gray-600' />
                   </div>
                 </a>
               </Link>
             </div>
-
-            {/* <div>
-              <Link href="/team">
-                <a className="flex items-center justify-between">
-                  <div className={navigation}>{t.nav.team}</div>
-                  <div className="lg:hidden">
-                    <HiOutlineChevronRight className="w-5 h-5 text-gray-600" />
-                  </div>
-                </a>
-              </Link>
-            </div> */}
 
             <div>
-              <Link href="/contact">
-                <a className="flex items-center justify-between">
+              <Link href='/contact'>
+                <a className='flex items-center justify-between'>
                   <div className={navigation}>{t.nav.contact}</div>
-                  <div className="lg:hidden">
-                    <HiOutlineChevronRight className="w-5 h-5 text-gray-600" />
+                  <div className='lg:hidden'>
+                    <HiOutlineChevronRight className='w-5 h-5 text-gray-600' />
                   </div>
                 </a>
               </Link>
             </div>
-
-            {/* Dark mode button */}
-            <DarkModeButton />
 
             {/* Internasionalization button */}
-            <article className="flex items-center lg:justify-center ">
-              <div className="inline-block">
+            <article className='flex items-center lg:justify-center '>
+              <div className='inline-block'>
                 <button
                   className={`${navigation} px-2`}
                   onClick={() => {
-                    router.push("/about", "/", { locale: "EN" });
+                    router.push('/about', '/', { locale: 'EN' });
                   }}
                 >
                   EN
                 </button>
               </div>
               {`|`}
-              <div className="inline-block">
+              <div className='inline-block'>
                 <button
                   className={`${navigation} px-2`}
-                  onClick={() => router.push("/about", "/", { locale: "ID" })}
+                  onClick={() => router.push('/about', '/', { locale: 'ID' })}
                 >
                   ID
                 </button>
@@ -170,51 +150,19 @@ const about = () => {
         </section>
       </nav>
 
-      <main className="max-w-5xl px-5 mx-auto lg:px-0">
-        {/* AKA Trading Indonesia adalah ... */}
-        <section className="pt-20 text-3xl sm:pt-24 mb-14 font-EBGaramond dark:text-white">
-          <span className="text-4xl font-bold ">AKA Trading Indonesia</span>{" "}
-          {t.about.top}
-        </section>
-
-        {/* Tujuan Kami */}
-        <section className="flex flex-col mb-20 space-y-5 sm:flex-row sm:space-y-0 sm:space-x-5">
-          <article className="sm:w-1/2">
-            <Image src="/abp1.png" width="880px" height="626px" priority />
-          </article>
-          <article className="font-EBGaramond sm:w-1/2">
-            <div className="mb-3 text-4xl font-semibold text-green-brand">
-              {t.about.tujuanTitle}
-            </div>
-            <div className="text-2xl dark:text-white">{t.about.tujuan}</div>
-          </article>
-        </section>
-
-        {/* Komitmen Kami */}
-        <section className="flex flex-col mb-20 space-y-5 sm:flex-row-reverse sm:space-y-0">
-          <article className="sm:w-1/2 sm:ml-5">
-            <Image src="/abp2.png" width="880px" height="626px" priority />
-          </article>
-          <article className="font-EBGaramond sm:w-1/2">
-            <div className="mb-3 text-4xl font-semibold text-green-brand">
-              {t.about.komitmenTitle}
-            </div>
-            <div className="text-2xl dark:text-white">{t.about.komitmen}</div>
-          </article>
-        </section>
-
-        {/* Prinsip Kami */}
-        <section className="flex flex-col mb-20 space-y-5 sm:flex-row sm:space-y-0 sm:space-x-5">
-          <article className="sm:w-1/2">
-            <Image src="/abp3.png" width="880px" height="626px" priority />
-          </article>
-          <article className="font-EBGaramond sm:w-1/2">
-            <div className="mb-3 text-4xl font-semibold text-green-brand">
-              {t.about.prinsipTitle}
-            </div>
-            <div className="text-2xl dark:text-white">{t.about.prinsip}</div>
-          </article>
-        </section>
+      <main className='max-w-5xl px-5 mx-auto lg:px-0'>
+        <div className='h-auto max-w-5xl mx-auto mt-16'>
+          <Image src='/new/aboutUs.jpg' layout='intrinsic' height={1242} width={4028} priority />
+        </div>
+        <div className='pt-10 pb-5 text-2xl font-medium text-center font-DMSans'>{t.aboutUs}</div>
+        <div className='grid grid-cols-1 gap-5 sm:grid-cols-2'>
+          <Image src='/new/y.jpg' width={3024} height={2493} priority />
+          <div className='flex flex-col space-y-5'>
+            <div className='text-xl text-gray-700 font-DMSans'>{t.about.one}</div>
+            <div className='text-xl text-gray-700 font-DMSans'>{t.about.two}</div>
+            <div className='text-xl text-gray-700 font-DMSans'>{t.about.three}</div>
+          </div>
+        </div>
       </main>
 
       <Footer />
