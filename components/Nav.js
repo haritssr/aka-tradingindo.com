@@ -27,7 +27,7 @@ const Nav = props => {
           {/*  */}
           <article className='flex flex-row items-center justify-between w-full lg:justify-start lg:space-x-5 lg:w-1/3'>
             {/* Mobile & Desktop -  Logo */}
-            <article className='flex items-center w-32 h-20 justiry-center'>
+            <article className='flex items-center h-20 w-36 justiry-center'>
               <Link href='/'>
                 <a className='block'>
                   <Image
@@ -40,11 +40,6 @@ const Nav = props => {
                 </a>
               </Link>
             </article>
-
-            {/* Mobile & Desktop -  Logo Name */}
-            {/* <article className='text-lg font-bold font-EBGaramond text-green-brand md:text-2xl'>
-              AKA Trading Indonesia
-            </article> */}
 
             {/* Mobile - Hamburger Menu - lg:hidden */}
             <article>

@@ -24,29 +24,24 @@ const candleNut = () => {
         <link rel='icon' href='/logo.ico' />
       </Head>
       {/* fixed wrapper */}
-      <nav className='fixed top-0 z-20 w-full h-auto p-3 px-5 bg-white md:px-10 font-inter'>
+      <nav className='fixed top-0 z-20 w-full h-auto px-5 py-2 bg-white md:px-10 font-inter'>
         {/* max-w-5xl */}
         <section className='flex flex-col items-center max-w-5xl mx-auto lg:justify-between lg:flex-row'>
           {/*  */}
           <article className='flex flex-row items-center justify-between w-full lg:justify-start lg:space-x-5 lg:w-1/3'>
             {/* Mobile & Desktop -  Logo */}
-            <article className='flex w-8 h-8 '>
+            <article className='flex items-center h-20 w-36 justiry-center'>
               <Link href='/'>
                 <a className='block'>
                   <Image
-                    src='/Logo.PNG'
-                    width='1000px'
-                    height='1000px'
+                    src='/new/logotulisan.PNG'
+                    width={2245}
+                    height={913}
                     layout='intrinsic'
                     priority
                   />
                 </a>
               </Link>
-            </article>
-
-            {/* Mobile & Desktop -  Logo Name */}
-            <article className='text-lg font-bold font-EBGaramond text-green-brand md:text-2xl'>
-              AKA Trading Indonesia
             </article>
 
             {/* Mobile - Hamburger Menu - lg:hidden */}
@@ -83,7 +78,7 @@ const candleNut = () => {
           <article
             className={` ${
               !isOpen ? 'hidden' : 'block'
-            } items-center flex-col lg:flex lg:flex-row lg:justify-end lg:w-2/3 w-full divide-y lg:divide-y-0 lg:divide-x  divide-gray-500 pt-5 lg:pt-0`}
+            } items-center flex-col lg:flex lg:flex-row lg:justify-end lg:w-2/3 w-full divide-y lg:divide-y-0  divide-gray-500 pt-5 lg:pt-0`}
           >
             <div>
               <Link href='/'>
@@ -158,7 +153,7 @@ const candleNut = () => {
       <main className='grid max-w-5xl grid-cols-1 p-5 pt-24 mx-auto space-y-3 md:grid-cols-2 font-inter md:pt-20 '>
         {/* Image */}
         <section className='space-y-3 md:p-5 md:px-0'>
-          <Image className='w-full h-auto ' src='/kemiri.jpg' width={1080} height={1200} priority />
+          <Image className='w-full h-auto ' src='/new/kemiri.png' width={1080} height={1200} priority />
         </section>
 
         {/* Information */}

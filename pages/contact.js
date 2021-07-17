@@ -49,7 +49,7 @@ const contact = () => {
           {/*  */}
           <article className='flex flex-row items-center justify-between w-full lg:justify-start lg:space-x-5 lg:w-1/3'>
             {/* Mobile & Desktop -  Logo */}
-            <article className='flex items-center w-32 h-20 justiry-center'>
+            <article className='flex items-center h-20 w-36 justiry-center'>
               <Link href='/'>
                 <a className='block'>
                   <Image
@@ -168,7 +168,7 @@ const contact = () => {
           </article>
         </section>
       </nav>
-      <div className='max-w-5xl px-5 pt-24 mx-auto text-center font-DMSans sm:px-0'>
+      <div className='max-w-4xl px-5 pt-24 mx-auto text-center font-DMSans sm:px-0'>
         <div className='py-3 text-3xl font-semibold'>{t.contactUs}</div>
         <div className='mb-2 sm:mb-0'>{t.contact1}</div>
         <div>{t.contact2}</div>

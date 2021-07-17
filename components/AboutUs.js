@@ -19,10 +19,10 @@ export default function AboutUs() {
         <Image src='/new/3.png' width={1000} height={1000} priority className='rounded-md' />
       </a>
       <div className='flex flex-col justify-between space-y-5 sm:space-y-0'>
-        <div className='text-3xl font-medium font-DMSans'>About us</div>
-        <div>{t.aboutUsHomePage}</div>
+        <div className='text-2xl font-medium font-DMSans'>About us</div>
+        <div className="text-gray-700">{t.aboutUsHomePage}</div>
         <Link href='/about'>
-          <a className='block px-10 py-3 text-center text-white bg-gray-700 rounded-full hover:opacity-90'>
+          <a className='block px-10 py-2 text-center text-white bg-gray-700 rounded-full hover:opacity-90'>
             read more
           </a>
         </Link>

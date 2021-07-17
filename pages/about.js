@@ -30,7 +30,7 @@ const about = () => {
           {/*  */}
           <article className='flex flex-row items-center justify-between w-full lg:justify-start lg:space-x-5 lg:w-1/3'>
             {/* Mobile & Desktop -  Logo */}
-            <article className='flex items-center w-32 h-20 justiry-center'>
+            <article className='flex items-center h-20 w-36 justiry-center'>
               <Link href='/'>
                 <a className='block'>
                   <Image
