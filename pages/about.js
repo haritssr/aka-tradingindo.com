@@ -17,7 +17,7 @@ const about = () => {
     'text-gray-600 hover:underline py-4 font-CGaramond lg:px-5 lg:py-0 block text-center';
 
   return (
-    <main className='dark:bg-gray-bkg'>
+    <main>
       <Head>
         <title>{` ${t.nav.about} ∙ AKA Trading Indonesia`}</title>
         <link rel='icon' href='/logo.ico' />
@@ -51,7 +51,7 @@ const about = () => {
                 className='block lg:hidden focus:outline-none'
               >
                 <svg
-                  className='w-8 h-8 dark:text-white text-green-brand'
+                  className='w-8 h-8 text-green-brand'
                   xmlns='http://www.w3.org/2000/svg'
                   fill='none'
                   viewBox='0 0 24 24'

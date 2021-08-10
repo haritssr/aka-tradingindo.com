@@ -33,7 +33,7 @@ const contact = () => {
   const navigation =
     'text-gray-600 hover:underline py-4 font-CGaramond lg:px-5 lg:py-0 block text-center';
   const ab =
-    'h-10 px-2 placeholder-gray-500  bg-gray-200 rounded  focus:outline-none  w-full  focus:ring focus:ring-1 focus:ring-green-brand dark:focus:ring-gray-300 ';
+    'h-10 px-2 placeholder-gray-500  bg-gray-200 rounded  focus:outline-none  w-full  focus:ring focus:ring-1 focus:ring-green-brand  ';
 
   return (
     <main className='min-h-screen mx-auto '>
@@ -70,7 +70,7 @@ const contact = () => {
                 className='block lg:hidden focus:outline-none'
               >
                 <svg
-                  className='w-8 h-8 dark:text-white text-green-brand'
+                  className='w-8 h-8 text-green-brand'
                   xmlns='http://www.w3.org/2000/svg'
                   fill='none'
                   viewBox='0 0 24 24'
@@ -177,7 +177,7 @@ const contact = () => {
         {/* Address + Concact + Maps */}
         <section>
           {/* Address + Contact */}
-          <section className='space-y-2 font-sans text-gray-700 rounded-lg dark:text-white'>
+          <section className='space-y-2 font-sans text-gray-700 rounded-lg '>
             <div className='mb-2 text-xl font-semibold'>Head Office</div>
             <div></div>
 
@@ -208,7 +208,7 @@ const contact = () => {
             {/* Contact */}
             <div className='grid grid-cols-1 gap-2 md:grid-cols-2'>
               {/* phone number */}
-              <div className='flex flex-row items-center p-2 overflow-hidden text-sm border rounded-lg border-green-brand dark:text-white hover:bg-gray-100 bg-gray-50'>
+              <div className='flex flex-row items-center p-2 overflow-hidden text-sm border rounded-lg border-green-brand hover:bg-gray-100 bg-gray-50'>
                 <svg
                   className='w-5 h-5 mr-2'
                   xmlns='http://www.w3.org/2000/svg'
@@ -228,7 +228,7 @@ const contact = () => {
               </div>
 
               {/* email */}
-              <div className='flex flex-row items-center p-2 overflow-hidden text-sm border rounded-lg border-green-brand dark:text-white hover:bg-gray-100 bg-gray-50'>
+              <div className='flex flex-row items-center p-2 overflow-hidden text-sm border rounded-lg border-green-brand hover:bg-gray-100 bg-gray-50'>
                 <div>
                   <svg
                     className='w-5 h-5 mr-2'
@@ -297,7 +297,7 @@ const contact = () => {
 
         {/* enquiry */}
         <form
-          className='h-auto p-5 space-y-5 bg-gray-100 border rounded sm: dark:border-gray-400 border-green-brand md:mx-auto md:mr-5'
+          className='h-auto p-5 space-y-5 bg-gray-100 border rounded border-green-brand md:mx-auto md:mr-5'
           onSubmit={sendEmail}
         >
           <div className='grid grid-cols-1 gap-5 sm:grid-cols-2'>
@@ -362,7 +362,7 @@ const contact = () => {
           />
 
           <textarea
-            className='w-full p-2 placeholder-gray-500 bg-gray-200 rounded-md dark:bg-gray-300 dark:placeholder-black focus:ring-1 focus:outline-none focus:ring-green-brand dark:focus:ring-gray-400 '
+            className='w-full p-2 placeholder-gray-500 bg-gray-200 rounded-md focus:ring-1 focus:outline-none focus:ring-green-brand '
             name='message'
             id='message'
             cols='20'

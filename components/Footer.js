@@ -10,7 +10,7 @@ const Footer = () => {
   const t = locale === 'ID' ? ID : EN;
   return (
     // outermost layer
-    <main className='bottom-0 mt-40 border bg-[#A0A7A7] dark:border-gray-400 '>
+    <main className='bottom-0 mt-40 border bg-[#A0A7A7]'>
       {/* max-w-5xl */}
       <main className='flex flex-col w-full h-auto max-w-5xl p-5 mx-auto space-y-5 lg:px-0 sm:space-y-0 sm:flex-row sm:justify-between sm:space-x-5 font-CGaramond'>
         <div className='w-12 h-12'>

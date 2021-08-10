@@ -49,7 +49,7 @@ const gambier = () => {
                 className='block lg:hidden focus:outline-none'
               >
                 <svg
-                  className='w-8 h-8 dark:text-white text-green-1000'
+                  className='w-8 h-8 text-green-1000'
                   xmlns='http://www.w3.org/2000/svg'
                   fill='none'
                   viewBox='0 0 24 24'

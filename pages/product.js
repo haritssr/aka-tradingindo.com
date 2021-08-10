@@ -22,7 +22,7 @@ const product = () => {
         <link rel='icon' href='/logo.ico' />
       </Head>
       {/* fixed wrapper */}
-      <nav className='fixed top-0 z-20 w-full h-auto px-5 py-2 bg-white sm:px-0 md:px-10 dark:bg-gray-bkg font-inter'>
+      <nav className='fixed top-0 z-20 w-full h-auto px-5 py-2 bg-white sm:px-0 md:px-10 font-inter'>
         {/* max-w-5xl */}
         <section className='flex flex-col items-center max-w-5xl mx-auto lg:justify-between lg:flex-row'>
           {/*  */}
@@ -49,7 +49,7 @@ const product = () => {
                 className='block lg:hidden focus:outline-none'
               >
                 <svg
-                  className='w-8 h-8 dark:text-white text-green-1000'
+                  className='w-8 h-8 text-green-1000'
                   xmlns='http://www.w3.org/2000/svg'
                   fill='none'
                   viewBox='0 0 24 24'
