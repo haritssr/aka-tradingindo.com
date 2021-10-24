@@ -182,7 +182,7 @@ export default function Contact() {
 
           <div>
             <label className='text-gray-600' htmlFor='messages'>
-              Messages
+              {t.form.message}
             </label>
             <textarea
               className='w-full p-2 placeholder-gray-500 bg-gray-200 rounded-md focus:ring-1 focus:outline-none focus:ring-green-brand '

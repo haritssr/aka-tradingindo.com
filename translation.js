@@ -11,6 +11,7 @@ export const EN = {
     subject: 'Subject',
     send: 'Send',
     textarea: 'Write a message...',
+    message: 'Message',
   },
   hero: 'WE PROVIDE AGRICULTURAL PRODUCT FOR ALL YOUR NEED',
 
@@ -111,6 +112,7 @@ export const ID = {
     subject: 'Subjek',
     send: 'Kirim Pesan',
     textarea: 'Tulis sebuah pesan...',
+    message: 'Pesan',
   },
   hero: 'KAMI MENYEDIAKAN PRODUK PERTANIAN UNTUK SEMUA KEBUTUHAN ANDA',
   about: {
