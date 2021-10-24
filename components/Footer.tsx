@@ -4,33 +4,50 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { FaFacebookSquare, FaInstagramSquare, FaLinkedin } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
+
 const Footer = () => {
   const router = useRouter();
   const { locale } = router;
   const t = locale === 'ID' ? ID : EN;
+  console.log(router.asPath);
   return (
     // outermost layer
     <main className='bottom-0 mt-40 border bg-[#A0A7A7]'>
       {/* max-w-5xl */}
       <main className='flex flex-col w-full h-auto max-w-5xl p-5 mx-auto space-y-5 lg:px-0 sm:space-y-0 sm:flex-row sm:justify-between sm:space-x-5 font-CGaramond'>
         <div className='w-12 h-12'>
-          <Image src='/new/logo.PNG' width={100} height={100} layout='intrinsic' priority />
+          <Image
+            src='/new/logo.PNG'
+            width={100}
+            height={100}
+            layout='intrinsic'
+            priority
+            alt='AKA Trading Indonesia Logo'
+          />
         </div>
         {/* Navigation + Product */}
         <section className='flex mb-10 sm:mb-0 sm:w-28'>
           {/* Navigation */}
           <article className='flex flex-col space-y-1 '>
             <Link href='/'>
-              <a className='hover:underline'>{t.nav.home}</a>
+              <a className={`${router.asPath === '/' ? 'underline' : ''} hover:underline`}>
+                {t.nav.home}
+              </a>
             </Link>
             <Link href='/about'>
-              <a className='hover:underline'>{t.nav.about}</a>
+              <a className={`${router.asPath === '/about' ? 'underline' : ''} hover:underline`}>
+                {t.nav.about}
+              </a>
             </Link>
             <Link href='/product'>
-              <a className='hover:underline'>{t.nav.product}</a>
+              <a className={`${router.asPath === '/product' ? 'underline' : ''} hover:underline`}>
+                {t.nav.product}
+              </a>
             </Link>
             <Link href='/contact'>
-              <a className='hover:underline'>{t.nav.contact}</a>
+              <a className={`${router.asPath === '/contact' ? 'underline' : ''} hover:underline`}>
+                {t.nav.contact}
+              </a>
             </Link>
           </article>
         </section>
@@ -46,15 +63,21 @@ const Footer = () => {
         {/* Link */}
         <div className='flex flex-col'>
           <div>Contact Us</div>
-          <div>+62-812-2319-1932</div>
+          <a href='tel:089612631275' className='hover:underline'>
+            +62-896-1263-1275
+          </a>
           <div className='flex flex-row mt-5'>
-            <a href='https://www.facebook.com/AKATradingIndo' target='_blank'>
+            <a href='https://www.facebook.com/AKATradingIndo' target='_blank' rel='noopener'>
               <FaFacebookSquare className='w-7 h-7' />
             </a>
-            <a href='https://www.instagram.com/akatradingindo/' target='_blank'>
+            <a href='https://www.instagram.com/akatradingindo/' target='_blank' rel='noopener'>
               <FaInstagramSquare className='w-7 h-7' />
             </a>
-            <a href='https://www.linkedin.com/company/aka-tradingindo' target='_blank'>
+            <a
+              href='https://www.linkedin.com/company/aka-tradingindo'
+              target='_blank'
+              rel='noopener'
+            >
               <FaLinkedin className='w-7 h-7' />
             </a>
             <a href='mailto:akatradingindo@gmail.com'>
@@ -63,7 +86,7 @@ const Footer = () => {
           </div>
         </div>
       </main>
-      <div className='max-w-5xl px-5 pb-3 mx-auto text-center text-gray-700 sm:px-0 font-CGaramond'>
+      <div className='max-w-5xl px-5 pb-3 mx-auto text-center text-gray-800 sm:px-0 font-CGaramond'>
         Copyright &copy; 2021. All Right Reserved.
       </div>
     </main>

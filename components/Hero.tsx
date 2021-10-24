@@ -3,7 +3,7 @@ import { EN, ID } from '../translation';
 import Image from 'next/image';
 import Link from 'next/link';
 
-const Hero = () => {
+export default function Hero() {
   const router = useRouter();
   const { locale } = router;
   const t = locale === 'ID' ? ID : EN;
@@ -13,6 +13,7 @@ const Hero = () => {
         src='/new/hero.jpg'
         layout='fill'
         className='absolute inset-0 object-cover w-full bg-opacity-50 h-72'
+        alt='AKA Trading Indonesia main banner'
       />
       <section className='relative max-w-5xl py-10 pl-0 pr-5 mx-auto md:px-5 '>
         <div className='w-full py-5 lg:py-14 sm:max-w-2xl '>
@@ -30,6 +31,4 @@ const Hero = () => {
       </section>
     </div>
   );
-};
-
-export default Hero;
+}

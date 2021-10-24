@@ -1,4 +1,6 @@
 export const EN = {
+  contactSocialMedia: 'Contact & Social Media',
+  officeLocation: 'Office Location Map',
   form: {
     fullName: 'Full Name',
     companyName: 'Company Name',
@@ -8,6 +10,7 @@ export const EN = {
     country: 'Country',
     subject: 'Subject',
     send: 'Send',
+    textarea: 'Write a message...',
   },
   hero: 'WE PROVIDE AGRICULTURAL PRODUCT FOR ALL YOUR NEED',
 
@@ -96,6 +99,8 @@ export const EN = {
 };
 
 export const ID = {
+  contactSocialMedia: 'Kontak & Sosial Media',
+  officeLocation: 'Peta Lokasi Kantor',
   form: {
     fullName: 'Nama Lengkap',
     companyName: 'Nama Perusahaan',
@@ -105,6 +110,7 @@ export const ID = {
     country: 'Negara',
     subject: 'Subjek',
     send: 'Kirim Pesan',
+    textarea: 'Tulis sebuah pesan...',
   },
   hero: 'KAMI MENYEDIAKAN PRODUK PERTANIAN UNTUK SEMUA KEBUTUHAN ANDA',
   about: {

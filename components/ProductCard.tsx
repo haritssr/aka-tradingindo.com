@@ -1,9 +1,9 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
-const ProductCard = ({ product, image, productName }) => {
+export default function ProductCard({ href, image, productName }) {
   return (
-    <Link href={`${product}`}>
+    <Link href={`${href}`}>
       <a className='relative block text-center cursor-pointer '>
         <Image
           src={`${image}`}
@@ -18,6 +18,4 @@ const ProductCard = ({ product, image, productName }) => {
       </a>
     </Link>
   );
-};
-
-export default ProductCard;
+}

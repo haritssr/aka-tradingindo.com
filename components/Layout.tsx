@@ -1,4 +1,4 @@
-import Footer from '../components/Footer';
+import Footer from './Footer';
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -7,20 +7,35 @@ import { useRouter } from 'next/router';
 import { EN, ID } from '../translation';
 import { HiOutlineChevronRight } from 'react-icons/hi';
 
-const about = () => {
+export default function Layout({ browserTitle, href, children, description }) {
   const router = useRouter();
   const { locale } = router;
   const t = locale === 'ID' ? ID : EN;
   const [isOpen, setIsOpen] = useState(false);
-
-  const navigation =
+  const type = 'website';
+  const style =
     'text-gray-600 hover:underline py-4 font-CGaramond lg:px-5 lg:py-0 block text-center';
+  console.log(router.asPath);
 
   return (
     <main>
       <Head>
-        <title>{` ${t.nav.about} ∙ AKA Trading Indonesia`}</title>
+        {router.asPath === '/' ? (
+          <title>AKA Trading Indonesia</title>
+        ) : (
+          <title>{browserTitle} - AKA Trading Indonesia</title>
+        )}
         <link rel='icon' href='/logo.ico' />
+        <meta name='robots' content='follow, index' />
+        <meta content={description} name='description' />
+        <meta property='og:type' content={type} />
+        <meta property='og:site_name' content='HarisLab' />
+        <meta property='og:description' content={description} />
+        <meta property='og:title' content={browserTitle} />
+        <meta name='twitter:card' content='summary_large_image' />
+        <meta name='twitter:site' content='@haritssr' />
+        <meta name='twitter:title' content={browserTitle} />
+        <meta name='twitter:description' content={description} />
       </Head>
 
       {/* fixed wrapper */}
@@ -38,6 +53,7 @@ const about = () => {
                     width={2245}
                     height={913}
                     layout='intrinsic'
+                    alt='Logo AKA Trading Indonesia'
                     priority
                   />
                 </a>
@@ -80,57 +96,18 @@ const about = () => {
               !isOpen ? 'hidden' : 'block'
             } items-center flex-col lg:flex lg:flex-row lg:justify-end lg:w-2/3 w-full divide-y lg:divide-y-0   divide-gray-500 pt-5 lg:pt-0`}
           >
-            <div>
-              <Link href='/'>
-                <a className='flex items-center justify-between '>
-                  <div className={navigation}>{t.nav.home}</div>
-                  <div className='lg:hidden'>
-                    <HiOutlineChevronRight className='w-5 h-5 text-gray-600' />
-                  </div>
-                </a>
-              </Link>
-            </div>
-
-            <div>
-              <Link href='/about'>
-                <a className='flex items-center justify-between'>
-                  <div className={navigation}>{t.nav.about}</div>
-                  <div className='lg:hidden'>
-                    <HiOutlineChevronRight className='w-5 h-5 text-gray-600' />
-                  </div>
-                </a>
-              </Link>
-            </div>
-
-            <div>
-              <Link href='/product'>
-                <a className='flex items-center justify-between'>
-                  <div className={navigation}>{t.nav.product}</div>
-                  <div className='lg:hidden'>
-                    <HiOutlineChevronRight className='w-5 h-5 text-gray-600' />
-                  </div>
-                </a>
-              </Link>
-            </div>
-
-            <div>
-              <Link href='/contact'>
-                <a className='flex items-center justify-between'>
-                  <div className={navigation}>{t.nav.contact}</div>
-                  <div className='lg:hidden'>
-                    <HiOutlineChevronRight className='w-5 h-5 text-gray-600' />
-                  </div>
-                </a>
-              </Link>
-            </div>
+            <TopNavLink href='/' title={t.nav.home} />
+            <TopNavLink href='/about' title={t.nav.about} />
+            <TopNavLink href='/product' title={t.nav.product} />
+            <TopNavLink href='/contact' title={t.nav.contact} />
 
             {/* Internasionalization button */}
-            <article className='flex items-center lg:justify-center '>
+            <div className='flex items-center lg:justify-center '>
               <div className='inline-block'>
                 <button
-                  className={`${navigation} px-2`}
+                  className={`${style} px-2`}
                   onClick={() => {
-                    router.push('/about', '/', { locale: 'EN' });
+                    router.push({ href }, { href }, { locale: 'EN' });
                   }}
                 >
                   EN
@@ -139,35 +116,42 @@ const about = () => {
               {`|`}
               <div className='inline-block'>
                 <button
-                  className={`${navigation} px-2`}
-                  onClick={() => router.push('/about', '/', { locale: 'ID' })}
+                  className={`${style} px-2`}
+                  onClick={() => router.push({ href }, { href }, { locale: 'ID' })}
                 >
                   ID
                 </button>
               </div>
-            </article>
+            </div>
           </article>
         </section>
       </nav>
 
-      <main className='max-w-5xl px-5 mx-auto lg:px-0'>
-        <div className='h-auto max-w-5xl mx-auto mt-16'>
-          <Image src='/new/aboutUs.jpg' layout='intrinsic' height={1242} width={4028} priority />
-        </div>
-        <div className='pt-10 pb-5 text-2xl font-medium text-center font-DMSans'>{t.aboutUs}</div>
-        <div className='grid grid-cols-1 gap-5 sm:grid-cols-2'>
-          <Image src='/new/y.jpg' width={3024} height={2493} priority />
-          <div className='flex flex-col space-y-5'>
-            <div className='text-xl text-gray-700 font-DMSans'>{t.about.one}</div>
-            <div className='text-xl text-gray-700 font-DMSans'>{t.about.two}</div>
-            <div className='text-xl text-gray-700 font-DMSans'>{t.about.three}</div>
-          </div>
-        </div>
-      </main>
+      <section>{children}</section>
 
       <Footer />
     </main>
   );
-};
+}
 
-export default about;
+const TopNavLink = ({ href, title }) => {
+  const router = useRouter();
+  return (
+    <div>
+      <Link href={href}>
+        <a className='flex items-center justify-between'>
+          <div
+            className={`${
+              router.asPath === href ? 'underline' : 'text-gray-600'
+            } hover:underline py-4 font-CGaramond lg:px-5 lg:py-0 block text-center`}
+          >
+            {title}
+          </div>
+          <div className='lg:hidden'>
+            <HiOutlineChevronRight className='w-5 h-5 text-gray-600' />
+          </div>
+        </a>
+      </Link>
+    </div>
+  );
+};
