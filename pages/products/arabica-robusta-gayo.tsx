@@ -8,9 +8,9 @@ import { DataProducts } from 'lib/data';
 export default function ArabicaRobustaGayo() {
   return (
     <Layout
-      browserTitle='Kopi Aceh'
-      href='/product/kopi-aceh'
-      description='AKA Trading Indonesia - Kopi Aceh Page'
+      browserTitle='Arabica Robusta Gayo'
+      href='/product/arabica-robusta-gayo'
+      description='AKA Trading Indonesia - Arabica Robusta Gayo Page'
     >
       <div className='max-w-5xl px-5 mx-auto text-4xl font-semibold font-DMSans mt-36 lg:px-10'>
         Arabica Gayo

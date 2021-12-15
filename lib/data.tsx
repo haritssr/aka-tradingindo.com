@@ -1,6 +1,7 @@
 export const DataProducts = [
   [
     // { point: 'name', desc: 'Arabica Mount Tilu (Java Preanger)' },
+    {point:'Grade', desc:'1'},
     { point: 'Types', desc: 'Arabica' },
     { point: 'Variety', desc: 'Single variety sigarar utang' },
     { point: 'Region', desc: 'Bandung, West Java, Indonesia' },
@@ -11,8 +12,9 @@ export const DataProducts = [
   ],
   [
     // { point: 'name', desc: 'Arabica Golewa' },
-    { point: 'Types', desc: 'Specialty' },
-    { point: 'Variety', desc: 'Arabica Lini S' },
+    {point:'Grade', desc:'Specialty'},
+    { point: 'Types', desc: 'Arabica' },
+    { point: 'Variety', desc: ' Lini S' },
     { point: 'Region', desc: 'Golewa, Ngada, Bajawa, East Nusa Tenggara' },
     { point: 'Moisture', desc: '12-13%' },
     { point: 'Process', desc: 'Full washed' },
@@ -21,22 +23,24 @@ export const DataProducts = [
   ],
   [
     // { point: 'name', desc: 'Robusta Sumedang' },
-    { point: 'Types', desc: 'Specialty' },
-    { point: 'Variety', desc: 'Robusta' },
-    { point: 'Region', desc: 'Biji Huni' },
-    { point: 'Moisture', desc: 'Sumedang, West Java' },
-    { point: 'Process', desc: '12-13%' },
+    {point:'Grade', desc:'Specialty'},
+    { point: 'Types', desc: 'Robusta' },
+    { point: 'Variety', desc: 'Biji Huni' },
+    { point: 'Region', desc: 'Sumedang, West Java' },
+    { point: 'Moisture', desc: '12-13%' },
+    { point: 'Process', desc: 'Honey' },
     { point: 'Altitude', desc: '800 - 1200 asl' },
     { point: 'Flavor', desc: 'Hint of vanilla, roasted peanut, cocoa' },
   ],
 
   [
-    // { point: 'name', desc: 'Natural' },
-    { point: 'Types', desc: 'Specialty' },
-    { point: 'Variety', desc: 'Arabica' },
+    // { point: 'name', desc: 'Natural'},
+    {point:'Grade', desc:'Specialty'},
+    { point: 'Types', desc: 'Arabica' },
+    { point: 'Variety', desc: 'Timtim, ateng super, merah pucuk, Bourbon P88' },
     {
       point: 'Region',
-      desc: 'Timtim, ateng super, merah pucuk, Bourbon P88, Takengon, Central Aceh',
+      desc: 'Takengon, Central Aceh',
     },
     { point: 'Moisture', desc: '12-13%' },
     { point: 'Process', desc: 'Natural' },
@@ -49,11 +53,12 @@ export const DataProducts = [
 
   [
     // { point: 'name', desc: 'Honey' },
-    { point: 'Types', desc: 'Specialty' },
-    { point: 'Variety', desc: 'Arabica' },
+    {point:'Grade', desc:'Specialty'},
+    { point: 'Types', desc: 'Arabica' },
+    { point: 'Variety', desc: 'Timtim, ateng super, merah pucuk, Bourbon P88' },
     {
       point: 'Region',
-      desc: 'Timtim, ateng super, merah pucuk, Bourbon P88, Takengon, Central Aceh',
+      desc: 'Takengon, Central Aceh',
     },
     { point: 'Moisture', desc: '12-13%' },
     { point: 'Process', desc: 'Honey' },
@@ -66,11 +71,12 @@ export const DataProducts = [
 
   [
     // { point: 'name', desc: 'Wine' },
-    { point: 'Types', desc: 'Specialty' },
-    { point: 'Variety', desc: 'Arabica' },
+    {point:'Grade', desc:'Specialty'},
+    { point: 'Types', desc: 'Arabica' },
+    { point: 'Variety', desc: 'Timtim, ateng super, merah pucuk, Bourbon P88' },
     {
       point: 'Region',
-      desc: 'Timtim, ateng super, merah pucuk, Bourbon P88, Takengon, Central Aceh',
+      desc: 'Takengon, Central Aceh',
     },
     { point: 'Moisture', desc: '12-13%' },
     { point: 'Process', desc: 'Wine' },
@@ -83,11 +89,12 @@ export const DataProducts = [
 
   [
     // { point: 'name', desc: 'Luwak' },
-    { point: 'Types', desc: 'Specialty' },
-    { point: 'Variety', desc: 'Arabica' },
+    {point:'Grade', desc:'Specialty'},
+    { point: 'Types', desc: 'Arabica' },
+    { point: 'Variety', desc: 'Timtim, ateng super, merah pucuk, Bourbon P88' },
     {
       point: 'Region',
-      desc: 'Timtim, ateng super, merah pucuk, Bourbon P88, Takengon, Central Aceh',
+      desc: 'Takengon, Central Aceh',
     },
     { point: 'Moisture', desc: '12-13%' },
     { point: 'Process', desc: 'Full washed (Luwak / Civet Cat Coffee)' },
@@ -100,11 +107,12 @@ export const DataProducts = [
 
   [
     // { point: 'name', desc: 'Arabica Speciality' },
-    { point: 'Types', desc: 'Specialty' },
-    { point: 'Variety', desc: 'Arabica' },
+    {point:'Grade', desc:'Specialty'},
+    { point: 'Types', desc: 'Arabica' },
+    { point: 'Variety', desc: 'Timtim, ateng super, merah pucuk, Bourbon P88' },
     {
       point: 'Region',
-      desc: 'Timtim, ateng super, merah pucuk, Bourbon P88, Takengon, Central Aceh',
+      desc: 'Takengon, Central Aceh',
     },
     { point: 'Moisture', desc: '12-13%' },
     { point: 'Process', desc: 'Semi washed' },
@@ -117,35 +125,36 @@ export const DataProducts = [
 
   [
     // { point: 'name', desc: 'Robusta Gayo' },
+    {point:'Grade', desc:'Speciality'},
     { point: 'Types', desc: 'Robusta' },
-    { point: 'Variety', desc: 'Speciality' },
+    { point: 'Variety', desc: 'Timtim, ateng super, merah pucuk Bourbon, P88' },
     {
       point: 'Region',
-      desc: 'Timtim, ateng super, merah pucuk Bourbon, P88, Takengon, Central Aceh',
+      desc: 'Takengon, Central Aceh',
     },
     { point: 'Moisture', desc: '12-13%' },
     { point: 'Process', desc: 'Full washed' },
     { point: 'Altitude', desc: '<1000 asl' },
-    { point: 'Flavor', desc: '-' },
   ],
   [
     // { point: 'name', desc: 'Wine Coffee Robusta' },
-    { point: 'Types', desc: 'Speciality' },
-    { point: 'Variety', desc: 'Robusta' },
+    {point:'Grade', desc:'Speciality'},
+    { point: 'Types', desc: 'Robusta' },
+    { point: 'Variety', desc: 'Timtim, ateng super, merah pucuk Bourbon, P88' },
     {
       point: 'Region',
-      desc: 'Timtim, ateng super, merah pucuk Bourbon, P88, Takengon, Central Aceh',
+      desc: 'Takengon, Central Aceh',
     },
     { point: 'Moisture', desc: '12-13%' },
     { point: 'Process', desc: 'Wine' },
     { point: 'Altitude', desc: '<1000 asl' },
-    { point: 'Flavor', desc: '-' },
   ],
 
   [
     // { point: 'name', desc: 'Robusta Ulubelu' },
-    { point: 'Types', desc: '1 (Double Pick)' },
-    { point: 'Variety', desc: '1 (Double Pick)' },
+    {point:'Grade', desc:'1 (Double Pick)'},
+    { point: 'Types', desc: 'Robusta' },
+    { point: 'Variety', desc: 'Mix Variety' },
     { point: 'Region', desc: 'Ulubelu, Tanggamus, Lampung' },
     { point: 'Moisture', desc: '12-13%' },
     { point: 'Process', desc: 'Natural' },
@@ -156,6 +165,7 @@ export const DataProducts = [
 
 // [
 //   { point: 'name', desc: '' },
+//   { point:'Grade', desc:''}//   
 //   { point: 'Types', desc: '' },
 //   { point: 'Variety', desc: '' },
 //   { point: 'Region', desc: '' },

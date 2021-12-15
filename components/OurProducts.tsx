@@ -6,24 +6,8 @@ export default function OurProducts() {
       <div className='pt-10 pb-5 text-3xl font-semibold text-center font-DMSans'>Our Products</div>
       <div className='grid max-w-5xl grid-cols-1 gap-5 px-5 mx-auto lg:px-0 sm:grid-cols-4'>
         <Image
-          alt='Gambir'
-          src='/new/gambir.jpg'
-          width={1000}
-          height={1000}
-          priority
-          className='rounded-md'
-        />
-        <Image
-          alt='Jagung'
-          src='/new/jagung.png'
-          width={1000}
-          height={1000}
-          priority
-          className='rounded-md'
-        />
-        <Image
-          alt='Kelapa'
-          src='/new/kelapa.png'
+          alt='Kopi'
+          src='/new/kopi.png'
           width={1000}
           height={1000}
           priority
@@ -38,8 +22,8 @@ export default function OurProducts() {
           className='rounded-md'
         />
         <Image
-          alt='Kopi'
-          src='/new/kopi.png'
+          alt='Jagung'
+          src='/new/jagung.png'
           width={1000}
           height={1000}
           priority
@@ -53,22 +37,26 @@ export default function OurProducts() {
           priority
           className='rounded-md'
         />
-        <Image
-          alt='Sayuran'
-          src='/new/sayuran.png'
-          width={1000}
-          height={1000}
-          priority
-          className='rounded-md'
-        />
-        <Image
-          alt='Teh'
-          src='/new/teh.png'
-          width={1000}
-          height={1000}
-          priority
-          className='rounded-md'
-        />
+        <div className='col-start-2'>
+          <Image
+            alt='Gambir'
+            src='/new/gambir.jpg'
+            width={1000}
+            height={1000}
+            priority
+            className='rounded-md '
+          />
+        </div>
+        <div className='col-start-3'>
+          <Image
+            alt='Kelapa'
+            src='/new/kelapa.png'
+            width={1000}
+            height={1000}
+            priority
+            className='rounded-md '
+          />
+        </div>
       </div>
     </>
   );
