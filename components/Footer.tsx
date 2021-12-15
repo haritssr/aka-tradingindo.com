@@ -87,7 +87,7 @@ const Footer = () => {
         </div>
       </main>
       <div className='max-w-5xl px-5 pb-3 mx-auto text-center text-gray-800 sm:px-0 font-CGaramond'>
-        Copyright &copy; 2021. All Right Reserved.
+        Copyright &copy; {new Date().getFullYear()}. All Right Reserved.
       </div>
     </main>
   );

@@ -30,10 +30,10 @@ export const EN = {
 
   bahan: 'Gambier, Candlenut, Cinnamon, Coffee Bean, etc.',
   name: {
-    gambier: 'Gambier',
+    gambier: 'Gambir / Uncaria Gambir Roxb',
     candlenut: 'Candlenut',
     cinnamon: 'Cinnamon',
-    coffeeBean: 'Coffee Bean',
+    coffeeBean: 'Coffee Beans',
     corn: 'Shelled Corn',
     tea: 'Tea',
     pala: 'Nutmeg',
@@ -78,7 +78,7 @@ export const EN = {
   nav: {
     home: 'Home',
     about: 'About Us',
-    product: 'Product',
+    product: 'Products',
     team: 'Team',
     contact: 'Contact',
   },

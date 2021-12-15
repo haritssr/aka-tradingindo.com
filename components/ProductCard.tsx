@@ -1,21 +1,35 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
-export default function ProductCard({ href, image, productName }) {
+const ProductCard = ({
+  href,
+  src,
+  name,
+  className,
+}: {
+  href: string;
+  src: string;
+  name: string;
+  className?: string;
+}) => {
   return (
-    <Link href={`${href}`}>
-      <a className='relative block text-center cursor-pointer '>
+    <Link href={href}>
+      <a className={`relative w-full h-52 sm:h-60 ${className}`}>
         <Image
-          src={`${image}`}
-          width={1000}
-          height={1000}
+          alt='Mountains'
+          src={src}
+          layout='fill'
+          objectFit='cover'
+          quality={75}
+          className='rounded-md'
           priority
-          className='absolute z-0 object-cover w-full h-full rounded-md'
         />
-        <div className='relative z-10 flex items-center justify-center h-full text-center'>
-          {productName}
+        <div className='absolute flex items-center justify-center w-full h-full text-lg text-center text-white bg-gradient-to-b from-white/0 via-black/10 to-white/0 hover:via-black/20'>
+          <div>{name}</div>
         </div>
       </a>
     </Link>
   );
-}
+};
+
+export default ProductCard;

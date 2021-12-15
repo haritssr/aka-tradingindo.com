@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { useState } from 'react';
 import { useRouter } from 'next/router';
 import { EN, ID } from '../translation';
-import { HiOutlineChevronRight } from 'react-icons/hi';
+import TopNavLink from './TopNavLink';
 
 export default function Layout({ browserTitle, href, children, description }) {
   const router = useRouter();
@@ -15,7 +15,6 @@ export default function Layout({ browserTitle, href, children, description }) {
   const type = 'website';
   const style =
     'text-gray-600 hover:underline py-4 font-CGaramond lg:px-5 lg:py-0 block text-center';
-  console.log(router.asPath);
 
   return (
     <main>
@@ -98,7 +97,7 @@ export default function Layout({ browserTitle, href, children, description }) {
           >
             <TopNavLink href='/' title={t.nav.home} />
             <TopNavLink href='/about' title={t.nav.about} />
-            <TopNavLink href='/product' title={t.nav.product} />
+            <TopNavLink href='/products' title={t.nav.product} />
             <TopNavLink href='/contact' title={t.nav.contact} />
 
             {/* Internasionalization button */}
@@ -133,25 +132,3 @@ export default function Layout({ browserTitle, href, children, description }) {
     </main>
   );
 }
-
-const TopNavLink = ({ href, title }) => {
-  const router = useRouter();
-  return (
-    <div>
-      <Link href={href}>
-        <a className='flex items-center justify-between'>
-          <div
-            className={`${
-              router.asPath === href ? 'underline' : 'text-gray-600'
-            } hover:underline py-4 font-CGaramond lg:px-5 lg:py-0 block text-center`}
-          >
-            {title}
-          </div>
-          <div className='lg:hidden'>
-            <HiOutlineChevronRight className='w-5 h-5 text-gray-600' />
-          </div>
-        </a>
-      </Link>
-    </div>
-  );
-};
